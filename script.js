@@ -58,10 +58,12 @@ if (ingredients.includes("vegetables") && ingredients.includes("tomato") && ingr
 if (ingredients.includes("potato") && ingredients.includes("oil") && ingredients.includes("salt")) suggestions.push("🍠 Roasted Potatoes");
 if (ingredients.includes("milk") && ingredients.includes("sugar")) suggestions.push("🥛 Milkshake");
 if (ingredients.includes("milk") && ingredients.includes("banana") && ingredients.includes("honey")) suggestions.push("🍹 Banana Smoothie");
+if (ingredients.includes)("beef fry")&&suggestions.push("🥩beef fry")
+if (ingredients.includes)("chicken")&&suggestions.push("chicken fry")
 
 
 
-  if (suggestions.length === 0) suggestions.push("🤔 Try a simple fry!");
+  if (suggestions.length === 0) suggestions.push("🤔 sorry! i could not anwser ");
 
   result.innerHTML = "<ul>" + suggestions.map(r => `<li>${r}</li>`).join("") + "</ul>";
 
