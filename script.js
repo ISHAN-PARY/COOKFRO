@@ -1,9 +1,5 @@
 // Array to store ingredients
 let ingredients = [];
-
-// Basic shopping list items
-const basicItems = ["vegetables", "chicken", "rice", "milk", "bread", "eggs", "onion", "tomato"];
-
 // Add ingredient from input
 function addIngredient() {
   const input = document.getElementById("ingredientInput");
@@ -51,17 +47,4 @@ function suggestRecipes() {
 
   result.innerHTML = "<h3>Recipe Suggestions:</h3><ul>" + suggestions.map(r => `<li>${r}</li>`).join("") + "</ul>";
 
-  // Update shopping list
-  updateShoppingList();
-}
-
-// Display basic shopping list
-function updateShoppingList() {
-  const shopping = document.getElementById("shoppingList");
-  shopping.innerHTML = "";
-  basicItems.forEach(item => {
-    const li = document.createElement("li");
-    li.textContent = item;
-    shopping.appendChild(li);
-  });
 }
