@@ -1,0 +1,161 @@
+body {
+  background-color: #d4e6ea;
+  text-align: center;
+  font-family: Arial;
+}
+
+h1 {
+  color: #0b4f6c;
+}
+body {
+  background: #d4e6ea;
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+h1 {
+  color: #0b4f6c;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  width: 150px;       /* make it shorter */
+  padding: 10px 20px; /* adjust padding */
+  border: none;
+  border-radius: 10px;
+  background-color: #0b4f6c;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #083d56;
+}
+
+#result {
+  margin-top: 15px;
+  font-weight: bold;
+}
+/* Reset and basic font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body background */
+body {
+  background: linear-gradient(to bottom right, #d4e6ea, #a0d2db);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container card */
+.container {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 350px;
+  max-width: 90%;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* Logo styling */
+.logo {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+/* Headings */
+h1 {
+  color: #0b4f6c;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+/* Input and button styling */
+input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+button {
+  width: 150px;       /* make it shorter */
+  padding: 10px 20px; /* adjust padding */
+  border: none;
+  border-radius: 10px;
+  background-color: #0b4f6c;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background-color: #083d56;
+}
+
+/* Result card */
+#result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #f0f4f7;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  color: #555;
+  font-size: 0.8rem;
+}
+/* Ingredient & shopping list styling */
+ul {
+  list-style-type: square;
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+li {
+  padding: 5px 0;
+}
