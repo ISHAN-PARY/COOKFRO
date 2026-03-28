@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookfro - Smart Pantry Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <img src="logo.png" alt="Cookfro Logo" class="logo">
+  <h1>🍳 Cookfro</h1>
+  <p>Add ingredients, see recipes, and track your pantry!</p>
+
+  <!-- Input and add button -->
+  <div class="input-group">
+    <input type="text" id="ingredientInput" placeholder="e.g. rice, egg, onion">
+    <button onclick="addIngredient()">Add</button>
+  </div>
+
+  <!-- Ingredients list -->
+  <h3>Your Pantry:</h3>
+  <ul id="ingredientList"></ul>
+
+  <!-- Suggest recipes -->
+  <button onclick="suggestRecipes()" class="action-btn">Get Recipe Suggestions</button>
+  <div id="recipeResult"></div>
+
+<footer>
+  &copy; 2026 Cookfro. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
