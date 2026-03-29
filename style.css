@@ -1,26 +1,83 @@
-/* Basic styling */
+/* ================= BODY ================= */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom right, #d4e6ea, #a0d2db);
+  margin: 0;
+  background-color: #a9c6cc;
+  color: #0f5f7a;
+
   display: flex;
-  justify-content: center;
-  padding: 30px;
+  flex-direction: column;
+  align-items: center; /* center horizontally */
+  min-height: 100vh;
 }
 
+/* ================= CONTAINER ================= */
 .container {
-  background: #fff;
-  padding: 30px;
+  background: #ffffff;
+  padding: 15px;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
   width: 400px;
   max-width: 90%;
+
+  height: 420px;          /* 👈 control height here */
+  overflow-y: auto;       /* 👈 scroll if content overflows */
+
   text-align: center;
+  margin-top: 20px;
+}
+/* ================= BIG BUTTON ================= */
+.big-btn {
+  height: 45px;
+  width: 220px;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  margin: 20px auto !important;
+
+  background: #0f5f7a;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 16px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  text-align: center;
+  line-height: normal !important;
+  padding: 0 !important;
+
+  cursor: pointer;
+}
+.big-btn:hover {
+  background: #0c4e64;
+  transform: scale(1.05);
 }
 
-h1, h3 {
-  color: #0b4f6c;
+.big-btn:hover {
+  background: #0c4e64;
+  transform: scale(1.05);
 }
 
+/* ================= LOGO ================= */
+.logo {
+  width: 180px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 2px solid #0f5f7a;
+}
+
+/* ================= HEADINGS ================= */
+h1, h2, h3 {
+  color: #0f5f7a;
+  margin-bottom: 10px;
+}
+
+/* ================= INPUTS ================= */
 .input-group {
   display: flex;
   justify-content: center;
@@ -31,29 +88,45 @@ input {
   flex: 1;
   padding: 10px;
   border-radius: 10px 0 0 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #0f5f7a;
+  outline: none;
 }
 
+input:focus {
+  border-color: #0f5f7a;
+}
+
+/* ================= BUTTONS ================= */
 button {
   padding: 10px 20px;
   border: none;
-  border-radius: 0 10px 10px 0;
-  background: #0b4f6c;
-  color: white;
+  border-radius: 16px;
+  background: #0f5f7a;
+  color: #ffffff;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+  margin: 8px 0; /* 👈 adds space */
 }
-
-button:hover {
-  background: #083d56;
+.big-btn {
+  padding: 0 !important;
 }
-
 .action-btn {
-  margin: 10px 0;
+  margin: 10px auto; /* center + spacing */
   width: 60%;
-  border-radius: 10px;
+  display: block; /* needed for centering */
 }
-
+.input-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: 10px; /* 👈 space between input & button */
+}
+button:hover {
+  background-color: #0c4e64; /* slightly darker */
+  transform: scale(1.03);
+}
+/* ================= PANTRY LIST ================= */
 ul {
   list-style-type: square;
   text-align: left;
@@ -65,18 +138,255 @@ li {
   padding: 5px 0;
   display: flex;
   justify-content: space-between;
+  color: #0f5f7a;
 }
 
 .remove-btn {
-  background: red;
+  background: #e74c3c;
   border: none;
   color: white;
-  border-radius: 5px;
-  padding: 2px 6px;
+  border-radius: 10px;
+  padding: 2px 8px;
   cursor: pointer;
   font-size: 0.8rem;
 }
-.logo {
-  width: 200px;
+
+/* ================= RECIPE CARDS ================= */
+#recipes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.recipe-card {
+  width: 300px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: center;
+  color: #0f5f7a;
+  border: 1px solid #0f5f7a;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid #0f5f7a;
+}
+
+.recipe-card h3 {
+  padding: 10px;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.recipe-card p {
+  padding: 0 10px 10px;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.recipe-card button {
+  background-color: #0f5f7a;
+  color: #ffffff;
+}
+
+.recipe-card button:hover {
+  background-color: #0c4e64;
+}
+
+/* ================= RECIPE DETAILS ================= */
+#recipe-details {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 30, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#recipe-details.hidden {
+  display: none;
+}
+
+#recipe-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  width: 80%;
+  max-width: 700px;
+  color: #0f5f7a;
+}
+
+#close-recipe-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+
+#close-recipe-button:hover {
+  background-color: #c0392b;
+}
+
+/* ================= FOOTER ================= */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0 5px 0;
+  background: #0f5f7a;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 0 0 24px 24px;
+  margin-top: 30px;
+  min-height: 30px;
+}
+
+.footer-center-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links {
+  margin: 10px 0;
+}
+.footer-links a {
+  margin: 0 8px;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+.footer-links a:hover {
+  transform: scale(1.2);
+}
+.footer-note {
+  font-size: 0.9em;
+  color: #e0e0e0;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 600px) {
+  .container {
+    width: 98vw;
+    padding: 10px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .logo {
+    width: 120px;
+  }
+  #recipe-content {
+    width: 98vw;
+    padding: 10px;
+    border-radius: 16px;
+  }
+  .footer-content {
+    border-radius: 0;
+    font-size: 0.95em;
+  }
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 30px;
+  background-color: #a9c6cc;
+  color: #0b3d91;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Push content and footer apart */
+.container {
+  flex: 1;
+}
+footer {
+  width: 400px;
+  max-width: 90%;
+  margin: 30px auto 0 auto; /* center it */
+  padding: 15px;
+
+  background-color: #0f5f7a; /* logo text color */
+  color: #ffffff;
+
+  text-align: center;
+  border-radius: 20px; /* curved corners */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ================= UTILITY ================= */
+.hidden {
+  display: none !important;
+}
+#recipes-container {
+  margin-top: 20px;
+}
+
+/* Make Add button same size as input */
+.input-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 15px;
+  gap: 0;
+}
+.input-group input {
+  height: 40px;
+  font-size: 1em;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 16px 0 0 16px;
+  border-right: none;
+  width: 120px;
+  min-width: 0;
+}
+.input-group button {
+  height: 40px;
+  font-size: 1em;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-radius: 0 16px 16px 0;
+  margin-left: -4px;
+  border-left: none;
+  justify-content: center;
+  padding: 0 18px;
+  width: 120px;
+}
+.container {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+  width: 400px;
+  max-width: 90%;
+
+  height: 420px !important;     /* force height */
+  overflow-y: auto;             /* scroll inside */
+
+  text-align: center;
+  margin-top: 20px;
 }
