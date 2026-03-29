@@ -4,33 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cookfro - Smart Pantry Assistant</title>
+  <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
-  <img src="logo.png" alt="Cookfro Logo" class="logo">
-  <h1>🍳 Cookfro</h1>
-  <p>Add ingredients, see recipes, and track your pantry!</p>
 
-  <!-- Input and add button -->
-  <div class="input-group">
-    <input type="text" id="ingredientInput" placeholder="e.g. rice, egg, onion">
-    <button onclick="addIngredient()">Add</button>
+  <div class="container" role="main" aria-label="Cookfro Smart Pantry Assistant">
+    <!-- LOGO -->
+    <img src="logo.png" alt="Cookfro Logo" class="logo" width="180" height="auto">
+
+    <!-- HEADER -->
+    <h1>🍳 COOKFRO</h1>
+    <p>Smart pantry <span aria-hidden="true">→</span> instant recipe suggestions</p>
+
+    <!-- INPUT -->
+    <div class="input-group">
+      <input type="text" id="ingredientInput" placeholder="e.g. rice, egg, onion" aria-label="Add ingredient">
+      <button onclick="addIngredient()" aria-label="Add ingredient to pantry">Add</button>
+    </div>
+
+    <!-- PANTRY -->
+    <ul id="ingredientList" aria-live="polite"></ul>
+
+    <!-- Get Recipe Suggestions Button (moved below pantry) -->
+    <button class="action-btn big-btn" onclick="getRecipes()" style="margin: 30px auto 10px auto; display: block; font-size: 1.3em; padding: 20px 0; width: 90%; max-width: 350px;">Get Recipe Suggestions</button>
+
+    <!-- RECIPES (AUTO FILLED BY JS) -->
+    <div id="recipes-container"></div>
   </div>
 
-  <!-- Ingredients list -->
-  <h3>Your Pantry:</h3>
-  <ul id="ingredientList"></ul>
+  <!-- RECIPE DETAILS POPUP -->
+  <div id="recipe-details" class="hidden" role="dialog" aria-modal="true" aria-label="Recipe Details">
+    <div id="recipe-content"></div>
+    <button id="close-recipe-button" onclick="closeRecipe()" aria-label="Close recipe details">Close</button>
+  </div>
 
-  <!-- Suggest recipes -->
-  <button onclick="suggestRecipes()" class="action-btn">Get Recipe Suggestions</button>
-  <div id="recipeResult"></div>
+  <!-- FOOTER -->
+  <footer>
+    <span style="display:block;margin-bottom:8px;text-align:center;width:100%;color:#fff;font-size:1em;">© 2026 COOKFRO. All rights reserved.</span>
+    <div class="footer-content">
+      <span class="footer-note">Made by Ishan | Under Testing</span>
+    </div>
+  </footer>
 
-<footer>
-  &copy; 2026 Cookfro. All rights reserved.
-</footer>
+  <script src="script.js"></script>
 
-<script src="script.js"></script>
 </body>
 </html>
