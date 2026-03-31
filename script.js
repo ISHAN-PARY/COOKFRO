@@ -172,6 +172,13 @@ const recipes = [
     ingredients: ['milk', 'banana', 'honey'],
     instructions: 'Blend banana, milk, and honey.'
   }
+    {
+    id: 16,
+    title: 'mango juice',
+    description: 'Banana smoothie with honey.',
+    ingredients: ['mango', 'sugar'],
+    instructions: 'Blend mango, and mix sugar until it becomes sweet as much as you want.'
+  }
 ];
 
 // ================= DISPLAY =================
