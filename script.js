@@ -67,718 +67,1966 @@ function removeIngredient(index) {
 
 // ================= RECIPES =================
 const recipes = [
-  {
-    id: 1,
-    title: 'Egg Fried Rice',
-    description: 'Quick fried rice with egg.',
-    ingredients: ['egg', 'rice'],
-    instructions: 'Cook rice. Scramble eggs. Mix scrambled eggs with rice.'
-  },
-  {
-    id: 2,
-    title: 'French Toast',
-    description: 'Classic French toast with bread and egg.',
-    ingredients: ['bread', 'egg', 'spices'],
-    instructions: 'mix egg with spicesDip bread in egg. Fry until golden.'
-  },
-  {
-    id: 3,
-    title: 'Banana Milkshake',
-    description: 'Refreshing banana milkshake.',
-    ingredients: ['milk', 'banana', 'sugar'],
-    instructions: 'Blend banana, milk, and sugar.'
-  },
-  {
-    id: 4,
-    title: 'Grilled Cheese',
-    description: 'Cheesy grilled sandwich.',
-    ingredients: ['bread', 'cheese'],
-    instructions: 'toast bread. Add cheese. Grill until chease is melted.'
-  },
-  {
-    id: 5,
-    title: 'Omelette',
-    description: 'Egg omelette with onion.',
-    ingredients: ['egg', 'onion','spices'],
-    instructions: 'Beat eggs, onion, spices, cook in a pan until it is set.'
-  },
-  {
-    id: 6,
-    title: 'Chicken Stir Fry',
-    description: 'Chicken and vegetables stir fry.',
-    ingredients: ['chicken', 'vegetables'],
-    instructions: 'Stir fry chicken and vegetables.'
-  },
-  {
-    id: 7,
-    title: 'Chicken Curry',
-    description: 'Spicy chicken curry.',
-    ingredients: ['chicken', 'tomato', 'onion', 'spices'],
-    instructions: 'Cook chicken with tomato, onion, and spices.'
-  },
-  {
-    id: 8,
-    title: 'Beef Stew',
-    description: 'Hearty beef stew.',
-    ingredients: ['beef', 'potato', 'carrot'],
-    instructions: 'Stew beef with potato and carrot.'
-  },
-  {
-    id: 9,
-    title: 'Pasta',
-    description: 'Pasta in tomato sauce.',
-    ingredients: ['pasta', 'tomato', 'onion'],
-    instructions: 'Cook pasta, make tomato sauce, mix together  .'
-  },
-  {
-    id: 10,
-    title: 'Shrimp Stir Fry',
-    description: 'Shrimp and vegetables stir fry.',
-    ingredients: ['rice', 'shrimp', 'vegetables'],
-    instructions: 'Stir fry shrimp, vegetables, and rice.'
-  },
-  {
-    id: 11,
-    title: 'Garlic Bread',
-    description: 'Toasted garlic bread.',
-    ingredients: ['bread', 'garlic', 'butter'],
-    instructions: 'Spread garlic butter on bread, toast.'
-  },
-  {
-    id: 12,
-    title: 'Vegetable Salad',
-    description: 'Fresh vegetable salad.',
-    ingredients: ['carrot','meat', 'tomato', 'cucumber'],
-    instructions: 'Chop and mix all ingredients toghether.'
-  },
-  {
-    id: 13,
-    title: 'Roasted Potatoes',
-    description: 'Crispy roasted potatoes.',
-    ingredients: ['potato', 'oil', 'salt'],
-    instructions: 'add salt to potatoes and roast potatoes in oil in oil.'
-  },
-  {
-    id: 14,
-    title: 'Milk tea',
-    description: 'Simple milk tea.',
-    ingredients: ['milk', 'sugar', 'tea powder'],
-    instructions: 'boil tea powder with milk and add some  sugar.'
-  },
-  {
-    id: 15,
-    title: 'Banana Smoothie',
-    description: 'Banana smoothie with honey.',
-    ingredients: ['milk', 'banana', 'honey'],
-    instructions: 'Blend banana, milk, and honey.'
-  },
-  {
-    id: 16,
-    title: 'Butter paneer',
-    description: 'Creamy paneer curry.',
-    ingredients: ['paneer', 'butter', 'tomato', 'cream'],
-    instructions: 'Cook tomato gravy. Add paneer and cream. Simmer.'
-  },
-  {
-    id: 17,
-    title: 'Mushroom Fry',
-    description: 'Spicy mushroom dish.',
-    ingredients: ['mushroom', 'pepper', 'onion'],
-    instructions: 'cook onion in heated oil, until it is brown onion. Add mushroom and pepper. Cook well.'
-  },
-  {
-    id:18,
-    title: 'Aloo Gobi',
-    description: 'A vegetarian dish from india.',
-    ingredients: ['potato', 'cauliflower', 'spices'],
-    instructions: 'Cook potato and cauliflower add spices.'
-  },
-  {
-    id:19,
-    title: 'Chickpea Masala',
-    description: 'Protein-rich chickpea curry.',
-    ingredients: ['chickpea', 'tomato', 'onion'],
-    instructions: 'Cook chickpeas with onion tomato gravy.'
-  },
-  {
-    id: 20,
-    title: 'Vegetable Fried Noodles',
-    description: 'Simple veg fried noodles.',
-    ingredients: ['noodles', 'vegetables', 'soy sauce'],
-    instructions: 'Cook noodles. Stir fry with vegetables and sauce.'
-  },
-  {
-    id: 21,
-    title: 'Brinjal Fry',
-    description: 'Crispy brinjal fry.',
-    ingredients: ['Brinjal', 'spices', 'oil'],
-    instructions: 'Slice Brinjal. Coat spices. Fry until crispy.'
-  },
-  {
-    id: 22,
-    title: 'Spinach Dal',
-    description: 'Healthy curry.',
-    ingredients: ['lentils', 'spinach', 'garlic'],
-    instructions: 'Cook lentils. Add spinach and garlic tempering.'
-  },
-  {
-    id: 23,
-    title: 'Coconut Rice',
-    description: 'Aromatic coconut flavored rice.',
-    ingredients: ['rice', 'coconut', 'curry leaves'],
-    instructions: 'Cook rice. Mix with coconut and tempering.'
-  },
-  {
-    id: 24,
-    title: 'Vegetable Cutlet',
-    description: 'Crispy veg patties.',
-    ingredients: ['potato', 'vegetables', 'breadcrumbs','egg'],
-    instructions: 'steam cook potato. mix potato and vegetables until it becomes a dough . shape it . take egg white and dip into it and put bread crumbs on it .fry it in oil or air fryer.'
-  },
-  {
-    id: 25,
-    title: 'Tomato Chutney',
-    description: 'Tangy side dish best for dosa from south india .',
-    ingredients: ['tomato', 'chili', 'garlic','dal','curry leaves'],
-    instructions: 'Cook tomato, chilli, garlic .blend it .add curry leaves to oil and put the blend and mix.'
-  },
+{
+  id: 1,
+  title: 'Egg Fried Rice',
+  description: 'A quick and flavorful fried rice made with fluffy scrambled eggs, garlic, and savory seasonings — perfect for a fast meal.',
+  
+  ingredients: [
+    '2 eggs',
+    '1 cup cooked rice',
+    '1 tbsp oil',
+    '2 cloves garlic (minced)',
+    '2 tbsp soy sauce',
+    'Salt and pepper to taste',
+    '2 tbsp chopped spring onions'
+  ],
 
-  {
-    id: 26,
-    title: 'Cabbage Stir Fry',
-    description: 'Light cabbage dish.',
-    ingredients: ['cabbage', 'mustard seeds', 'oil'],
-    instructions: 'Stir fry cabbage with seasoning.'
-  },
-  {
-    id: 27,
-    title: 'Sweet Corn Soup',
-    description: 'Thick corn soup.',
-    ingredients: ['corn', 'water', 'pepper'],
-    instructions: 'Boil and blend corn. Season.'
-  },
-  {
-    id: 28,
-    title: 'Paneer Tikka',
-    description: 'Grilled paneer cubes.',
-    ingredients: ['paneer', 'yogurt', 'spices'],
-    instructions: 'Marinate paneer. Grill until cooked.'
-  },
-  {
-    id: 29,
-    title: 'Vegetable Upma',
-    description: 'easy dish from south india.',
-    ingredients: ['semolina', 'vegetables', 'mustard seeds'],
-    instructions: 'Roast semolina. Cook with veggies and water.'
-  },
-  {
-    id: 30,
-    title: 'Carrot Halwa',
-    description: 'Sweet carrot dessert.',
-    ingredients: ['carrot', 'milk', 'sugar'],
-    instructions: 'Cook grated carrot in milk and sugar.'
-  },
-  {
-    id: 31,
-    title: 'Lentil Soup',
-    description: 'Simple soup.',
-    ingredients: ['lentils', 'garlic', 'onion'],
-    instructions: 'Boil lentils. Add sautéed garlic and onion.'
-  },
-  {
-    id: 32,
-    title: 'Stuffed Capsicum',
-    description: 'Capsicum filled with masala.',
-    ingredients: ['capsicum', 'potato', 'spices'],
-    instructions: 'steam cook potatoes. mix potatoes with spices .Stuff capsicum with the mix . Cook capsicum  until soft.'
-  },
-  {
-    id: 33,
-    title: 'Vegetable Pulao',
-    description: 'Rice with mixed vegetables.',
-    ingredients: ['rice', 'vegetables', 'spices'],
-    instructions: 'Cook rice with vegetables and spices.'
-  },
-  {
-    id: 34,
-    title: 'Onion Pakoda',
-    description: 'Crispy onion fritters.',
-    ingredients: ['onion', 'gram flour', 'spices'],
-    instructions: 'Mix gram flour and spices with water .sperad the mixture into onions . Deep fry the onions.'
-  },
-  {
-    id: 35,
-    title: 'Curd Rice',
-    description: 'Cooling yogurt rice.',
-    ingredients: ['rice', 'curd', 'mustard seeds'],
-    instructions: 'Mix rice with curd and tempering.'
-  },
-
-  {
-    id: 36,
-    title: 'Beetroot Stir Fry',
-    description: 'Healthy beetroot dish.',
-    ingredients: ['beetroot', 'coconut', 'oil'],
-    instructions: 'Cook beetroot. Add coconut.'
-  },
-  {
-    id: 37,
-    title: 'Pumpkin Curry',
-    description: 'Mild sweet curry.',
-    ingredients: ['pumpkin', 'spices', 'coconut'],
-    instructions: 'Cook pumpkin add water and add with spices and coconut.'
-  },
-  {
-    id: 38,
-    title: 'Moong Dal Khichdi',
-    description: 'Comfort rice and dal dish.',
-    ingredients: ['rice', 'moong dal', 'turmeric'],
-    instructions: 'Cook everything together until soft.'
-  },
-  {
-    id: 39,
-    title: 'Vegetable Spring Rolls',
-    description: 'Crispy rolls.',
-    ingredients: ['spring roll sheets', 'vegetables', 'oil'],
-    instructions: 'Fill sheets. Roll and fry.'
-  },
-  {
-    id: 40,
-    title: 'Rava Dosa',
-    description: 'Crispy semolina dosa.',
-    ingredients: ['semolina', 'water', 'spices'],
-    instructions: 'Make batter. Cook thin dosa.'
-  },
-  {
-    id: 41,
-    title: 'Paneer Bhurji',
-    description: 'Spiced scrambled paneer.',
-    ingredients: ['paneer', 'onion', 'tomato', 'spices'],
-    instructions: 'Crumble paneer. Cook with onion, tomato, and spices.'
-  },
-  {
-    id: 42,
-    title: 'Vegetable Stew',
-    description: 'Mild coconut-based stew.',
-    ingredients: ['vegetables', 'coconut milk', 'spices'],
-    instructions: 'Cook vegetables in coconut milk with spices.'
-  },
-  {
-    id: 43,
-    title: 'Masala Dosa',
-    description: 'Crispy dosa with potato filling.',
-    ingredients: ['dosa batter', 'potato', 'spices'],
-    instructions: 'Prepare dosa. Fill with spiced potato mixture.'
-  },
-  {
-    id: 44,
-    title: 'Green Peas Curry',
-    description: 'Simple peas curry.',
-    ingredients: ['green peas', 'onion', 'tomato'],
-    instructions: 'Cook peas with onion tomato gravy.'
-  },
-  {
-    id: 45,
-    title: 'Vegetable Korma',
-    description: 'Rich creamy curry.',
-    ingredients: ['vegetables', 'cream', 'spices'],
-    instructions: 'Cook vegetables in creamy spiced gravy.'
-  },
-
-  {
-    id: 46,
-    title: 'Idli',
-    description: 'Steamed rice cakes.',
-    ingredients: ['idli batter'],
-    instructions: 'Pour batter into molds. Steam until cooked.'
-  },
-  {
-    id: 47,
-    title: 'Sambar',
-    description: 'Lentil vegetable stew.',
-    ingredients: ['lentils', 'vegetables', 'tamarind'],
-    instructions: 'Cook lentils. Add vegetables and tamarind.'
-  },
-  {
-    id: 48,
-    title: 'Avial',
-    description: 'Kerala mixed vegetable dish.',
-    ingredients: ['vegetables', 'coconut', 'curd'],
-    instructions: 'Cook vegetables. Mix with coconut and curd.'
-  },
-  {
-    id: 49,
-    title: 'Thoran',
-    description: 'Dry vegetable coconut stir fry.',
-    ingredients: ['vegetables', 'coconut', 'mustard seeds'],
-    instructions: 'Stir fry vegetables with coconut.'
-  },
-  {
-    id: 50,
-    title: 'Kootu Curry',
-    description: 'Kerala style curry.',
-    ingredients: ['chickpea', 'yam', 'coconut'],
-    instructions: 'Cook ingredients with coconut paste.'
-  },
-
-  {
-    id: 51,
-    title: 'Vegetable Omelette',
-    description: 'Egg omelette with veggies.',
-    ingredients: ['egg', 'vegetables', 'spices'],
-    instructions: 'Mix and cook in pan.'
-  },
-  {
-    id: 52,
-    title: 'Tomato Rasam',
-    description: 'Spicy tangy soup.',
-    ingredients: ['tomato', 'tamarind', 'spices'],
-    instructions: 'Boil and season.'
-  },
-  {
-    id: 53,
-    title: 'Curd Curry',
-    description: 'Yogurt-based curry.',
-    ingredients: ['curd', 'spices', 'curry leaves'],
-    instructions: 'Cook curd with spices.'
-  },
-  {
-    id: 54,
-    title: 'Vegetable Uttapam',
-    description: 'Thick dosa with toppings.',
-    ingredients: ['dosa batter', 'vegetables'],
-    instructions: 'Pour thick batter. Add toppings. Cook.'
-  },
-  {
-    id: 55,
-    title: 'Lemon Pickle',
-    description: 'Spicy preserved lemon.',
-    ingredients: ['lemon', 'salt', 'chili'],
-    instructions: 'Mix and store for days.'
-  },
-
-  {
-    id: 56,
-    title: 'Coconut Chutney',
-    description: 'Classic chutney.',
-    ingredients: ['coconut', 'green chili', 'salt'],
-    instructions: 'Grind all ingredients.'
-  },
-  {
-    id: 57,
-    title: 'Mint Chutney',
-    description: 'Refreshing chutney.',
-    ingredients: ['mint', 'coriander', 'lemon'],
-    instructions: 'Blend everything.'
-  },
-  {
-    id: 58,
-    title: 'Vegetable Clear Soup',
-    description: 'Light soup.',
-    ingredients: ['vegetables', 'water', 'pepper'],
-    instructions: 'Boil vegetables and strain.'
-  },
-  {
-    id: 59,
-    title: 'Spinach Rice',
-    description: 'Healthy green rice.',
-    ingredients: ['rice', 'spinach', 'spices'],
-    instructions: 'Cook rice with spinach puree.'
-  },
-  {
-    id: 60,
-    title: 'Carrot Soup',
-    description: 'Smooth carrot soup.',
-    ingredients: ['carrot', 'water', 'pepper'],
-    instructions: 'Cook and blend carrots.'
-  },
-
-  {
-    id: 61,
-    title: 'Vegetable Sandwich Toast',
-    description: 'Toasted veg sandwich.',
-    ingredients: ['bread', 'vegetables', 'butter'],
-    instructions: 'Assemble and toast.'
-  },
-  {
-    id: 62,
-    title: 'Onion Tomato Sabzi',
-    description: 'Simple curry.',
-    ingredients: ['onion', 'tomato', 'spices'],
-    instructions: 'Cook onion and tomato with spices.'
-  },
-  {
-    id: 63,
-    title: 'Cucumber Raita',
-    description: 'Cooling side dish.',
-    ingredients: ['curd', 'cucumber', 'salt'],
-    instructions: 'Mix all ingredients.'
-  },
-  {
-    id: 64,
-    title: 'Vegetable Maggi',
-    description: 'Instant noodles with veggies.',
-    ingredients: ['noodles', 'vegetables', 'spice mix'],
-    instructions: 'Cook noodles with vegetables.'
-  },
-  {
-    id: 65,
-    title: 'Sweet Pongal',
-    description: 'Rice jaggery dessert.',
-    ingredients: ['rice', 'jaggery', 'ghee'],
-    instructions: 'Cook rice. Add jaggery and ghee.'
-  },
-  {
-    id: 66,
-    title: 'Vegetable Biryani',
-    description: 'Spiced mixed vegetable rice.',
-    ingredients: ['rice', 'vegetables', 'spices'],
-    instructions: 'Cook rice with vegetables and aromatic spices.'
-  },
-  {
-    id: 67,
-    title: 'Paneer Fried Rice',
-    description: 'Rice with paneer cubes.',
-    ingredients: ['rice', 'paneer', 'soy sauce'],
-    instructions: 'Stir fry rice with paneer and sauce.'
-  },
-  {
-    id: 68,
-    title: 'Mango Lassi',
-    description: 'Sweet mango yogurt drink.',
-    ingredients: ['mango', 'curd', 'sugar'],
-    instructions: 'Blend all ingredients until smooth.'
-  },
-  {
-    id: 69,
-    title: 'Roti',
-    description: 'Soft wheat flatbread.',
-    ingredients: ['wheat flour', 'water'],
-    instructions: 'Knead dough. Roll and cook on pan.'
-  },
-  {
-    id: 70,
-    title: 'Jeera Rice',
-    description: 'Cumin flavored rice.',
-    ingredients: ['rice', 'cumin', 'ghee'],
-    instructions: 'Cook rice with cumin seeds in ghee.'
-  },
-
-  {
-    id: 71,
-    title: 'Paneer Korma',
-    description: 'Rich paneer curry.',
-    ingredients: ['paneer', 'cream', 'spices'],
-    instructions: 'Cook paneer in creamy spiced gravy.'
-  },
-  {
-    id: 72,
-    title: 'Vegetable Jalfrezi',
-    description: 'Spicy stir-fried vegetables.',
-    ingredients: ['vegetables', 'spices', 'oil'],
-    instructions: 'Stir fry vegetables with spices.'
-  },
-  {
-    id: 73,
-    title: 'Dal Tadka',
-    description: 'Tempered lentils.',
-    ingredients: ['lentils', 'garlic', 'ghee'],
-    instructions: 'Cook lentils. Add garlic tempering.'
-  },
-  {
-    id: 74,
-    title: 'Bhindi Fry',
-    description: 'Crispy okra fry.',
-    ingredients: ['okra', 'spices', 'oil'],
-    instructions: 'Slice and fry okra with spices.'
-  },
-  {
-    id: 75,
-    title: 'Vegetable Paratha',
-    description: 'Stuffed flatbread.',
-    ingredients: ['wheat flour', 'vegetables', 'spices'],
-    instructions: 'Stuff dough and cook on pan.'
-  },
-
-  {
-    id: 76,
-    title: 'Coconut Ladoo',
-    description: 'Sweet coconut balls.',
-    ingredients: ['coconut', 'condensed milk'],
-    instructions: 'Mix and shape into balls.'
-  },
-  {
-    id: 77,
-    title: 'Rice Kheer',
-    description: 'Rice pudding dessert.',
-    ingredients: ['rice', 'milk', 'sugar'],
-    instructions: 'Cook rice in milk. Add sugar.'
-  },
-  {
-    id: 78,
-    title: 'Vegetable Samosa',
-    description: 'Crispy stuffed snack.',
-    ingredients: ['flour', 'potato', 'spices'],
-    instructions: 'Prepare filling. Stuff and fry.'
-  },
-  {
-    id: 79,
-    title: 'Paneer Roll',
-    description: 'Stuffed wrap.',
-    ingredients: ['roti', 'paneer', 'sauce'],
-    instructions: 'Fill roti with paneer and roll.'
-  },
-  {
-    id: 80,
-    title: 'Vegetable Manchurian',
-    description: 'Indo-Chinese dish.',
-    ingredients: ['vegetables', 'corn flour', 'sauce'],
-    instructions: 'Make balls and cook in sauce.'
-  },
-
-  {
-    id: 81,
-    title: 'Gobi Manchurian',
-    description: 'Cauliflower in sauce.',
-    ingredients: ['cauliflower', 'corn flour', 'sauce'],
-    instructions: 'Fry cauliflower and toss in sauce.'
-  },
-  {
-    id: 82,
-    title: 'Vegetable Hakka Noodles',
-    description: 'Indo-Chinese noodles.',
-    ingredients: ['noodles', 'vegetables', 'soy sauce'],
-    instructions: 'Stir fry noodles with vegetables.'
-  },
-  {
-    id: 83,
-    title: 'Chole Bhature',
-    description: 'Chickpea curry with fried bread.',
-    ingredients: ['chickpea', 'flour', 'spices'],
-    instructions: 'Cook chole. Fry bhature.'
-  },
-  {
-    id: 84,
-    title: 'Rajma Curry',
-    description: 'Kidney bean curry.',
-    ingredients: ['rajma', 'onion', 'tomato'],
-    instructions: 'Cook beans with onion tomato gravy.'
-  },
-  {
-    id: 85,
-    title: 'Vegetable Kathi Roll',
-    description: 'Street style wrap.',
-    ingredients: ['roti', 'vegetables', 'sauce'],
-    instructions: 'Fill roti and roll.'
-  },
-
-  {
-    id: 86,
-    title: 'Paneer Pakora',
-    description: 'Fried paneer snack.',
-    ingredients: ['paneer', 'gram flour', 'spices'],
-    instructions: 'Dip paneer in batter and fry.'
-  },
-  {
-    id: 87,
-    title: 'Vegetable Daliya',
-    description: 'Healthy broken wheat dish.',
-    ingredients: ['daliya', 'vegetables', 'water'],
-    instructions: 'Cook all ingredients together.'
-  },
-  {
-    id: 88,
-    title: 'Spinach Paratha',
-    description: 'Green flatbread.',
-    ingredients: ['wheat flour', 'spinach', 'spices'],
-    instructions: 'Mix dough and cook.'
-  },
-  {
-    id: 89,
-    title: 'Corn Chaat',
-    description: 'Spicy corn snack.',
-    ingredients: ['corn', 'lemon', 'spices'],
-    instructions: 'Mix all ingredients.'
-  },
-  {
-    id: 90,
-    title: 'Vegetable Omelette Roll',
-    description: 'Egg roll with veggies.',
-    ingredients: ['egg', 'vegetables', 'roti'],
-    instructions: 'Make omelette. Roll in roti.'
-  },
-
-  {
-    id: 91,
-    title: 'Mushroom Soup',
-    description: 'Creamy mushroom soup.',
-    ingredients: ['mushroom', 'milk', 'pepper'],
-    instructions: 'Cook and blend mushrooms.'
-  },
-  {
-    id: 92,
-    title: 'Vegetable Poha',
-    description: 'Flattened rice dish.',
-    ingredients: ['poha', 'vegetables', 'mustard seeds'],
-    instructions: 'Cook poha with vegetables.'
-  },
-  {
-    id: 93,
-    title: 'Sabudana Khichdi',
-    description: 'Tapioca pearl dish.',
-    ingredients: ['sabudana', 'peanut', 'potato'],
-    instructions: 'Cook soaked sabudana with peanuts.'
-  },
-  {
-    id: 94,
-    title: 'Vegetable Frankie',
-    description: 'Street style wrap.',
-    ingredients: ['roti', 'vegetables', 'sauce'],
-    instructions: 'Fill and roll.'
-  },
-  {
-    id: 95,
-    title: 'Paneer Sandwich',
-    description: 'Grilled paneer sandwich.',
-    ingredients: ['bread', 'paneer', 'butter'],
-    instructions: 'Assemble and grill.'
-  },
-
-  {
-    id: 96,
-    title: 'Vegetable Cutlet Burger',
-    description: 'Veg patty burger.',
-    ingredients: ['bun', 'cutlet', 'sauce'],
-    instructions: 'Assemble burger.'
-  },
-  {
-    id: 97,
-    title: 'Cheese Corn Balls',
-    description: 'Fried snack.',
-    ingredients: ['corn', 'cheese', 'breadcrumbs'],
-    instructions: 'Shape and fry.'
-  },
-  {
-    id: 98,
-    title: 'Vegetable Pizza',
-    description: 'Homemade veg pizza.',
-    ingredients: ['pizza base', 'vegetables', 'cheese'],
-    instructions: 'Assemble and bake.'
-  },
-  {
-    id: 99,
-    title: 'Paneer Pizza',
-    description: 'Paneer topping pizza.',
-    ingredients: ['pizza base', 'paneer', 'cheese'],
-    instructions: 'Top and bake.'
-  },
-  {
-    id: 100,
-    title: 'Garlic Mushroom',
-    description: 'Sauteed mushrooms.',
-    ingredients: ['mushroom', 'garlic', 'butter'],
-    instructions: 'Saute mushrooms with garlic.'
-  },
+  instructions: [
+    'Heat oil in a pan over medium heat.',
+    'Add minced garlic and sauté for about 30 seconds until fragrant.',
+    'Crack the eggs into the pan and scramble until fully cooked.',
+    'Add the cooked rice and mix well with the eggs.',
+    'Pour in soy sauce, add salt and pepper, and stir thoroughly.',
+    'Cook for another 2–3 minutes, then garnish with chopped spring onions.'
+  ],
+},
+{
+  id: 2,
+  title: 'French Toast',
+  description: 'Golden, crispy French toast with a soft, custardy center — perfect for breakfast.',
+  ingredients: [
+    '2 slices bread',
+    '2 eggs',
+    '1/4 cup milk',
+    '1 tbsp sugar',
+    '1/2 tsp cinnamon (optional)',
+    '1 tbsp butter'
+  ],
+  instructions: [
+    'In a bowl, whisk eggs, milk, sugar, and cinnamon.',
+    'Dip each bread slice into the mixture, coating both sides.',
+    'Heat butter in a pan over medium heat.',
+    'Cook bread slices until golden brown on both sides.',
+    'Serve hot with honey or syrup.'
+  ],
+},
+{
+  id: 3,
+  title: 'Banana Milkshake',
+  description: 'A creamy and refreshing banana milkshake, perfect for a quick energy boost.',
+  ingredients: [
+    '1 ripe banana',
+    '1 cup milk',
+    '2 tsp sugar or honey',
+    '2 ice cubes (optional)'
+  ],
+  instructions: [
+    'Peel and slice the banana.',
+    'Add banana, milk, sugar, and ice cubes to a blender.',
+    'Blend until smooth and creamy.',
+    'Pour into a glass and serve chilled.'
+  ],
+},
+{
+  id: 4,
+  title: 'Grilled Cheese Sandwich',
+  description: 'Crispy, buttery bread with gooey melted cheese inside.',
+  ingredients: [
+    '2 slices bread',
+    '2 slices cheese',
+    '1 tbsp butter'
+  ],
+  instructions: [
+    'Spread butter on one side of each bread slice.',
+    'Place cheese between the unbuttered sides.',
+    'Heat a pan and cook sandwich until golden brown.',
+    'Flip and cook until cheese is melted.',
+    'Serve hot.'
+  ],
+},
+{
+  id: 5,
+  title: 'Omelette',
+  description: 'A soft and fluffy omelette with onions and simple spices.',
+  ingredients: [
+    '2 eggs',
+    '2 tbsp chopped onion',
+    '1 tbsp chopped green chili (optional)',
+    'Salt and pepper to taste',
+    '1 tbsp oil or butter'
+  ],
+  instructions: [
+    'Beat eggs with salt and pepper in a bowl.',
+    'Heat oil in a pan and sauté onions.',
+    'Pour in the eggs and cook on medium heat.',
+    'Fold the omelette once set.',
+    'Serve hot.'
+  ],
+},
+{
+  id: 6,
+  title: 'Chicken Stir Fry',
+  description: 'Quick and flavorful chicken stir fry with fresh vegetables.',
+  ingredients: [
+    '200g chicken (sliced)',
+    '1 cup mixed vegetables',
+    '2 tbsp soy sauce',
+    '1 tbsp oil',
+    '2 cloves garlic',
+    'Salt and pepper to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan and sauté garlic.',
+    'Add chicken and cook until browned.',
+    'Add vegetables and stir fry for 3–4 minutes.',
+    'Pour soy sauce, add salt and pepper.',
+    'Cook for another 2 minutes and serve.'
+  ],
+},
+{
+  id: 7,
+  title: 'Chicken Curry',
+  description: 'A rich and spicy chicken curry cooked in a flavorful onion-tomato gravy.',
+  ingredients: [
+    '250g chicken',
+    '1 onion (chopped)',
+    '2 tomatoes (chopped)',
+    '2 tbsp oil',
+    '1 tsp ginger garlic paste',
+    'Spices (turmeric, chili powder, garam masala)',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil and sauté onions until golden.',
+    'Add ginger garlic paste and cook briefly.',
+    'Add tomatoes and cook until soft.',
+    'Add spices and mix well.',
+    'Add chicken and cook until done.',
+    'Simmer for 10 minutes and serve.'
+  ],
+},
+{
+  id: 8,
+  title: 'Beef Stew',
+  description: 'A hearty and comforting beef stew with tender meat and vegetables.',
+  ingredients: [
+    '300g beef',
+    '2 potatoes (chopped)',
+    '1 carrot (chopped)',
+    '1 onion',
+    '2 cups water or broth',
+    'Salt and pepper'
+  ],
+  instructions: [
+    'Heat oil and sauté onions.',
+    'Add beef and cook until browned.',
+    'Add vegetables and mix.',
+    'Pour water or broth and simmer for 30–40 minutes.',
+    'Season and serve hot.'
+  ],
+},
+{
+  id: 9,
+  title: 'Pasta with Tomato Sauce',
+  description: 'Simple and delicious pasta tossed in a rich tomato sauce.',
+  ingredients: [
+    '1 cup pasta',
+    '2 tomatoes (pureed)',
+    '2 cloves garlic',
+    '1 tbsp oil',
+    'Salt and herbs'
+  ],
+  instructions: [
+    'Cook pasta according to instructions.',
+    'Heat oil and sauté garlic.',
+    'Add tomato puree and cook for 5–7 minutes.',
+    'Add salt and herbs.',
+    'Mix pasta with sauce and serve.'
+  ],
+},
+{
+  id: 10,
+  title: 'Shrimp Stir Fry',
+  description: 'Quick shrimp stir fry with vegetables and savory sauce.',
+  ingredients: [
+    '200g shrimp',
+    '1 cup vegetables',
+    '2 tbsp soy sauce',
+    '1 tbsp oil',
+    '2 cloves garlic'
+  ],
+  instructions: [
+    'Heat oil and sauté garlic.',
+    'Add shrimp and cook until pink.',
+    'Add vegetables and stir fry.',
+    'Add soy sauce and mix well.',
+    'Cook for 2–3 minutes and serve.'
+  ],
+},
+ {
+  id: 11,
+  title: 'Garlic Bread',
+  description: 'Crispy toasted bread with buttery garlic flavor — perfect as a side or snack.',
+  ingredients: [
+    '4 slices bread',
+    '2 tbsp butter (softened)',
+    '2 cloves garlic (minced)',
+    '1 tbsp chopped parsley (optional)'
+  ],
+  instructions: [
+    'Mix butter and minced garlic in a bowl.',
+    'Spread the garlic butter evenly on bread slices.',
+    'Toast in a pan or oven until golden and crispy.',
+    'Garnish with parsley and serve warm.'
+  ],
+},
+{
+  id: 12,
+  title: 'Vegetable Salad',
+  description: 'A fresh and crunchy mix of vegetables, perfect for a healthy side dish.',
+  ingredients: [
+    '1 carrot (chopped)',
+    '1 tomato (chopped)',
+    '1 cucumber (sliced)',
+    '1/2 onion (optional)',
+    'Salt to taste',
+    '1 tbsp lemon juice'
+  ],
+  instructions: [
+    'Wash and chop all vegetables.',
+    'Combine them in a large bowl.',
+    'Add salt and lemon juice.',
+    'Toss well and serve fresh.'
+  ],
+},
+{
+  id: 13,
+  title: 'Roasted Potatoes',
+  description: 'Crispy and golden roasted potatoes with simple seasoning.',
+  ingredients: [
+    '2 potatoes (cubed)',
+    '2 tbsp oil',
+    'Salt to taste',
+    '1/2 tsp pepper',
+    '1/2 tsp paprika (optional)'
+  ],
+  instructions: [
+    'Preheat oven to 200°C.',
+    'Toss potatoes with oil, salt, and spices.',
+    'Spread evenly on a baking tray.',
+    'Roast for 25–30 minutes until crispy.',
+    'Serve hot.'
+  ],
+},
+{
+  id: 14,
+  title: 'Milk Tea',
+  description: 'Warm and comforting milk tea, perfect for any time of the day.',
+  ingredients: [
+    '1 cup milk',
+    '1/2 cup water',
+    '1 tsp tea powder',
+    '2 tsp sugar'
+  ],
+  instructions: [
+    'Boil water and add tea powder.',
+    'Add milk and bring to a boil.',
+    'Add sugar and stir well.',
+    'Strain into a cup and serve hot.'
+  ],
+},
+{
+  id: 15,
+  title: 'Banana Smoothie',
+  description: 'A smooth and creamy banana drink with natural sweetness.',
+  ingredients: [
+    '1 banana',
+    '1 cup milk',
+    '1 tbsp honey',
+    '2 ice cubes'
+  ],
+  instructions: [
+    'Add all ingredients to a blender.',
+    'Blend until smooth.',
+    'Pour into a glass.',
+    'Serve chilled.'
+  ],
+},
+{
+  id: 16,
+  title: 'Butter Paneer',
+  description: 'Rich and creamy paneer curry cooked in a buttery tomato gravy.',
+  ingredients: [
+    '200g paneer',
+    '2 tomatoes (pureed)',
+    '2 tbsp butter',
+    '2 tbsp cream',
+    '1 tsp ginger garlic paste',
+    'Spices (chili powder, garam masala)',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat butter and sauté ginger garlic paste.',
+    'Add tomato puree and cook until thick.',
+    'Add spices and mix well.',
+    'Add paneer cubes and simmer for 5 minutes.',
+    'Stir in cream and serve hot.'
+  ],
+},
+{
+  id: 17,
+  title: 'Mushroom Fry',
+  description: 'Spicy and flavorful mushroom stir fry with onions.',
+  ingredients: [
+    '200g mushrooms',
+    '1 onion (sliced)',
+    '1 tbsp oil',
+    '1/2 tsp pepper',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil and sauté onions until golden.',
+    'Add mushrooms and cook until soft.',
+    'Add salt and pepper.',
+    'Cook until moisture evaporates.',
+    'Serve hot.'
+  ],
+},
+{
+  id: 18,
+  title: 'Aloo Gobi',
+  description: 'Classic Indian dish made with potatoes and cauliflower cooked with spices.',
+  ingredients: [
+    '2 potatoes (cubed)',
+    '1 cup cauliflower florets',
+    '2 tbsp oil',
+    'Spices (turmeric, chili powder)',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil and add spices.',
+    'Add potatoes and cook for 5 minutes.',
+    'Add cauliflower and mix well.',
+    'Cover and cook until tender.',
+    'Serve hot.'
+  ],
+},
+{
+  id: 19,
+  title: 'Chickpea Masala',
+  description: 'Protein-rich chickpeas cooked in a spicy onion-tomato gravy.',
+  ingredients: [
+    '1 cup boiled chickpeas',
+    '1 onion (chopped)',
+    '2 tomatoes (chopped)',
+    '2 tbsp oil',
+    'Spices (garam masala, chili powder)',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil and sauté onions.',
+    'Add tomatoes and cook until soft.',
+    'Add spices and mix.',
+    'Add chickpeas and cook for 10 minutes.',
+    'Serve hot.'
+  ],
+},
+{
+  id: 20,
+  title: 'Vegetable Fried Noodles',
+  description: 'Quick stir-fried noodles with crunchy vegetables and savory sauce.',
+  ingredients: [
+    '1 pack noodles',
+    '1 cup mixed vegetables',
+    '2 tbsp soy sauce',
+    '1 tbsp oil',
+    '2 cloves garlic'
+  ],
+  instructions: [
+    'Cook noodles and drain.',
+    'Heat oil and sauté garlic.',
+    'Add vegetables and stir fry.',
+    'Add noodles and soy sauce.',
+    'Mix well and cook for 2–3 minutes.',
+    'Serve hot.'
+  ],
+},
+{
+  id: 21,
+  title: 'Brinjal Fry',
+  description: 'Crispy and flavorful brinjal slices pan-fried with simple spices.',
+  ingredients: [
+    '1 large brinjal (sliced)',
+    '2 tbsp oil',
+    '1/2 tsp turmeric powder',
+    '1 tsp chili powder',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Slice the brinjal into thin rounds.',
+    'Mix turmeric, chili powder, and salt.',
+    'Coat the brinjal slices evenly with the spice mix.',
+    'Heat oil in a pan over medium heat.',
+    'Fry the slices until golden and crispy on both sides.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 22,
+  title: 'Spinach Dal',
+  description: 'A nutritious and comforting dal made with lentils and fresh spinach.',
+  ingredients: [
+    '1 cup lentils (toor dal or moong dal)',
+    '1 cup chopped spinach',
+    '2 cloves garlic',
+    '1 tbsp oil or ghee',
+    '1/2 tsp turmeric',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Cook lentils with turmeric until soft.',
+    'Heat oil or ghee in a pan and sauté garlic.',
+    'Add chopped spinach and cook until wilted.',
+    'Mix in the cooked lentils and salt.',
+    'Simmer for 5 minutes and serve hot.'
+  ]
+},
+{
+  id: 23,
+  title: 'Coconut Rice',
+  description: 'Aromatic rice mixed with fresh coconut and mild spices.',
+  ingredients: [
+    '1 cup cooked rice',
+    '1/2 cup grated coconut',
+    '1 tbsp oil',
+    '1 tsp mustard seeds',
+    '1 dried red chili',
+    'Curry leaves',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil and add mustard seeds.',
+    'Add red chili and curry leaves.',
+    'Add grated coconut and sauté lightly.',
+    'Mix in cooked rice and salt.',
+    'Stir well and cook for 2–3 minutes.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 24,
+  title: 'Vegetable Cutlet',
+  description: 'Crispy vegetable patties with a soft and flavorful inside.',
+  ingredients: [
+    '2 boiled potatoes',
+    '1/2 cup mixed vegetables (carrot, peas)',
+    '1/2 cup breadcrumbs',
+    '1 egg (optional)',
+    'Salt and spices to taste',
+    'Oil for frying'
+  ],
+  instructions: [
+    'Mash boiled potatoes in a bowl.',
+    'Add cooked vegetables, salt, and spices.',
+    'Mix well and shape into patties.',
+    'Dip in beaten egg (optional) and coat with breadcrumbs.',
+    'Heat oil and fry until golden and crispy.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 25,
+  title: 'Tomato Chutney',
+  description: 'Tangy and slightly spicy chutney that pairs perfectly with dosa or idli.',
+  ingredients: [
+    '2 tomatoes',
+    '2 dried red chilies',
+    '2 cloves garlic',
+    '1 tbsp oil',
+    '1 tsp mustard seeds',
+    'Curry leaves',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil and sauté tomatoes, chilies, and garlic until soft.',
+    'Cool and blend into a smooth paste.',
+    'Heat a little oil, add mustard seeds and curry leaves.',
+    'Pour in the chutney and mix well.',
+    'Cook for 2–3 minutes and serve.'
+  ]
+},
+{
+  id: 26,
+  title: 'Cabbage Stir Fry',
+  description: 'Light and simple cabbage stir fry with mild spices and a fresh crunch.',
+  ingredients: [
+    '2 cups shredded cabbage',
+    '1 tbsp oil',
+    '1 tsp mustard seeds',
+    '1 green chili (chopped)',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan and add mustard seeds.',
+    'Add chopped green chili and sauté briefly.',
+    'Add shredded cabbage and mix well.',
+    'Cook on medium heat until slightly soft but still crunchy.',
+    'Add salt, mix, and serve warm.'
+  ]
+},
+{
+  id: 27,
+  title: 'Sweet Corn Soup',
+  description: 'Warm and comforting sweet corn soup with a mild, slightly sweet flavor.',
+  ingredients: [
+    '1 cup sweet corn',
+    '2 cups water',
+    '1 tsp corn flour (optional)',
+    'Salt and pepper to taste'
+  ],
+  instructions: [
+    'Boil sweet corn in water until soft.',
+    'Blend half the corn to make it slightly thick.',
+    'Add salt and pepper.',
+    'Mix corn flour with water and add to soup (optional).',
+    'Simmer for a few minutes and serve hot.'
+  ]
+},
+{
+  id: 28,
+  title: 'Paneer Tikka',
+  description: 'Soft paneer cubes marinated in spices and grilled to a smoky finish.',
+  ingredients: [
+    '200g paneer (cubed)',
+    '1/2 cup yogurt',
+    '1 tsp chili powder',
+    '1/2 tsp turmeric',
+    '1 tsp garam masala',
+    'Salt to taste',
+    '1 tbsp oil'
+  ],
+  instructions: [
+    'Mix yogurt, spices, and salt to prepare marinade.',
+    'Add paneer cubes and coat well.',
+    'Let it marinate for at least 20 minutes.',
+    'Heat a pan or grill and add a little oil.',
+    'Cook paneer until lightly charred on all sides.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 29,
+  title: 'Vegetable Upma',
+  description: 'A soft and flavorful semolina dish cooked with vegetables and mild spices.',
+  ingredients: [
+    '1 cup semolina (rava)',
+    '1/2 cup mixed vegetables',
+    '1 tbsp oil',
+    '1 tsp mustard seeds',
+    '2 cups water',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Dry roast semolina until light golden and keep aside.',
+    'Heat oil and add mustard seeds.',
+    'Add vegetables and sauté for a few minutes.',
+    'Add water and bring to a boil.',
+    'Slowly add semolina while stirring to avoid lumps.',
+    'Cook until soft and serve warm.'
+  ]
+},
+{
+  id: 30,
+  title: 'Carrot Halwa',
+  description: 'A rich and sweet dessert made with grated carrots, milk, and sugar.',
+  ingredients: [
+    '2 cups grated carrot',
+    '2 cups milk',
+    '1/4 cup sugar',
+    '2 tbsp ghee',
+    'Cashews or raisins (optional)'
+  ],
+  instructions: [
+    'Heat ghee in a pan and add grated carrots.',
+    'Cook for a few minutes until slightly soft.',
+    'Add milk and cook on low heat until it thickens.',
+    'Add sugar and mix well.',
+    'Cook until the mixture becomes thick and slightly glossy.',
+    'Garnish with nuts and serve warm.'
+  ]
+},
+ {
+  id: 31,
+  title: 'Lentil Soup',
+  description: 'A simple and comforting lentil soup that is warm, filling, and easy to make.',
+  ingredients: [
+    '1 cup lentils',
+    '1 small onion (chopped)',
+    '2 cloves garlic (minced)',
+    '3 cups water',
+    '1 tbsp oil',
+    'Salt and pepper to taste'
+  ],
+  instructions: [
+    'Rinse lentils thoroughly.',
+    'Heat oil in a pot and sauté onion and garlic.',
+    'Add lentils and water, then bring to a boil.',
+    'Reduce heat and simmer until lentils are soft.',
+    'Add salt and pepper, mix well, and serve hot.'
+  ]
+},
+{
+  id: 32,
+  title: 'Stuffed Capsicum',
+  description: 'Capsicum filled with a flavorful spiced potato mixture and cooked until tender.',
+  ingredients: [
+    '3 capsicums',
+    '2 boiled potatoes',
+    '1 tbsp oil',
+    '1/2 tsp turmeric',
+    '1 tsp chili powder',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Cut the tops off capsicums and remove seeds.',
+    'Mash boiled potatoes and mix with spices and salt.',
+    'Stuff the mixture into capsicums.',
+    'Heat oil in a pan and place the stuffed capsicums.',
+    'Cover and cook on low heat until soft, turning occasionally.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 33,
+  title: 'Vegetable Pulao',
+  description: 'Fragrant rice cooked with mixed vegetables and mild spices.',
+  ingredients: [
+    '1 cup rice',
+    '1/2 cup mixed vegetables',
+    '2 cups water',
+    '1 tbsp oil or ghee',
+    'Whole spices (bay leaf, cloves)',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Wash and soak rice for 10 minutes.',
+    'Heat oil or ghee and add whole spices.',
+    'Add vegetables and sauté briefly.',
+    'Add rice and water, then mix gently.',
+    'Cook until rice is soft and fluffy.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 34,
+  title: 'Onion Pakoda',
+  description: 'Crispy and crunchy onion fritters, perfect as a snack.',
+  ingredients: [
+    '2 onions (sliced)',
+    '1 cup gram flour',
+    '1/2 tsp chili powder',
+    'Salt to taste',
+    'Water as needed',
+    'Oil for frying'
+  ],
+  instructions: [
+    'Mix sliced onions with gram flour, spices, and salt.',
+    'Add a little water to form a thick batter.',
+    'Heat oil in a pan.',
+    'Drop small portions into hot oil.',
+    'Fry until golden and crispy.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 35,
+  title: 'Curd Rice',
+  description: 'A cooling and comforting rice dish mixed with fresh curd and mild seasoning.',
+  ingredients: [
+    '1 cup cooked rice',
+    '1/2 cup curd',
+    '1 tbsp milk (optional)',
+    '1 tsp mustard seeds',
+    'Curry leaves',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Mash the cooked rice slightly.',
+    'Add curd and mix well.',
+    'Add milk if needed for a softer texture.',
+    'Heat oil and add mustard seeds and curry leaves.',
+    'Pour the tempering over the rice and mix.',
+    'Serve cool or at room temperature.'
+  ]
+},
+{
+  id: 36,
+  title: 'Beetroot Stir Fry',
+  description: 'A healthy and mildly sweet stir fry made with fresh beetroot and coconut.',
+  ingredients: [
+    '1 cup grated beetroot',
+    '2 tbsp grated coconut',
+    '1 tbsp oil',
+    '1 tsp mustard seeds',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan and add mustard seeds.',
+    'Add grated beetroot and mix well.',
+    'Cook on medium heat until soft.',
+    'Add salt and grated coconut.',
+    'Mix well and cook for another 2 minutes.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 37,
+  title: 'Pumpkin Curry',
+  description: 'A mildly sweet and flavorful pumpkin curry with simple spices.',
+  ingredients: [
+    '2 cups pumpkin (cubed)',
+    '1 tbsp oil',
+    '1/2 tsp turmeric',
+    '1 tsp chili powder',
+    '1/4 cup grated coconut',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan and add pumpkin pieces.',
+    'Add turmeric, chili powder, and salt.',
+    'Mix well and cook until pumpkin is soft.',
+    'Add grated coconut and mix.',
+    'Cook for a few more minutes and serve.'
+  ]
+},
+{
+  id: 38,
+  title: 'Moong Dal Khichdi',
+  description: 'A soft and comforting one-pot dish made with rice and moong dal.',
+  ingredients: [
+    '1/2 cup rice',
+    '1/2 cup moong dal',
+    '3 cups water',
+    '1/2 tsp turmeric',
+    '1 tbsp ghee',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Wash rice and dal together.',
+    'Add water, turmeric, and salt.',
+    'Cook until soft and slightly mushy.',
+    'Heat ghee and pour over the khichdi.',
+    'Mix well and serve hot.'
+  ]
+},
+{
+  id: 39,
+  title: 'Vegetable Spring Rolls',
+  description: 'Crispy rolls filled with sautéed vegetables, perfect as a snack.',
+  ingredients: [
+    'Spring roll sheets',
+    '1 cup mixed vegetables (shredded)',
+    '1 tbsp soy sauce',
+    '1 tbsp oil',
+    'Oil for frying'
+  ],
+  instructions: [
+    'Heat oil and sauté vegetables until slightly soft.',
+    'Add soy sauce and mix well.',
+    'Place filling on spring roll sheets and roll tightly.',
+    'Seal edges with water.',
+    'Heat oil and fry until golden and crispy.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 40,
+  title: 'Rava Dosa',
+  description: 'A thin and crispy dosa made with semolina, quick and easy to prepare.',
+  ingredients: [
+    '1 cup semolina (rava)',
+    '1/2 cup rice flour',
+    '2 cups water',
+    '1 tsp cumin seeds',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Mix semolina, rice flour, water, and salt to form a thin batter.',
+    'Add cumin seeds and mix.',
+    'Heat a pan and pour the batter thinly.',
+    'Cook until crispy and golden.',
+    'Flip if needed and cook briefly.',
+    'Serve hot.'
+  ]
+},
+ {
+  id: 41,
+  title: 'Paneer Bhurji',
+  description: 'A quick and flavorful scrambled paneer dish cooked with onions and spices.',
+  ingredients: [
+    '200g paneer (crumbled)',
+    '1 onion (chopped)',
+    '1 tomato (chopped)',
+    '1 tbsp oil',
+    '1/2 tsp turmeric',
+    '1 tsp chili powder',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan and sauté onions until soft.',
+    'Add tomatoes and cook until mushy.',
+    'Add turmeric, chili powder, and salt.',
+    'Add crumbled paneer and mix well.',
+    'Cook for 5 minutes and serve hot.'
+  ]
+},
+{
+  id: 42,
+  title: 'Vegetable Stew',
+  description: 'A mild and creamy vegetable stew cooked in coconut milk.',
+  ingredients: [
+    '1 cup mixed vegetables',
+    '1 cup coconut milk',
+    '1 tbsp oil',
+    '1/2 tsp black pepper',
+    'Curry leaves',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil and add curry leaves.',
+    'Add vegetables and cook for a few minutes.',
+    'Pour in coconut milk and mix.',
+    'Add salt and pepper.',
+    'Simmer until vegetables are soft.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 43,
+  title: 'Masala Dosa',
+  description: 'A crispy dosa filled with a spiced potato mixture, a classic South Indian dish.',
+  ingredients: [
+    'Dosa batter',
+    '2 boiled potatoes',
+    '1 onion (sliced)',
+    '1 tsp mustard seeds',
+    '1/2 tsp turmeric',
+    'Salt to taste',
+    'Oil as needed'
+  ],
+  instructions: [
+    'Mash boiled potatoes and keep aside.',
+    'Heat oil, add mustard seeds and onions, and sauté.',
+    'Add turmeric and salt, then mix in mashed potatoes.',
+    'Spread dosa batter on a hot pan.',
+    'Place potato filling inside and fold.',
+    'Cook until crispy and serve hot.'
+  ]
+},
+{
+  id: 44,
+  title: 'Green Peas Curry',
+  description: 'A simple and tasty curry made with green peas in a light gravy.',
+  ingredients: [
+    '1 cup green peas',
+    '1 onion (chopped)',
+    '1 tomato (chopped)',
+    '1 tbsp oil',
+    '1/2 tsp turmeric',
+    '1 tsp chili powder',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil and sauté onions until soft.',
+    'Add tomatoes and cook until mushy.',
+    'Add spices and mix well.',
+    'Add green peas and cook for a few minutes.',
+    'Add a little water and simmer.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 45,
+  title: 'Vegetable Korma',
+  description: 'A rich and creamy vegetable curry cooked with mild spices.',
+  ingredients: [
+    '1 cup mixed vegetables',
+    '1/2 cup cream or coconut milk',
+    '1 tbsp oil',
+    '1 tsp garam masala',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil and sauté vegetables.',
+    'Add a little water and cook until soft.',
+    'Add cream or coconut milk.',
+    'Add garam masala and salt.',
+    'Simmer for a few minutes and serve.'
+  ]
+},
+{
+  id: 46,
+  title: 'Idli',
+  description: 'Soft and fluffy steamed rice cakes, a classic South Indian breakfast.',
+  ingredients: [
+    '2 cups idli batter',
+    'Oil for greasing'
+  ],
+  instructions: [
+    'Grease idli molds with a little oil.',
+    'Pour batter into the molds.',
+    'Steam for 10–12 minutes until cooked.',
+    'Allow to cool slightly before removing.',
+    'Serve warm with chutney or sambar.'
+  ]
+},
+{
+  id: 47,
+  title: 'Sambar',
+  description: 'A flavorful lentil and vegetable stew with a tangy and spicy taste.',
+  ingredients: [
+    '1 cup toor dal',
+    '1 cup mixed vegetables',
+    '1 tbsp sambar powder',
+    '1 small piece tamarind',
+    '1 tsp mustard seeds',
+    'Curry leaves',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Cook dal until soft.',
+    'Cook vegetables separately until tender.',
+    'Add tamarind water and sambar powder to vegetables.',
+    'Mix in cooked dal and salt.',
+    'Prepare tempering with mustard seeds and curry leaves and add to sambar.',
+    'Simmer for a few minutes and serve hot.'
+  ]
+},
+{
+  id: 48,
+  title: 'Avial',
+  description: 'A traditional Kerala dish made with mixed vegetables, coconut, and curd.',
+  ingredients: [
+    '2 cups mixed vegetables',
+    '1/2 cup grated coconut',
+    '1/2 cup curd',
+    '1 tbsp coconut oil',
+    'Curry leaves',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Cook vegetables until tender.',
+    'Grind coconut into a coarse paste.',
+    'Add coconut paste to vegetables and mix.',
+    'Add curd and salt, mix gently.',
+    'Drizzle coconut oil and add curry leaves.',
+    'Cook briefly and serve warm.'
+  ]
+},
+{
+  id: 49,
+  title: 'Thoran',
+  description: 'A simple and flavorful dry vegetable stir fry with coconut.',
+  ingredients: [
+    '2 cups chopped vegetables',
+    '1/2 cup grated coconut',
+    '1 tbsp oil',
+    '1 tsp mustard seeds',
+    'Curry leaves',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil and add mustard seeds and curry leaves.',
+    'Add chopped vegetables and cook until soft.',
+    'Add salt and grated coconut.',
+    'Mix well and cook for a few minutes.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 50,
+  title: 'Kootu Curry',
+  description: 'A traditional Kerala curry made with chickpeas, vegetables, and coconut.',
+  ingredients: [
+    '1 cup chickpeas (soaked and cooked)',
+    '1 cup vegetables (yam or raw banana)',
+    '1/2 cup grated coconut',
+    '1 tbsp oil',
+    '1 tsp mustard seeds',
+    'Curry leaves',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Cook vegetables until soft.',
+    'Add cooked chickpeas and mix.',
+    'Grind coconut into a coarse paste and add to the mixture.',
+    'Add salt and cook for a few minutes.',
+    'Prepare tempering with mustard seeds and curry leaves and add on top.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 51,
+  title: 'Vegetable Omelette',
+  description: 'A soft and fluffy omelette loaded with fresh vegetables and simple spices.',
+  ingredients: [
+    '2 eggs',
+    '1/4 cup chopped vegetables (onion, tomato, capsicum)',
+    '1 tbsp oil or butter',
+    'Salt and pepper to taste'
+  ],
+  instructions: [
+    'Beat eggs in a bowl and add salt and pepper.',
+    'Mix in chopped vegetables.',
+    'Heat oil or butter in a pan.',
+    'Pour the mixture and cook on medium heat.',
+    'Flip gently and cook the other side.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 52,
+  title: 'Tomato Rasam',
+  description: 'A light and tangy South Indian soup made with tomatoes and spices.',
+  ingredients: [
+    '2 tomatoes (crushed)',
+    '1 tbsp tamarind pulp',
+    '1 tsp rasam powder',
+    '1 tsp mustard seeds',
+    'Curry leaves',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Boil crushed tomatoes with water.',
+    'Add tamarind pulp, rasam powder, and salt.',
+    'Simmer for a few minutes.',
+    'Prepare tempering with mustard seeds and curry leaves.',
+    'Add tempering to rasam.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 53,
+  title: 'Curd Curry',
+  description: 'A mild and creamy yogurt-based curry with simple seasoning.',
+  ingredients: [
+    '1 cup curd',
+    '1 tbsp gram flour',
+    '1 tbsp oil',
+    '1 tsp mustard seeds',
+    'Curry leaves',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Whisk curd with gram flour until smooth.',
+    'Heat oil and add mustard seeds and curry leaves.',
+    'Pour in the curd mixture and stir continuously.',
+    'Cook on low heat until slightly thick.',
+    'Add salt and mix well.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 54,
+  title: 'Vegetable Uttapam',
+  description: 'A thick and soft dosa topped with fresh vegetables.',
+  ingredients: [
+    '2 cups dosa batter',
+    '1/2 cup chopped vegetables',
+    'Oil as needed',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat a pan and pour a thick layer of batter.',
+    'Sprinkle chopped vegetables on top.',
+    'Drizzle a little oil around the edges.',
+    'Cook until the bottom is golden.',
+    'Flip and cook briefly.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 55,
+  title: 'Lemon Pickle',
+  description: 'A tangy and spicy preserved lemon pickle full of bold flavors.',
+  ingredients: [
+    '4 lemons (cut)',
+    '2 tbsp salt',
+    '1 tbsp chili powder',
+    '1 tbsp oil',
+    '1/2 tsp mustard seeds'
+  ],
+  instructions: [
+    'Mix lemon pieces with salt and keep aside for a day.',
+    'Heat oil and add mustard seeds.',
+    'Add chili powder and mix.',
+    'Combine with the lemon mixture.',
+    'Store in a clean jar for a few days before using.',
+    'Serve as a side.'
+  ]
+},
+{
+  id: 56,
+  title: 'Coconut Chutney',
+  description: 'A classic South Indian chutney made with fresh coconut and mild spices.',
+  ingredients: [
+    '1 cup grated coconut',
+    '2 green chilies',
+    '1 small piece ginger',
+    'Salt to taste',
+    '1/2 cup water',
+    '1 tsp mustard seeds',
+    'Curry leaves',
+    '1 tbsp oil'
+  ],
+  instructions: [
+    'Grind coconut, green chilies, ginger, salt, and water into a smooth paste.',
+    'Transfer to a bowl.',
+    'Heat oil and add mustard seeds and curry leaves.',
+    'Pour tempering over the chutney.',
+    'Mix well and serve fresh.'
+  ]
+},
+{
+  id: 57,
+  title: 'Mint Chutney',
+  description: 'A refreshing and flavorful chutney made with mint and coriander leaves.',
+  ingredients: [
+    '1 cup mint leaves',
+    '1/2 cup coriander leaves',
+    '1 green chili',
+    '1 tbsp lemon juice',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Wash and clean the mint and coriander leaves.',
+    'Add all ingredients to a blender.',
+    'Blend into a smooth paste.',
+    'Adjust salt and lemon juice as needed.',
+    'Serve fresh.'
+  ]
+},
+{
+  id: 58,
+  title: 'Vegetable Clear Soup',
+  description: 'A light and healthy soup made with fresh vegetables and simple seasoning.',
+  ingredients: [
+    '1 cup chopped vegetables',
+    '3 cups water',
+    '1/2 tsp black pepper',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Boil water and add vegetables.',
+    'Cook until vegetables are tender.',
+    'Add salt and pepper.',
+    'Simmer for a few minutes.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 59,
+  title: 'Spinach Rice',
+  description: 'A nutritious rice dish made with fresh spinach and mild spices.',
+  ingredients: [
+    '1 cup rice',
+    '1 cup spinach (blended)',
+    '1 tbsp oil',
+    '1/2 tsp cumin seeds',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Cook rice and keep aside.',
+    'Heat oil and add cumin seeds.',
+    'Add spinach puree and cook for a few minutes.',
+    'Add salt and mix in cooked rice.',
+    'Stir well and serve hot.'
+  ]
+},
+{
+  id: 60,
+  title: 'Carrot Soup',
+  description: 'A smooth and slightly sweet soup made from fresh carrots.',
+  ingredients: [
+    '2 carrots (chopped)',
+    '2 cups water',
+    '1/2 tsp black pepper',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Boil carrots in water until soft.',
+    'Blend into a smooth puree.',
+    'Return to heat and add salt and pepper.',
+    'Simmer for a few minutes.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 61,
+  title: 'Vegetable Sandwich Toast',
+  description: 'A crispy toasted sandwich filled with fresh vegetables and butter.',
+  ingredients: [
+    '4 slices bread',
+    '1/2 cup chopped vegetables (onion, tomato, cucumber)',
+    'Butter as needed',
+    'Salt and pepper to taste'
+  ],
+  instructions: [
+    'Spread butter on bread slices.',
+    'Place chopped vegetables evenly on one slice.',
+    'Sprinkle salt and pepper.',
+    'Cover with another slice of bread.',
+    'Toast on a pan or sandwich maker until golden and crispy.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 62,
+  title: 'Onion Tomato Sabzi',
+  description: 'A simple and quick curry made with onions, tomatoes, and basic spices.',
+  ingredients: [
+    '2 onions (chopped)',
+    '2 tomatoes (chopped)',
+    '1 tbsp oil',
+    '1/2 tsp turmeric',
+    '1 tsp chili powder',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan and sauté onions until soft.',
+    'Add tomatoes and cook until mushy.',
+    'Add turmeric, chili powder, and salt.',
+    'Mix well and cook for a few minutes.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 63,
+  title: 'Cucumber Raita',
+  description: 'A cooling yogurt side dish with fresh cucumber and mild seasoning.',
+  ingredients: [
+    '1 cup curd',
+    '1/2 cup grated cucumber',
+    'Salt to taste',
+    'A pinch of cumin powder'
+  ],
+  instructions: [
+    'Whisk curd until smooth.',
+    'Add grated cucumber and mix well.',
+    'Add salt and cumin powder.',
+    'Mix thoroughly and serve chilled.'
+  ]
+},
+{
+  id: 64,
+  title: 'Vegetable Maggi',
+  description: 'A quick and tasty noodle dish cooked with vegetables and spice mix.',
+  ingredients: [
+    '1 packet noodles',
+    '1/2 cup chopped vegetables',
+    'Maggi spice mix',
+    '2 cups water'
+  ],
+  instructions: [
+    'Boil water in a pan.',
+    'Add vegetables and cook for a few minutes.',
+    'Add noodles and spice mix.',
+    'Cook until noodles are soft and water is absorbed.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 65,
+  title: 'Sweet Pongal',
+  description: 'A traditional sweet dish made with rice, jaggery, and ghee.',
+  ingredients: [
+    '1/2 cup rice',
+    '1/2 cup jaggery',
+    '2 cups water',
+    '2 tbsp ghee',
+    'A few cashews and raisins'
+  ],
+  instructions: [
+    'Cook rice until soft.',
+    'Melt jaggery in a little water and strain.',
+    'Add jaggery syrup to cooked rice and mix.',
+    'Heat ghee and fry cashews and raisins.',
+    'Add to the pongal and mix well.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 66,
+  title: 'Vegetable Biryani',
+  description: 'A fragrant rice dish cooked with mixed vegetables and aromatic spices.',
+  ingredients: [
+    '1 cup basmati rice',
+    '1 cup mixed vegetables',
+    '1 onion (sliced)',
+    '1 tbsp biryani masala',
+    '2 tbsp oil or ghee',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Cook rice until 80% done and set aside.',
+    'Heat oil or ghee and sauté onions until golden.',
+    'Add vegetables and cook for a few minutes.',
+    'Add biryani masala and salt.',
+    'Layer partially cooked rice over vegetables.',
+    'Cover and cook on low heat until fully done.',
+    'Mix gently and serve hot.'
+  ]
+},
+{
+  id: 67,
+  title: 'Paneer Fried Rice',
+  description: 'A quick stir-fried rice dish with paneer and simple seasonings.',
+  ingredients: [
+    '1 cup cooked rice',
+    '1/2 cup paneer (cubed)',
+    '1/2 cup vegetables',
+    '1 tbsp soy sauce',
+    '1 tbsp oil',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan and sauté paneer until lightly golden.',
+    'Add vegetables and stir fry for a few minutes.',
+    'Add cooked rice and mix well.',
+    'Add soy sauce and salt.',
+    'Stir fry on high heat for 2–3 minutes.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 68,
+  title: 'Mango Lassi',
+  description: 'A refreshing and creamy yogurt drink made with ripe mango.',
+  ingredients: [
+    '1 ripe mango (chopped)',
+    '1 cup curd',
+    '2 tbsp sugar',
+    '1/2 cup chilled water or milk'
+  ],
+  instructions: [
+    'Add mango, curd, sugar, and water or milk to a blender.',
+    'Blend until smooth and creamy.',
+    'Adjust sweetness if needed.',
+    'Serve chilled.'
+  ]
+},
+{
+  id: 69,
+  title: 'Roti',
+  description: 'Soft and simple whole wheat flatbread made fresh on a pan.',
+  ingredients: [
+    '1 cup wheat flour',
+    'Water as needed'
+  ],
+  instructions: [
+    'Mix flour with water to form a soft dough.',
+    'Knead well and rest for 10 minutes.',
+    'Divide into small balls and roll into circles.',
+    'Cook on a hot pan until both sides are done.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 70,
+  title: 'Jeera Rice',
+  description: 'A simple and aromatic rice dish flavored with cumin seeds.',
+  ingredients: [
+    '1 cup rice',
+    '1 tsp cumin seeds',
+    '1 tbsp ghee',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Cook rice and keep aside.',
+    'Heat ghee in a pan and add cumin seeds.',
+    'Once they splutter, add cooked rice.',
+    'Add salt and mix gently.',
+    'Cook for a few minutes and serve hot.'
+  ]
+},
+{
+  id: 71,
+  title: 'Paneer Korma',
+  description: 'A rich and creamy paneer curry cooked with mild spices and a smooth gravy.',
+  ingredients: [
+    '200g paneer (cubed)',
+    '1 onion (chopped)',
+    '1/2 cup cream or coconut milk',
+    '1 tbsp oil',
+    '1 tsp garam masala',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan and sauté onions until soft.',
+    'Add paneer cubes and cook lightly.',
+    'Pour in cream or coconut milk and mix well.',
+    'Add garam masala and salt.',
+    'Simmer for a few minutes until thick.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 72,
+  title: 'Vegetable Jalfrezi',
+  description: 'A spicy stir-fried vegetable dish with bold flavors and a slightly tangy taste.',
+  ingredients: [
+    '1 cup mixed vegetables',
+    '1 onion (sliced)',
+    '1 tomato (chopped)',
+    '1 tbsp oil',
+    '1 tsp chili powder',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil and sauté onions until slightly soft.',
+    'Add vegetables and cook on high heat.',
+    'Add tomatoes, chili powder, and salt.',
+    'Stir fry for a few minutes.',
+    'Cook until vegetables are tender but crisp.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 73,
+  title: 'Dal Tadka',
+  description: 'A comforting lentil dish topped with a flavorful garlic tempering.',
+  ingredients: [
+    '1 cup cooked lentils (toor dal or moong dal)',
+    '3 cloves garlic (chopped)',
+    '1 tbsp ghee',
+    '1/2 tsp cumin seeds',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat ghee in a pan and add cumin seeds.',
+    'Add chopped garlic and sauté until golden.',
+    'Pour this tempering over cooked lentils.',
+    'Add salt and mix well.',
+    'Simmer for a few minutes.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 74,
+  title: 'Bhindi Fry',
+  description: 'A crispy and flavorful okra dish cooked with simple spices.',
+  ingredients: [
+    '2 cups okra (sliced)',
+    '1 tbsp oil',
+    '1/2 tsp turmeric',
+    '1 tsp chili powder',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Add sliced okra and cook on medium heat.',
+    'Add turmeric, chili powder, and salt.',
+    'Stir occasionally until crispy.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 75,
+  title: 'Vegetable Paratha',
+  description: 'A stuffed flatbread filled with spiced vegetables, perfect for breakfast or lunch.',
+  ingredients: [
+    '1 cup wheat flour',
+    '1/2 cup mixed vegetables (mashed)',
+    '1/2 tsp chili powder',
+    'Salt to taste',
+    'Water as needed',
+    'Oil or ghee for cooking'
+  ],
+  instructions: [
+    'Prepare dough using flour and water.',
+    'Mix vegetables with chili powder and salt.',
+    'Stuff the mixture into dough balls and roll out.',
+    'Cook on a hot pan with oil or ghee.',
+    'Cook both sides until golden.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 76,
+  title: 'Coconut Ladoo',
+  description: 'A quick and delicious sweet made with coconut and condensed milk.',
+  ingredients: [
+    '2 cups grated coconut',
+    '1 cup condensed milk',
+    '1/2 tsp cardamom powder'
+  ],
+  instructions: [
+    'Heat a pan and add grated coconut.',
+    'Pour in condensed milk and mix well.',
+    'Cook on low heat until the mixture thickens.',
+    'Add cardamom powder and mix.',
+    'Allow to cool slightly.',
+    'Shape into small balls and serve.'
+  ]
+},
+{
+  id: 77,
+  title: 'Rice Kheer',
+  description: 'A creamy and sweet rice pudding flavored with milk and sugar.',
+  ingredients: [
+    '1/2 cup rice',
+    '3 cups milk',
+    '1/2 cup sugar',
+    '1/2 tsp cardamom powder'
+  ],
+  instructions: [
+    'Cook rice in milk on low heat.',
+    'Stir occasionally until rice is soft and milk thickens.',
+    'Add sugar and mix well.',
+    'Add cardamom powder.',
+    'Simmer for a few minutes.',
+    'Serve warm or chilled.'
+  ]
+},
+{
+  id: 78,
+  title: 'Vegetable Samosa',
+  description: 'A crispy deep-fried snack filled with spiced potato and vegetables.',
+  ingredients: [
+    'Samosa sheets or dough',
+    '2 boiled potatoes (mashed)',
+    '1/2 cup peas',
+    '1 tsp chili powder',
+    'Salt to taste',
+    'Oil for frying'
+  ],
+  instructions: [
+    'Prepare filling by mixing potatoes, peas, spices, and salt.',
+    'Fill the mixture into samosa sheets and shape.',
+    'Seal edges properly.',
+    'Heat oil and deep fry until golden and crispy.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 79,
+  title: 'Paneer Roll',
+  description: 'A delicious wrap filled with spiced paneer and simple sauces.',
+  ingredients: [
+    '2 rotis',
+    '1/2 cup paneer (cubed)',
+    '1 onion (sliced)',
+    '1 tbsp oil',
+    'Salt and spices to taste'
+  ],
+  instructions: [
+    'Heat oil and sauté paneer with onions and spices.',
+    'Cook for a few minutes.',
+    'Place the filling on a roti.',
+    'Roll tightly and serve warm.'
+  ]
+},
+{
+  id: 80,
+  title: 'Vegetable Manchurian',
+  description: 'Crispy vegetable balls tossed in a flavorful Indo-Chinese sauce.',
+  ingredients: [
+    '1 cup mixed vegetables (grated)',
+    '2 tbsp corn flour',
+    '1 tbsp soy sauce',
+    '1 tbsp oil',
+    'Salt to taste',
+    'Oil for frying'
+  ],
+  instructions: [
+    'Mix vegetables with corn flour and salt.',
+    'Shape into small balls.',
+    'Deep fry until crispy.',
+    'Heat oil and add soy sauce.',
+    'Add fried balls and toss well.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 81,
+  title: 'Gobi Manchurian',
+  description: 'Crispy cauliflower florets tossed in a spicy and tangy Indo-Chinese sauce.',
+  ingredients: [
+    '1 cup cauliflower florets',
+    '2 tbsp corn flour',
+    '1 tbsp all-purpose flour',
+    '1 tbsp soy sauce',
+    '1 tbsp oil',
+    'Salt to taste',
+    'Oil for frying'
+  ],
+  instructions: [
+    'Mix corn flour, all-purpose flour, salt, and water to make a batter.',
+    'Dip cauliflower florets in batter.',
+    'Deep fry until crispy and golden.',
+    'Heat oil and add soy sauce.',
+    'Add fried cauliflower and toss well.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 82,
+  title: 'Vegetable Hakka Noodles',
+  description: 'A popular Indo-Chinese noodle dish stir-fried with vegetables and sauces.',
+  ingredients: [
+    '1 packet noodles',
+    '1 cup mixed vegetables',
+    '1 tbsp soy sauce',
+    '1 tbsp oil',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Cook noodles and drain.',
+    'Heat oil and stir fry vegetables on high heat.',
+    'Add cooked noodles and mix well.',
+    'Add soy sauce and salt.',
+    'Stir fry for a few minutes.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 83,
+  title: 'Chole Bhature',
+  description: 'A classic North Indian dish of spicy chickpea curry served with fried bread.',
+  ingredients: [
+    '1 cup chickpeas (soaked and cooked)',
+    '1 onion (chopped)',
+    '1 tomato (chopped)',
+    '1 tsp chole masala',
+    'Flour for bhature',
+    'Oil for frying',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Cook chickpeas with onion, tomato, spices, and salt.',
+    'Prepare dough using flour and water.',
+    'Roll and deep fry to make bhature.',
+    'Serve hot with chole.'
+  ]
+},
+{
+  id: 84,
+  title: 'Rajma Curry',
+  description: 'A hearty and flavorful kidney bean curry cooked in a rich gravy.',
+  ingredients: [
+    '1 cup rajma (soaked and cooked)',
+    '1 onion (chopped)',
+    '1 tomato (chopped)',
+    '1 tbsp oil',
+    '1 tsp garam masala',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil and sauté onions until soft.',
+    'Add tomatoes and cook until mushy.',
+    'Add garam masala and salt.',
+    'Add cooked rajma and mix.',
+    'Simmer for 10 minutes.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 85,
+  title: 'Vegetable Kathi Roll',
+  description: 'A street-style wrap filled with spiced vegetables and rolled in soft roti.',
+  ingredients: [
+    '2 rotis',
+    '1 cup mixed vegetables',
+    '1 tbsp oil',
+    'Salt and spices to taste'
+  ],
+  instructions: [
+    'Heat oil and cook vegetables with spices.',
+    'Place the filling on a roti.',
+    'Roll tightly.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 86,
+  title: 'Paneer Pakora',
+  description: 'Crispy deep-fried paneer fritters coated in a spiced gram flour batter.',
+  ingredients: [
+    '200g paneer (sliced)',
+    '1/2 cup gram flour (besan)',
+    '1/2 tsp chili powder',
+    'Salt to taste',
+    'Water as needed',
+    'Oil for frying'
+  ],
+  instructions: [
+    'Mix gram flour, chili powder, salt, and water to make a thick batter.',
+    'Dip paneer slices into the batter.',
+    'Heat oil and deep fry until golden and crispy.',
+    'Drain excess oil and serve hot.'
+  ]
+},
+{
+  id: 87,
+  title: 'Vegetable Daliya',
+  description: 'A healthy and filling dish made with broken wheat and vegetables.',
+  ingredients: [
+    '1/2 cup daliya (broken wheat)',
+    '1/2 cup vegetables',
+    '2 cups water',
+    '1 tbsp oil',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil and sauté vegetables.',
+    'Add daliya and roast for a minute.',
+    'Add water and salt.',
+    'Cook until soft and fluffy.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 88,
+  title: 'Spinach Paratha',
+  description: 'A nutritious flatbread made with spinach and whole wheat flour.',
+  ingredients: [
+    '1 cup wheat flour',
+    '1/2 cup spinach (pureed)',
+    'Salt to taste',
+    'Water as needed',
+    'Oil or ghee for cooking'
+  ],
+  instructions: [
+    'Mix flour, spinach puree, and salt to form a dough.',
+    'Knead well and rest for 10 minutes.',
+    'Roll into flat circles.',
+    'Cook on a hot pan with oil or ghee.',
+    'Cook both sides until golden.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 89,
+  title: 'Corn Chaat',
+  description: 'A quick and tangy snack made with sweet corn and spices.',
+  ingredients: [
+    '1 cup boiled corn',
+    '1 tbsp lemon juice',
+    '1/2 tsp chili powder',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Add boiled corn to a bowl.',
+    'Add lemon juice, chili powder, and salt.',
+    'Mix well.',
+    'Serve immediately.'
+  ]
+},
+{
+  id: 90,
+  title: 'Vegetable Omelette Roll',
+  description: 'A soft omelette with vegetables rolled inside a roti for a quick meal.',
+  ingredients: [
+    '2 eggs',
+    '1/2 cup vegetables',
+    '1 roti',
+    'Salt and spices to taste',
+    '1 tbsp oil'
+  ],
+  instructions: [
+    'Beat eggs with vegetables, salt, and spices.',
+    'Heat oil and cook the omelette.',
+    'Place the omelette on a roti.',
+    'Roll tightly.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 91,
+  title: 'Mushroom Soup',
+  description: 'A creamy and comforting soup made with fresh mushrooms and simple seasoning.',
+  ingredients: [
+    '1 cup mushrooms (chopped)',
+    '2 cups water or milk',
+    '1 tbsp butter',
+    '1/2 tsp black pepper',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat butter in a pan and sauté mushrooms.',
+    'Add water or milk and cook until mushrooms are soft.',
+    'Blend into a smooth consistency.',
+    'Add salt and pepper.',
+    'Simmer for a few minutes and serve warm.'
+  ]
+},
+{
+  id: 92,
+  title: 'Vegetable Poha',
+  description: 'A light and flavorful breakfast made with flattened rice and vegetables.',
+  ingredients: [
+    '1 cup poha',
+    '1/2 cup vegetables',
+    '1 tsp mustard seeds',
+    '1 tbsp oil',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Wash poha and drain.',
+    'Heat oil and add mustard seeds.',
+    'Add vegetables and sauté.',
+    'Add poha and salt.',
+    'Mix well and cook for a few minutes.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 93,
+  title: 'Sabudana Khichdi',
+  description: 'A soft and mildly spiced dish made with tapioca pearls and peanuts.',
+  ingredients: [
+    '1 cup soaked sabudana',
+    '1/4 cup peanuts',
+    '1 potato (cubed)',
+    '1 tbsp oil',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil and cook potatoes until soft.',
+    'Add peanuts and roast lightly.',
+    'Add soaked sabudana and salt.',
+    'Mix gently and cook until soft.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 94,
+  title: 'Vegetable Frankie',
+  description: 'A street-style wrap filled with spiced vegetables and sauces.',
+  ingredients: [
+    '2 rotis',
+    '1 cup vegetables',
+    '1 tbsp oil',
+    'Salt and spices to taste'
+  ],
+  instructions: [
+    'Cook vegetables with oil and spices.',
+    'Place filling on a roti.',
+    'Roll tightly.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 95,
+  title: 'Paneer Sandwich',
+  description: 'A tasty grilled sandwich filled with spiced paneer and vegetables.',
+  ingredients: [
+    '4 slices bread',
+    '1/2 cup paneer (crumbled)',
+    '1/4 cup vegetables',
+    'Butter as needed',
+    'Salt and spices to taste'
+  ],
+  instructions: [
+    'Mix paneer with vegetables, salt, and spices.',
+    'Spread butter on bread slices.',
+    'Place filling between slices.',
+    'Grill or toast until golden.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 96,
+  title: 'Vegetable Cutlet Burger',
+  description: 'A crispy vegetable cutlet served inside a soft bun with simple toppings.',
+  ingredients: [
+    '2 burger buns',
+    '2 vegetable cutlets',
+    '2 tbsp sauce (ketchup or mayo)',
+    'Lettuce or onion slices',
+    'Butter as needed'
+  ],
+  instructions: [
+    'Lightly toast the burger buns with butter.',
+    'Place the vegetable cutlet inside the bun.',
+    'Add sauce and toppings like lettuce or onion.',
+    'Cover with the top bun.',
+    'Serve immediately.'
+  ]
+},
+{
+  id: 97,
+  title: 'Cheese Corn Balls',
+  description: 'Crispy fried balls filled with sweet corn and melted cheese.',
+  ingredients: [
+    '1 cup boiled corn',
+    '1/2 cup grated cheese',
+    '2 tbsp corn flour',
+    'Salt and spices to taste',
+    'Oil for frying'
+  ],
+  instructions: [
+    'Mix corn, cheese, corn flour, salt, and spices.',
+    'Shape into small balls.',
+    'Heat oil and deep fry until golden.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 98,
+  title: 'Vegetable Pizza',
+  description: 'A homemade pizza topped with fresh vegetables and melted cheese.',
+  ingredients: [
+    '1 pizza base',
+    '1/2 cup vegetables',
+    '1/2 cup grated cheese',
+    '2 tbsp pizza sauce'
+  ],
+  instructions: [
+    'Spread pizza sauce on the base.',
+    'Add vegetables evenly.',
+    'Top with grated cheese.',
+    'Bake in a preheated oven until cheese melts.',
+    'Slice and serve hot.'
+  ]
+},
+{
+  id: 99,
+  title: 'Paneer Pizza',
+  description: 'A delicious pizza topped with spiced paneer and melted cheese.',
+  ingredients: [
+    '1 pizza base',
+    '1/2 cup paneer (cubed)',
+    '1/2 cup grated cheese',
+    '2 tbsp pizza sauce'
+  ],
+  instructions: [
+    'Spread pizza sauce on the base.',
+    'Add paneer pieces.',
+    'Top with grated cheese.',
+    'Bake until cheese melts and base is crisp.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 100,
+  title: 'Garlic Mushroom',
+  description: 'A quick sautéed mushroom dish with rich garlic flavor.',
+  ingredients: [
+    '1 cup mushrooms (sliced)',
+    '3 cloves garlic (chopped)',
+    '1 tbsp butter',
+    'Salt and pepper to taste'
+  ],
+  instructions: [
+    'Heat butter in a pan.',
+    'Add garlic and sauté briefly.',
+    'Add mushrooms and cook until soft.',
+    'Add salt and pepper.',
+    'Cook for a few minutes and serve hot.'
+  ]
+},
 
   {
     id: 101,
