@@ -72,35 +72,35 @@ const recipes = [
     title: 'Egg Fried Rice',
     description: 'Quick fried rice with egg.',
     ingredients: ['egg', 'rice'],
-    instructions: 'Cook rice. Scramble eggs. Stir fry together.'
+    instructions: 'Cook rice. Scramble eggs. Mix scrambled eggs with rice.'
   },
   {
     id: 2,
     title: 'French Toast',
     description: 'Classic French toast with bread and egg.',
-    ingredients: ['bread', 'egg'],
-    instructions: 'Dip bread in egg. Fry until golden.'
+    ingredients: ['bread', 'egg', 'spices'],
+    instructions: 'mix egg with spicesDip bread in egg. Fry until golden.'
   },
   {
     id: 3,
     title: 'Banana Milkshake',
     description: 'Refreshing banana milkshake.',
-    ingredients: ['milk', 'banana'],
-    instructions: 'Blend banana and milk.'
+    ingredients: ['milk', 'banana', 'sugar'],
+    instructions: 'Blend banana, milk, and sugar.'
   },
   {
     id: 4,
     title: 'Grilled Cheese',
     description: 'Cheesy grilled sandwich.',
     ingredients: ['bread', 'cheese'],
-    instructions: 'Assemble and grill sandwich.'
+    instructions: 'toast bread. Add cheese. Grill until chease is melted.'
   },
   {
     id: 5,
     title: 'Omelette',
     description: 'Egg omelette with onion.',
-    ingredients: ['egg', 'onion'],
-    instructions: 'Beat eggs, onion, cook.'
+    ingredients: ['egg', 'onion','spices'],
+    instructions: 'Beat eggs, onion, spices, cook in a pan until it is set.'
   },
   {
     id: 6,
@@ -113,8 +113,8 @@ const recipes = [
     id: 7,
     title: 'Chicken Curry',
     description: 'Spicy chicken curry.',
-    ingredients: ['chicken', 'tomato', 'onion'],
-    instructions: 'Cook chicken with tomato and onion.'
+    ingredients: ['chicken', 'tomato', 'onion', 'spices'],
+    instructions: 'Cook chicken with tomato, onion, and spices.'
   },
   {
     id: 8,
@@ -125,10 +125,10 @@ const recipes = [
   },
   {
     id: 9,
-    title: 'Pasta with Tomato Sauce',
+    title: 'Pasta',
     description: 'Pasta in tomato sauce.',
     ingredients: ['pasta', 'tomato', 'onion'],
-    instructions: 'Cook pasta, make tomato sauce, combine.'
+    instructions: 'Cook pasta, make tomato sauce, mix together  .'
   },
   {
     id: 10,
@@ -148,22 +148,22 @@ const recipes = [
     id: 12,
     title: 'Vegetable Salad',
     description: 'Fresh vegetable salad.',
-    ingredients: ['vegetables', 'tomato', 'cucumber'],
-    instructions: 'Chop and mix all ingredients.'
+    ingredients: ['carrot','meat', 'tomato', 'cucumber'],
+    instructions: 'Chop and mix all ingredients toghether.'
   },
   {
     id: 13,
     title: 'Roasted Potatoes',
     description: 'Crispy roasted potatoes.',
     ingredients: ['potato', 'oil', 'salt'],
-    instructions: 'Roast potatoes with oil and salt.'
+    instructions: 'add salt to potatoes and roast potatoes in oil in oil.'
   },
   {
     id: 14,
-    title: 'Milkshake',
-    description: 'Simple milkshake.',
-    ingredients: ['milk', 'sugar'],
-    instructions: 'Blend milk and sugar.'
+    title: 'Milk tea',
+    description: 'Simple milk tea.',
+    ingredients: ['milk', 'sugar', 'tea powder'],
+    instructions: 'boil tea powder with milk and add some  sugar.'
   },
   {
     id: 15,
@@ -174,24 +174,24 @@ const recipes = [
   },
   {
     id: 16,
-    title: 'Paneer Butter Masala',
+    title: 'Butter paneer',
     description: 'Creamy paneer curry.',
     ingredients: ['paneer', 'butter', 'tomato', 'cream'],
     instructions: 'Cook tomato gravy. Add paneer and cream. Simmer.'
   },
   {
     id: 17,
-    title: 'Mushroom Pepper Fry',
+    title: 'Mushroom Fry',
     description: 'Spicy mushroom dish.',
     ingredients: ['mushroom', 'pepper', 'onion'],
-    instructions: 'Saute onion. Add mushroom and pepper. Cook well.'
+    instructions: 'cook onion in heated oil, until it is brown onion. Add mushroom and pepper. Cook well.'
   },
   {
     id:18,
     title: 'Aloo Gobi',
-    description: 'Potato and cauliflower curry.',
+    description: 'A vegetarian dish from india.',
     ingredients: ['potato', 'cauliflower', 'spices'],
-    instructions: 'Cook potato and cauliflower with spices.'
+    instructions: 'Cook potato and cauliflower add spices.'
   },
   {
     id:19,
@@ -203,21 +203,21 @@ const recipes = [
   {
     id: 20,
     title: 'Vegetable Fried Noodles',
-    description: 'Quick stir fried noodles.',
+    description: 'Simple veg fried noodles.',
     ingredients: ['noodles', 'vegetables', 'soy sauce'],
     instructions: 'Cook noodles. Stir fry with vegetables and sauce.'
   },
   {
     id: 21,
-    title: 'Eggplant Fry',
+    title: 'Brinjal Fry',
     description: 'Crispy brinjal fry.',
-    ingredients: ['eggplant', 'spices', 'oil'],
-    instructions: 'Slice eggplant. Coat spices. Fry until crispy.'
+    ingredients: ['Brinjal', 'spices', 'oil'],
+    instructions: 'Slice Brinjal. Coat spices. Fry until crispy.'
   },
   {
     id: 22,
     title: 'Spinach Dal',
-    description: 'Healthy lentil curry.',
+    description: 'Healthy curry.',
     ingredients: ['lentils', 'spinach', 'garlic'],
     instructions: 'Cook lentils. Add spinach and garlic tempering.'
   },
@@ -232,15 +232,15 @@ const recipes = [
     id: 24,
     title: 'Vegetable Cutlet',
     description: 'Crispy veg patties.',
-    ingredients: ['potato', 'vegetables', 'breadcrumbs'],
-    instructions: 'Mix ingredients. Shape and fry.'
+    ingredients: ['potato', 'vegetables', 'breadcrumbs','egg'],
+    instructions: 'steam cook potato. mix potato and vegetables until it becomes a dough . shape it . take egg white and dip into it and put bread crumbs on it .fry it in oil or air fryer.'
   },
   {
     id: 25,
     title: 'Tomato Chutney',
-    description: 'Tangy side dish.',
-    ingredients: ['tomato', 'chili', 'garlic'],
-    instructions: 'Cook and blend all ingredients.'
+    description: 'Tangy side dish best for dosa from south india .',
+    ingredients: ['tomato', 'chili', 'garlic','dal','curry leaves'],
+    instructions: 'Cook tomato, chilli, garlic .blend it .add curry leaves to oil and put the blend and mix.'
   },
 
   {
@@ -267,7 +267,7 @@ const recipes = [
   {
     id: 29,
     title: 'Vegetable Upma',
-    description: 'Savory semolina dish.',
+    description: 'easy dish from south india.',
     ingredients: ['semolina', 'vegetables', 'mustard seeds'],
     instructions: 'Roast semolina. Cook with veggies and water.'
   },
@@ -281,7 +281,7 @@ const recipes = [
   {
     id: 31,
     title: 'Lentil Soup',
-    description: 'Simple hearty soup.',
+    description: 'Simple soup.',
     ingredients: ['lentils', 'garlic', 'onion'],
     instructions: 'Boil lentils. Add sautéed garlic and onion.'
   },
@@ -290,7 +290,7 @@ const recipes = [
     title: 'Stuffed Capsicum',
     description: 'Capsicum filled with masala.',
     ingredients: ['capsicum', 'potato', 'spices'],
-    instructions: 'Stuff capsicum. Cook until soft.'
+    instructions: 'steam cook potatoes. mix potatoes with spices .Stuff capsicum with the mix . Cook capsicum  until soft.'
   },
   {
     id: 33,
@@ -301,10 +301,10 @@ const recipes = [
   },
   {
     id: 34,
-    title: 'Onion Pakora',
+    title: 'Onion Pakoda',
     description: 'Crispy onion fritters.',
     ingredients: ['onion', 'gram flour', 'spices'],
-    instructions: 'Mix ingredients. Deep fry.'
+    instructions: 'Mix gram flour and spices with water .sperad the mixture into onions . Deep fry the onions.'
   },
   {
     id: 35,
@@ -326,7 +326,7 @@ const recipes = [
     title: 'Pumpkin Curry',
     description: 'Mild sweet curry.',
     ingredients: ['pumpkin', 'spices', 'coconut'],
-    instructions: 'Cook pumpkin with spices and coconut.'
+    instructions: 'Cook pumpkin add water and add with spices and coconut.'
   },
   {
     id: 38,
@@ -886,9 +886,825 @@ const recipes = [
     description: 'Quick microwave cake.',
     ingredients: ['flour', 'cocoa', 'milk'],
     instructions: 'Mix and microwave.'
-  }
-];
+  },
+  {
+  id: 116,
+  title: 'Simple Veg Rice',
+  description: 'Quick vegetable rice.',
+  ingredients: ['rice', 'vegetables', 'salt'],
+  instructions: 'Cook rice. Mix vegetables and salt.'
+},
+{
+  id: 117,
+  title: 'Egg Curry',
+  description: 'Spicy egg curry.',
+  ingredients: ['egg', 'onion', 'spices'],
+  instructions: 'Boil eggs. Cook in onion gravy.'
+},
+{
+  id: 118,
+  title: 'Butter Toast',
+  description: 'Crispy butter toast.',
+  ingredients: ['bread', 'butter'],
+  instructions: 'Apply butter and toast.'
+},
+{
+  id: 119,
+  title: 'Tomato Soup',
+  description: 'Warm tomato soup.',
+  ingredients: ['tomato', 'water', 'salt'],
+  instructions: 'Boil and blend tomatoes.'
+},
+{
+  id: 120,
+  title: 'Veg Sandwich',
+  description: 'Simple vegetable sandwich.',
+  ingredients: ['bread', 'vegetables', 'butter'],
+  instructions: 'Assemble and serve.'
+},
+{
+  id: 121,
+  title: 'Masala Omelette',
+  description: 'Spicy omelette.',
+  ingredients: ['egg', 'onion', 'spices'],
+  instructions: 'Mix and cook.'
+},
+{
+  id: 122,
+  title: 'Lemon Rice',
+  description: 'Tangy lemon rice.',
+  ingredients: ['rice', 'lemon', 'spices'],
+  instructions: 'Mix cooked rice with lemon.'
+},
+{
+  id: 123,
+  title: 'Garlic Rice',
+  description: 'Flavorful garlic rice.',
+  ingredients: ['rice', 'garlic', 'oil'],
+  instructions: 'Cook rice with garlic.'
+},
+{
+  id: 124,
+  title: 'Cheese Toast',
+  description: 'Melted cheese bread.',
+  ingredients: ['bread', 'cheese'],
+  instructions: 'Top cheese and toast.'
+},
+{
+  id: 125,
+  title: 'Veg Soup',
+  description: 'Light vegetable soup.',
+  ingredients: ['vegetables', 'water'],
+  instructions: 'Boil and season.'
+},
+{
+  id: 126,
+  title: 'Fried Egg',
+  description: 'Simple fried egg.',
+  ingredients: ['egg', 'oil'],
+  instructions: 'Fry egg in pan.'
+},
+{
+  id: 127,
+  title: 'Plain Rice',
+  description: 'Steamed rice.',
+  ingredients: ['rice', 'water'],
+  instructions: 'Cook rice.'
+},
+{
+  id: 128,
+  title: 'Potato Fry',
+  description: 'Crispy potato fry.',
+  ingredients: ['potato', 'oil', 'salt'],
+  instructions: 'Fry potatoes.'
+},
+{
+  id: 129,
+  title: 'Onion Salad',
+  description: 'Fresh onion salad.',
+  ingredients: ['onion', 'salt', 'lemon'],
+  instructions: 'Mix ingredients.'
+},
+{
+  id: 130,
+  title: 'Egg Toast',
+  description: 'Egg coated toast.',
+  ingredients: ['bread', 'egg'],
+  instructions: 'Dip and fry.'
+},
+{
+  id: 131,
+  title: 'Milk Tea',
+  description: 'Hot milk tea.',
+  ingredients: ['milk', 'tea', 'sugar'],
+  instructions: 'Boil and serve.'
+},
+{
+  id: 132,
+  title: 'Black Tea',
+  description: 'Strong tea.',
+  ingredients: ['tea', 'water'],
+  instructions: 'Boil and strain.'
+},
+{
+  id: 133,
+  title: 'Fruit Bowl',
+  description: 'Mixed fruits.',
+  ingredients: ['fruits'],
+  instructions: 'Cut and mix.'
+},
+{
+  id: 134,
+  title: 'Banana Snack',
+  description: 'Quick banana snack.',
+  ingredients: ['banana'],
+  instructions: 'Slice and serve.'
+},
+{
+  id: 135,
+  title: 'Rice Porridge',
+  description: 'Soft rice porridge.',
+  ingredients: ['rice', 'water'],
+  instructions: 'Cook until soft.'
+},
+{
+  id: 136,
+  title: 'Veg Stir Fry',
+  description: 'Quick stir fry.',
+  ingredients: ['vegetables', 'oil'],
+  instructions: 'Stir fry veggies.'
+},
+{
+  id: 137,
+  title: 'Egg Bhurji',
+  description: 'Scrambled eggs.',
+  ingredients: ['egg', 'onion', 'spices'],
+  instructions: 'Cook scrambled eggs.'
+},
+{
+  id: 138,
+  title: 'Tomato Rice',
+  description: 'Spiced tomato rice.',
+  ingredients: ['rice', 'tomato'],
+  instructions: 'Cook together.'
+},
+{
+  id: 139,
+  title: 'Cucumber Salad',
+  description: 'Fresh salad.',
+  ingredients: ['cucumber', 'salt'],
+  instructions: 'Mix ingredients.'
+},
+{
+  id: 140,
+  title: 'Bread Jam',
+  description: 'Sweet bread.',
+  ingredients: ['bread', 'jam'],
+  instructions: 'Spread and eat.'
+},
+{
+  id: 141,
+  title: 'Butter Rice',
+  description: 'Simple butter rice.',
+  ingredients: ['rice', 'butter'],
+  instructions: 'Mix butter in rice.'
+},
+{
+  id: 142,
+  title: 'Egg Roll',
+  description: 'Simple egg roll.',
+  ingredients: ['egg', 'roti'],
+  instructions: 'Wrap egg in roti.'
+},
+{
+  id: 143,
+  title: 'Veg Wrap',
+  description: 'Vegetable wrap.',
+  ingredients: ['roti', 'vegetables'],
+  instructions: 'Fill and roll.'
+},
+{
+  id: 144,
+  title: 'Sweet Milk',
+  description: 'Sweet milk drink.',
+  ingredients: ['milk', 'sugar'],
+  instructions: 'Mix and drink.'
+},
+{
+  id: 145,
+  title: 'Boiled Egg',
+  description: 'Hard boiled egg.',
+  ingredients: ['egg'],
+  instructions: 'Boil egg.'
+},
+{
+  id: 146,
+  title: 'Veg Noodles',
+  description: 'Simple noodles.',
+  ingredients: ['noodles', 'vegetables'],
+  instructions: 'Cook and mix.'
+},
+{
+  id: 147,
+  title: 'Rice Upma',
+  description: 'Rice upma.',
+  ingredients: ['rice', 'spices'],
+  instructions: 'Cook and mix.'
+},
+{
+  id: 148,
+  title: 'Onion Fry',
+  description: 'Fried onion.',
+  ingredients: ['onion', 'oil'],
+  instructions: 'Fry onion.'
+},
+{
+  id: 149,
+  title: 'Egg Sandwich',
+  description: 'Egg sandwich.',
+  ingredients: ['bread', 'egg'],
+  instructions: 'Assemble and serve.'
+},
+{
+  id: 150,
+  title: 'Veg Cutlet',
+  description: 'Crispy veg snack.',
+  ingredients: ['vegetables', 'breadcrumbs'],
+  instructions: 'Shape and fry.'
+},
+{
+  id: 151,
+  title: 'Paneer Rice',
+  description: 'Rice with paneer cubes.',
+  ingredients: ['rice', 'paneer', 'spices'],
+  instructions: 'Cook rice. Add paneer and spices.'
+},
+{
+  id: 152,
+  title: 'Chicken Rice',
+  description: 'Simple chicken rice.',
+  ingredients: ['rice', 'chicken', 'salt'],
+  instructions: 'Cook rice with chicken.'
+},
+{
+  id: 153,
+  title: 'Veg Curry',
+  description: 'Mixed vegetable curry.',
+  ingredients: ['vegetables', 'spices'],
+  instructions: 'Cook vegetables with spices.'
+},
+{
+  id: 154,
+  title: 'Egg Masala',
+  description: 'Egg masala gravy.',
+  ingredients: ['egg', 'onion', 'spices'],
+  instructions: 'Cook eggs in masala.'
+},
+{
+  id: 155,
+  title: 'Bread Butter',
+  description: 'Classic bread butter.',
+  ingredients: ['bread', 'butter'],
+  instructions: 'Spread butter on bread.'
+},
+{
+  id: 156,
+  title: 'Corn Salad',
+  description: 'Sweet corn salad.',
+  ingredients: ['corn', 'salt', 'lemon'],
+  instructions: 'Mix all ingredients.'
+},
+{
+  id: 157,
+  title: 'Veg Maggi',
+  description: 'Maggi with vegetables.',
+  ingredients: ['noodles', 'vegetables'],
+  instructions: 'Cook noodles with vegetables.'
+},
+{
+  id: 158,
+  title: 'Milk Coffee',
+  description: 'Hot milk coffee.',
+  ingredients: ['milk', 'coffee', 'sugar'],
+  instructions: 'Mix and serve hot.'
+},
+{
+  id: 159,
+  title: 'Chicken Fry',
+  description: 'Spicy fried chicken.',
+  ingredients: ['chicken', 'spices', 'oil'],
+  instructions: 'Fry chicken with spices.'
+},
+{
+  id: 160,
+  title: 'Veg Rice Bowl',
+  description: 'Healthy rice bowl.',
+  ingredients: ['rice', 'vegetables'],
+  instructions: 'Combine and serve.'
+},
+{
+  id: 161,
+  title: 'Potato Curry',
+  description: 'Simple potato curry.',
+  ingredients: ['potato', 'spices'],
+  instructions: 'Cook potatoes with spices.'
+},
+{
+  id: 162,
+  title: 'Egg Rice',
+  description: 'Egg fried rice.',
+  ingredients: ['rice', 'egg'],
+  instructions: 'Stir fry rice with egg.'
+},
+{
+  id: 163,
+  title: 'Veg Pasta',
+  description: 'Vegetable pasta.',
+  ingredients: ['pasta', 'vegetables'],
+  instructions: 'Cook pasta and mix veggies.'
+},
+{
+  id: 164,
+  title: 'Tomato Curry',
+  description: 'Tangy tomato curry.',
+  ingredients: ['tomato', 'spices'],
+  instructions: 'Cook tomatoes with spices.'
+},
+{
+  id: 165,
+  title: 'Egg Noodles',
+  description: 'Egg noodles.',
+  ingredients: ['noodles', 'egg'],
+  instructions: 'Cook noodles and mix egg.'
+},
+{
+  id: 166,
+  title: 'Veg Omelette',
+  description: 'Omelette with veggies.',
+  ingredients: ['egg', 'vegetables'],
+  instructions: 'Cook mixture in pan.'
+},
+{
+  id: 167,
+  title: 'Chicken Soup',
+  description: 'Light chicken soup.',
+  ingredients: ['chicken', 'water'],
+  instructions: 'Boil and season.'
+},
+{
+  id: 168,
+  title: 'Rice Salad',
+  description: 'Cold rice salad.',
+  ingredients: ['rice', 'vegetables'],
+  instructions: 'Mix and serve.'
+},
+{
+  id: 169,
+  title: 'Paneer Fry',
+  description: 'Fried paneer cubes.',
+  ingredients: ['paneer', 'oil'],
+  instructions: 'Fry paneer.'
+},
+{
+  id: 170,
+  title: 'Veg Burger',
+  description: 'Simple veg burger.',
+  ingredients: ['bun', 'vegetables'],
+  instructions: 'Assemble burger.'
+},
+{
+  id: 171,
+  title: 'Egg Burger',
+  description: 'Egg burger.',
+  ingredients: ['bun', 'egg'],
+  instructions: 'Assemble and serve.'
+},
+{
+  id: 172,
+  title: 'Veg Pizza Slice',
+  description: 'Vegetable pizza.',
+  ingredients: ['base', 'vegetables', 'cheese'],
+  instructions: 'Top and bake.'
+},
+{
+  id: 173,
+  title: 'Chicken Pizza',
+  description: 'Chicken pizza.',
+  ingredients: ['base', 'chicken', 'cheese'],
+  instructions: 'Bake pizza.'
+},
+{
+  id: 174,
+  title: 'Cheese Pasta',
+  description: 'Cheesy pasta.',
+  ingredients: ['pasta', 'cheese'],
+  instructions: 'Mix and cook.'
+},
+{
+  id: 175,
+  title: 'Veg Wrap Roll',
+  description: 'Veg roll.',
+  ingredients: ['roti', 'vegetables'],
+  instructions: 'Fill and roll.'
+},
+{
+  id: 176,
+  title: 'Chicken Wrap',
+  description: 'Chicken roll.',
+  ingredients: ['roti', 'chicken'],
+  instructions: 'Wrap and serve.'
+},
+{
+  id: 177,
+  title: 'Potato Sandwich',
+  description: 'Potato sandwich.',
+  ingredients: ['bread', 'potato'],
+  instructions: 'Assemble and toast.'
+},
+{
+  id: 178,
+  title: 'Egg Curry Rice',
+  description: 'Rice with egg curry.',
+  ingredients: ['rice', 'egg curry'],
+  instructions: 'Serve together.'
+},
+{
+  id: 179,
+  title: 'Veg Soup Bowl',
+  description: 'Vegetable soup.',
+  ingredients: ['vegetables', 'water'],
+  instructions: 'Cook and serve.'
+},
+{
+  id: 180,
+  title: 'Chicken Rice Bowl',
+  description: 'Chicken rice bowl.',
+  ingredients: ['rice', 'chicken'],
+  instructions: 'Mix and serve.'
+},
+{
+  id: 181,
+  title: 'Paneer Sandwich',
+  description: 'Paneer sandwich.',
+  ingredients: ['bread', 'paneer'],
+  instructions: 'Assemble and grill.'
+},
+{
+  id: 182,
+  title: 'Veg Toast',
+  description: 'Vegetable toast.',
+  ingredients: ['bread', 'vegetables'],
+  instructions: 'Toast and serve.'
+},
+{
+  id: 183,
+  title: 'Milkshake Vanilla',
+  description: 'Vanilla milkshake.',
+  ingredients: ['milk', 'vanilla'],
+  instructions: 'Blend and serve.'
+},
+{
+  id: 184,
+  title: 'Chocolate Shake',
+  description: 'Chocolate milkshake.',
+  ingredients: ['milk', 'chocolate'],
+  instructions: 'Blend ingredients.'
+},
+{
+  id: 185,
+  title: 'Strawberry Shake',
+  description: 'Strawberry drink.',
+  ingredients: ['milk', 'strawberry'],
+  instructions: 'Blend and serve.'
+},
+{
+  id: 186,
+  title: 'Veg Fried Rice',
+  description: 'Classic fried rice.',
+  ingredients: ['rice', 'vegetables'],
+  instructions: 'Stir fry rice.'
+},
+{
+  id: 187,
+  title: 'Chicken Fried Rice',
+  description: 'Chicken fried rice.',
+  ingredients: ['rice', 'chicken'],
+  instructions: 'Cook together.'
+},
+{
+  id: 188,
+  title: 'Paneer Fried Rice',
+  description: 'Paneer rice.',
+  ingredients: ['rice', 'paneer'],
+  instructions: 'Stir fry.'
+},
+{
+  id: 189,
+  title: 'Veg Cutlet Plate',
+  description: 'Cutlet snack.',
+  ingredients: ['vegetables', 'crumbs'],
+  instructions: 'Shape and fry.'
+},
+{
+  id: 190,
+  title: 'Egg Cutlet',
+  description: 'Egg cutlet.',
+  ingredients: ['egg', 'crumbs'],
+  instructions: 'Fry and serve.'
+},
+{
+  id: 191,
+  title: 'Chicken Cutlet',
+  description: 'Chicken snack.',
+  ingredients: ['chicken', 'crumbs'],
+  instructions: 'Fry cutlet.'
+},
+{
+  id: 192,
+  title: 'Veg Soup Creamy',
+  description: 'Creamy soup.',
+  ingredients: ['vegetables', 'cream'],
+  instructions: 'Cook and blend.'
+},
+{
+  id: 193,
+  title: 'Tomato Pasta',
+  description: 'Tomato pasta.',
+  ingredients: ['pasta', 'tomato'],
+  instructions: 'Cook and mix.'
+},
+{
+  id: 194,
+  title: 'Garlic Pasta',
+  description: 'Garlic flavored pasta.',
+  ingredients: ['pasta', 'garlic'],
+  instructions: 'Cook and mix.'
+},
+{
+  id: 195,
+  title: 'Veg Chowmein',
+  description: 'Street noodles.',
+  ingredients: ['noodles', 'vegetables'],
+  instructions: 'Stir fry.'
+},
+{
+  id: 196,
+  title: 'Chicken Chowmein',
+  description: 'Chicken noodles.',
+  ingredients: ['noodles', 'chicken'],
+  instructions: 'Cook together.'
+},
+{
+  id: 197,
+  title: 'Paneer Chowmein',
+  description: 'Paneer noodles.',
+  ingredients: ['noodles', 'paneer'],
+  instructions: 'Mix and cook.'
+},
+{
+  id: 198,
+  title: 'Veg Salad Bowl',
+  description: 'Healthy salad.',
+  ingredients: ['vegetables'],
+  instructions: 'Mix and serve.'
+},
+{
+  id: 199,
+  title: 'Fruit Salad',
+  description: 'Fresh fruits.',
+  ingredients: ['fruits'],
+  instructions: 'Cut and mix.'
+},
+{
+  id: 200,
+  title: 'Egg Salad',
+  description: 'Protein salad.',
+  ingredients: ['egg', 'vegetables'],
+  instructions: 'Mix ingredients.'
+},
+{
+  id: 201,
+  title: 'Chicken Salad',
+  description: 'Chicken salad.',
+  ingredients: ['chicken', 'vegetables'],
+  instructions: 'Mix and serve.'
+},
+{
+  id: 202,
+  title: 'Paneer Salad',
+  description: 'Paneer salad.',
+  ingredients: ['paneer', 'vegetables'],
+  instructions: 'Combine and serve.'
+},
+{
+  id: 203,
+  title: 'Veg Roll',
+  description: 'Veg roll.',
+  ingredients: ['roti', 'vegetables'],
+  instructions: 'Wrap and serve.'
+},
+{
+  id: 204,
+  title: 'Chicken Roll',
+  description: 'Chicken roll.',
+  ingredients: ['roti', 'chicken'],
+  instructions: 'Wrap and serve.'
+},
+{
+  id: 205,
+  title: 'Egg Roll Street',
+  description: 'Street egg roll.',
+  ingredients: ['roti', 'egg'],
+  instructions: 'Cook and wrap.'
+},
+{
+  id: 206,
+  title: 'Veg Pizza Mini',
+  description: 'Mini pizza.',
+  ingredients: ['base', 'veg', 'cheese'],
+  instructions: 'Bake.'
+},
+{
+  id: 207,
+  title: 'Chicken Pizza Mini',
+  description: 'Mini chicken pizza.',
+  ingredients: ['base', 'chicken'],
+  instructions: 'Bake.'
+},
+{
+  id: 208,
+  title: 'Paneer Pizza Mini',
+  description: 'Mini paneer pizza.',
+  ingredients: ['base', 'paneer'],
+  instructions: 'Bake.'
+},
+{
+  id: 209,
+  title: 'Veg Rice Deluxe',
+  description: 'Rich veg rice.',
+  ingredients: ['rice', 'veg'],
+  instructions: 'Cook and serve.'
+},
+{
+  id: 210,
+  title: 'Chicken Rice Deluxe',
+  description: 'Rich chicken rice.',
+  ingredients: ['rice', 'chicken'],
+  instructions: 'Cook and serve.'
+},
+{
+  id: 211,
+  title: 'Paneer Rice Deluxe',
+  description: 'Rich paneer rice.',
+  ingredients: ['rice', 'paneer'],
+  instructions: 'Cook.'
+},
+{
+  id: 212,
+  title: 'Veg Soup Hot',
+  description: 'Hot soup.',
+  ingredients: ['vegetables'],
+  instructions: 'Boil.'
+},
+{
+  id: 213,
+  title: 'Chicken Soup Hot',
+  description: 'Hot chicken soup.',
+  ingredients: ['chicken'],
+  instructions: 'Cook.'
+},
+{
+  id: 214,
+  title: 'Paneer Soup',
+  description: 'Paneer soup.',
+  ingredients: ['paneer'],
+  instructions: 'Cook.'
+},
+{
+  id: 215,
+  title: 'Veg Snack Plate',
+  description: 'Snack combo.',
+  ingredients: ['veg'],
+  instructions: 'Serve.'
+},
+{
+  id: 216,
+  title: 'Chicken Snack Plate',
+  description: 'Chicken snack.',
+  ingredients: ['chicken'],
+  instructions: 'Serve.'
+},
+{
+  id: 217,
+  title: 'Egg Snack Plate',
+  description: 'Egg snack.',
+  ingredients: ['egg'],
+  instructions: 'Serve.'
+},
+{
+  id: 218,
+  title: 'Paneer Snack Plate',
+  description: 'Paneer snack.',
+  ingredients: ['paneer'],
+  instructions: 'Serve.'
+},
+{
+  id: 219,
+  title: 'Veg Combo Meal',
+  description: 'Veg combo.',
+  ingredients: ['rice', 'veg'],
+  instructions: 'Serve.'
+},
+{
+  id: 220,
+  title: 'Chicken Combo Meal',
+  description: 'Chicken combo.',
+  ingredients: ['rice', 'chicken'],
+  instructions: 'Serve.'
+},
+{
+  id: 221,
+  title: 'Egg Rice Bowl',
+  description: 'Egg rice combo.',
+  ingredients: ['rice', 'egg'],
+  instructions: 'Mix and serve.'
+},
+{
+  id: 222,
+  title: 'Veg Rice Mix',
+  description: 'Mixed veg rice.',
+  ingredients: ['rice', 'vegetables'],
+  instructions: 'Cook and mix.'
+},
+{
+  id: 223,
+  title: 'Chicken Masala',
+  description: 'Spicy chicken.',
+  ingredients: ['chicken', 'spices'],
+  instructions: 'Cook well.'
+},
+{
+  id: 224,
+  title: 'Paneer Masala',
+  description: 'Paneer curry.',
+  ingredients: ['paneer', 'spices'],
+  instructions: 'Cook paneer.'
+},
+{
+  id: 225,
+  title: 'Veg Masala',
+  description: 'Veg curry.',
+  ingredients: ['vegetables', 'spices'],
+  instructions: 'Cook vegetables.'
+},
+{
+  id: 326,
+  title: 'Rice Combo Plate',
+  description: 'Rice combo meal.',
+  ingredients: ['rice', 'curry'],
+  instructions: 'Serve together.'
+},
+{
+  id: 327,
+  title: 'Veg Deluxe Plate',
+  description: 'Veg deluxe meal.',
+  ingredients: ['vegetables', 'rice'],
+  instructions: 'Serve fresh.'
+},
+{
+  id: 328,
+  title: 'Chicken Deluxe Plate',
+  description: 'Chicken deluxe meal.',
+  ingredients: ['chicken', 'rice'],
+  instructions: 'Serve hot.'
+},
+{
+  id: 329,
+  title: 'Paneer Deluxe Plate',
+  description: 'Paneer deluxe meal.',
+  ingredients: ['paneer', 'rice'],
+  instructions: 'Serve hot.'
+},
+{
+  id: 330,
+  title: 'Egg Deluxe Plate',
+  description: 'Egg deluxe meal.',
+  ingredients: ['egg', 'rice'],
+  instructions: 'Serve hot.'
+},
 
+...Array.from({ length: 20 }, (_, i) => {
+  const id = 331 + i;
+  return {
+    id,
+    title: `Quick Recipe ${id}`,
+    description: 'Fast and easy recipe.',
+    ingredients: ['basic ingredients'],
+    instructions: 'Cook and serve quickly.'
+  };
+})
+];
+Array.from()
 // ================= DISPLAY =================
 function displayRecipes(recipesToDisplay) {
   const container = document.getElementById("recipes-container");
