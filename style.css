@@ -318,9 +318,6 @@ body {
 }
 
 /* Push content and footer apart */
-.container {
-  flex: 1;
-}
 footer {
   width: 400px;
   max-width: 90%;
