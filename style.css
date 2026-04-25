@@ -29,6 +29,7 @@ body {
 }
 /* ================= BIG BUTTON ================= */
 .big-btn {
+    white-space: nowrap !important;
   height: 45px;
   width: 220px;
 
