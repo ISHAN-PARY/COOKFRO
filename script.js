@@ -3027,3 +3027,33 @@ function viewRecipe(id) {
 function closeRecipe() {
   document.getElementById("recipe-details").classList.add("hidden");
 }
+const search = document.querySelector("input");
+
+search.addEventListener("input", () => {
+  const value = search.value.toLowerCase();
+  document.querySelectorAll(".card").forEach(card => {
+    card.style.display =
+      card.innerText.toLowerCase().includes(value)
+        ? "block"
+        : "none";
+  });
+});
+let html = "";
+
+// 🔥 Best matches
+if (matched.length > 0) {
+  html += "<h3>🔥 Best Matches</h3>";
+  matched.slice(0, 6).forEach(recipe => {
+    html += createRecipeCard(recipe);
+  });
+}
+
+// ✨ Suggestions
+if (matched.length < 6) {
+  html += "<h3>✨ You Might Also Like</h3>";
+  others.slice(0, 6 - matched.length).forEach(recipe => {
+    html += createRecipeCard(recipe);
+  });
+}
+
+document.getElementById("recipes-container").innerHTML = html;
