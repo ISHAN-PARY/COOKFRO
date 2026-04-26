@@ -2027,183 +2027,469 @@ const recipes = [
     'Cook for a few minutes and serve hot.'
   ]
 },
-
-  {
-    id: 101,
-    title: 'Vegetable Pasta Alfredo',
-    description: 'Creamy pasta.',
-    ingredients: ['pasta', 'cream', 'vegetables'],
-    instructions: 'Cook pasta. Add creamy sauce.'
-  },
-  {
-    id: 102,
-    title: 'Red Sauce Pasta',
-    description: 'Tangy pasta dish.',
-    ingredients: ['pasta', 'tomato', 'garlic'],
-    instructions: 'Cook pasta. Mix with sauce.'
-  },
-  {
-    id: 103,
-    title: 'Vegetable Lasagna',
-    description: 'Layered pasta bake.',
-    ingredients: ['lasagna sheets', 'vegetables', 'cheese'],
-    instructions: 'Layer and bake.'
-  },
-  {
-    id: 104,
-    title: 'Cheese Omelette',
-    description: 'Egg omelette with cheese.',
-    ingredients: ['egg', 'cheese', 'butter'],
-    instructions: 'Cook eggs and add cheese.'
-  },
-  {
-    id: 105,
-    title: 'Herb Rice',
-    description: 'Flavored rice.',
-    ingredients: ['rice', 'herbs', 'butter'],
-    instructions: 'Cook rice with herbs.'
-  },
-
-  {
-    id: 106,
-    title: 'Vegetable Soup',
-    description: 'Simple mixed soup.',
-    ingredients: ['vegetables', 'water', 'salt'],
-    instructions: 'Boil and season.'
-  },
-  {
-    id: 107,
-    title: 'Paneer Fried Noodles',
-    description: 'Noodles with paneer.',
-    ingredients: ['noodles', 'paneer', 'soy sauce'],
-    instructions: 'Stir fry together.'
-  },
-  {
-    id: 108,
-    title: 'Vegetable Wrap',
-    description: 'Quick veggie wrap.',
-    ingredients: ['roti', 'vegetables', 'sauce'],
-    instructions: 'Fill and roll.'
-  },
-  {
-    id: 109,
-    title: 'Potato Wedges',
-    description: 'Baked potato snack.',
-    ingredients: ['potato', 'oil', 'spices'],
-    instructions: 'Bake seasoned wedges.'
-  },
-  {
-    id: 110,
-    title: 'Paneer Salad',
-    description: 'Healthy paneer salad.',
-    ingredients: ['paneer', 'vegetables', 'lemon'],
-    instructions: 'Mix all ingredients.'
-  },
-
-  {
-    id: 111,
-    title: 'Vegetable Fried Idli',
-    description: 'Fried idli snack.',
-    ingredients: ['idli', 'vegetables', 'spices'],
-    instructions: 'Fry idli with vegetables.'
-  },
-  {
-    id: 112,
-    title: 'Curd Sandwich',
-    description: 'Soft curd filling sandwich.',
-    ingredients: ['bread', 'curd', 'vegetables'],
-    instructions: 'Mix filling and assemble.'
-  },
-  {
-    id: 113,
-    title: 'Vegetable Rice Noodles',
-    description: 'Light noodle dish.',
-    ingredients: ['rice noodles', 'vegetables', 'soy sauce'],
-    instructions: 'Cook and stir fry.'
-  },
-  {
-    id: 114,
-    title: 'Mango Rice',
-    description: 'Tangy mango rice.',
-    ingredients: ['rice', 'raw mango', 'spices'],
-    instructions: 'Mix rice with mango seasoning.'
-  },
-  {
-    id: 115,
-    title: 'Chocolate Mug Cake',
-    description: 'Quick microwave cake.',
-    ingredients: ['flour', 'cocoa', 'milk'],
-    instructions: 'Mix and microwave.'
-  },
-  {
+{
+  id: 101,
+  title: 'Vegetable Pasta Alfredo',
+  description: 'A creamy white sauce pasta loaded with sautéed vegetables and rich flavor.',
+  ingredients: [
+    '1 cup pasta',
+    '1/2 cup mixed vegetables',
+    '1/2 cup milk or cream',
+    '2 tbsp butter',
+    '2 cloves garlic (chopped)',
+    'Salt and pepper to taste'
+  ],
+  instructions: [
+    'Boil pasta until soft and drain.',
+    'Heat butter in a pan and sauté garlic.',
+    'Add vegetables and cook until slightly tender.',
+    'Pour in milk or cream and mix well.',
+    'Add cooked pasta and season with salt and pepper.',
+    'Cook for a few minutes and serve warm.'
+  ]
+},
+{
+  id: 102,
+  title: 'Red Sauce Pasta',
+  description: 'A tangy and flavorful pasta made with a simple tomato-based sauce.',
+  ingredients: [
+    '1 cup pasta',
+    '2 tomatoes (pureed)',
+    '2 cloves garlic (chopped)',
+    '1 tbsp oil',
+    'Salt and chili flakes to taste'
+  ],
+  instructions: [
+    'Cook pasta and keep aside.',
+    'Heat oil and sauté garlic.',
+    'Add tomato puree and cook until thick.',
+    'Add salt and chili flakes.',
+    'Mix in cooked pasta and toss well.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 103,
+  title: 'Vegetable Lasagna',
+  description: 'A layered pasta dish filled with vegetables, sauce, and melted cheese.',
+  ingredients: [
+    'Lasagna sheets',
+    '1 cup vegetables',
+    '1 cup tomato sauce',
+    '1/2 cup cheese'
+  ],
+  instructions: [
+    'Cook lasagna sheets as per instructions.',
+    'Prepare vegetable filling by sautéing vegetables.',
+    'In a baking dish, layer sheets, vegetables, and sauce.',
+    'Repeat layers and top with cheese.',
+    'Bake until cheese melts and turns golden.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 104,
+  title: 'Cheese Omelette',
+  description: 'A soft and fluffy omelette filled with melted cheese.',
+  ingredients: [
+    '2 eggs',
+    '1/4 cup grated cheese',
+    '1 tbsp butter',
+    'Salt and pepper to taste'
+  ],
+  instructions: [
+    'Beat eggs with salt and pepper.',
+    'Heat butter in a pan.',
+    'Pour the egg mixture into the pan.',
+    'Add cheese on top.',
+    'Fold the omelette and cook until set.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 105,
+  title: 'Herb Rice',
+  description: 'A simple and aromatic rice dish flavored with herbs and butter.',
+  ingredients: [
+    '1 cup rice',
+    '1 tbsp butter',
+    '1 tsp mixed herbs',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Cook rice and keep aside.',
+    'Heat butter in a pan.',
+    'Add herbs and sauté briefly.',
+    'Add cooked rice and mix well.',
+    'Season with salt.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 106,
+  title: 'Vegetable Soup',
+  description: 'A light and healthy soup made with mixed vegetables and simple seasoning.',
+  ingredients: [
+    '1 cup mixed vegetables (chopped)',
+    '3 cups water',
+    '1/2 tsp black pepper',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Add vegetables and water to a pot.',
+    'Bring to a boil and cook until vegetables are soft.',
+    'Add salt and pepper.',
+    'Simmer for a few minutes.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 107,
+  title: 'Paneer Fried Noodles',
+  description: 'Stir-fried noodles tossed with paneer and flavorful sauces.',
+  ingredients: [
+    '1 cup noodles',
+    '1/2 cup paneer (cubed)',
+    '1/2 cup vegetables',
+    '1 tbsp soy sauce',
+    '1 tbsp oil'
+  ],
+  instructions: [
+    'Cook noodles and set aside.',
+    'Heat oil and sauté vegetables.',
+    'Add paneer and cook lightly.',
+    'Add noodles and soy sauce.',
+    'Toss well and cook for a few minutes.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 108,
+  title: 'Vegetable Wrap',
+  description: 'A quick and healthy wrap filled with sautéed vegetables.',
+  ingredients: [
+    '2 rotis',
+    '1 cup vegetables',
+    '1 tbsp oil',
+    'Salt and spices to taste'
+  ],
+  instructions: [
+    'Heat oil and cook vegetables with spices.',
+    'Place filling on roti.',
+    'Roll tightly into a wrap.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 109,
+  title: 'Potato Wedges',
+  description: 'Crispy and flavorful potato wedges, perfect as a snack.',
+  ingredients: [
+    '2 potatoes (cut into wedges)',
+    '1 tbsp oil',
+    '1/2 tsp chili powder',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Preheat oven or heat a pan.',
+    'Mix potato wedges with oil and spices.',
+    'Bake or cook until crispy and golden.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 110,
+  title: 'Paneer Salad',
+  description: 'A fresh and protein-rich salad made with paneer and vegetables.',
+  ingredients: [
+    '1/2 cup paneer (cubed)',
+    '1/2 cup vegetables',
+    '1 tbsp lemon juice',
+    'Salt and pepper to taste'
+  ],
+  instructions: [
+    'Add paneer and vegetables to a bowl.',
+    'Drizzle lemon juice.',
+    'Add salt and pepper.',
+    'Mix well and serve fresh.'
+  ]
+},
+{
+  id: 111,
+  title: 'Vegetable Fried Idli',
+  description: 'Leftover idlis tossed with vegetables and spices for a quick snack.',
+  ingredients: [
+    '4 idlis (cubed)',
+    '1/2 cup vegetables',
+    '1 tbsp oil',
+    'Salt and spices to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Add vegetables and sauté until slightly cooked.',
+    'Add idli cubes and spices.',
+    'Toss well and cook until lightly crispy.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 112,
+  title: 'Curd Sandwich',
+  description: 'A soft and refreshing sandwich with a creamy curd-based filling.',
+  ingredients: [
+    '4 slices bread',
+    '1/2 cup curd',
+    '1/4 cup vegetables (chopped)',
+    'Salt and spices to taste'
+  ],
+  instructions: [
+    'Mix curd with vegetables, salt, and spices.',
+    'Spread the mixture on bread slices.',
+    'Cover with another slice to form a sandwich.',
+    'Cut and serve fresh.'
+  ]
+},
+{
+  id: 113,
+  title: 'Vegetable Rice Noodles',
+  description: 'Light and flavorful rice noodles stir-fried with vegetables.',
+  ingredients: [
+    '1 cup rice noodles',
+    '1/2 cup vegetables',
+    '1 tbsp soy sauce',
+    '1 tbsp oil'
+  ],
+  instructions: [
+    'Cook rice noodles and drain.',
+    'Heat oil and sauté vegetables.',
+    'Add noodles and soy sauce.',
+    'Toss well and cook for a few minutes.',
+    'Serve hot.'
+  ]
+},
+{
+  id: 114,
+  title: 'Mango Rice',
+  description: 'A tangy and aromatic rice dish made with raw mango and spices.',
+  ingredients: [
+    '1 cup cooked rice',
+    '1/2 cup grated raw mango',
+    '1 tsp mustard seeds',
+    '1 tbsp oil',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil and add mustard seeds.',
+    'Add grated mango and sauté briefly.',
+    'Add cooked rice and salt.',
+    'Mix well and cook for a few minutes.',
+    'Serve warm.'
+  ]
+},
+{
+  id: 115,
+  title: 'Chocolate Mug Cake',
+  description: 'A quick and easy single-serving chocolate cake made in a microwave.',
+  ingredients: [
+    '4 tbsp flour',
+    '2 tbsp cocoa powder',
+    '3 tbsp sugar',
+    '4 tbsp milk',
+    '2 tbsp oil'
+  ],
+  instructions: [
+    'Mix all ingredients in a mug until smooth.',
+    'Microwave for about 1–2 minutes.',
+    'Let it cool slightly.',
+    'Serve warm.'
+  ]
+},
+{
   id: 116,
-  title: 'Simple Veg Rice',
-  description: 'Quick vegetable rice.',
-  ingredients: ['rice', 'vegetables', 'salt'],
-  instructions: 'Cook rice. Mix vegetables and salt.'
+  title: 'Simple Vegetable Rice',
+  description: 'A quick and comforting rice dish made with lightly spiced vegetables.',
+  ingredients: [
+    '1 cup cooked rice',
+    '1/2 cup mixed vegetables',
+    '1 tbsp oil',
+    '1/2 tsp cumin seeds',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan and add cumin seeds.',
+    'Add vegetables and sauté until tender.',
+    'Add cooked rice and salt.',
+    'Mix gently until well combined.',
+    'Cook for a few minutes and serve warm.'
+  ]
 },
 {
   id: 117,
   title: 'Egg Curry',
-  description: 'Spicy egg curry.',
-  ingredients: ['egg', 'onion', 'spices'],
-  instructions: 'Boil eggs. Cook in onion gravy.'
+  description: 'Boiled eggs simmered in a flavorful and mildly spiced onion-tomato gravy.',
+  ingredients: [
+    '4 boiled eggs',
+    '1 onion (chopped)',
+    '2 tomatoes (pureed)',
+    '1 tbsp oil',
+    '1 tsp ginger-garlic paste',
+    '1/2 tsp turmeric',
+    '1 tsp chili powder',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil and sauté onions until golden.',
+    'Add ginger-garlic paste and cook briefly.',
+    'Add tomato puree and cook until oil separates.',
+    'Add turmeric, chili powder, and salt.',
+    'Add boiled eggs and mix gently.',
+    'Simmer for a few minutes and serve hot.'
+  ]
 },
 {
   id: 118,
   title: 'Butter Toast',
-  description: 'Crispy butter toast.',
-  ingredients: ['bread', 'butter'],
-  instructions: 'Apply butter and toast.'
+  description: 'Golden crispy toast with rich melted butter, perfect for breakfast.',
+  ingredients: [
+    '2 slices bread',
+    '2 tbsp butter'
+  ],
+  instructions: [
+    'Heat a pan or toaster.',
+    'Spread butter evenly on bread slices.',
+    'Toast until golden and crispy.',
+    'Serve hot.'
+  ]
 },
 {
   id: 119,
   title: 'Tomato Soup',
-  description: 'Warm tomato soup.',
-  ingredients: ['tomato', 'water', 'salt'],
-  instructions: 'Boil and blend tomatoes.'
+  description: 'A smooth and comforting soup made with fresh tomatoes and simple seasoning.',
+  ingredients: [
+    '3 tomatoes (chopped)',
+    '2 cups water',
+    '1/2 tsp black pepper',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Boil tomatoes in water until soft.',
+    'Blend into a smooth puree.',
+    'Strain if needed and return to heat.',
+    'Add salt and pepper.',
+    'Simmer for a few minutes and serve warm.'
+  ]
 },
 {
   id: 120,
-  title: 'Veg Sandwich',
-  description: 'Simple vegetable sandwich.',
-  ingredients: ['bread', 'vegetables', 'butter'],
-  instructions: 'Assemble and serve.'
+  title: 'Vegetable Sandwich',
+  description: 'A simple and fresh sandwich filled with crunchy vegetables and butter.',
+  ingredients: [
+    '4 slices bread',
+    '1/2 cup vegetables (sliced)',
+    'Butter as needed',
+    'Salt and pepper to taste'
+  ],
+  instructions: [
+    'Spread butter on bread slices.',
+    'Add vegetables evenly on one slice.',
+    'Sprinkle salt and pepper.',
+    'Cover with another slice.',
+    'Cut and serve fresh.'
+  ]
 },
 {
   id: 121,
   title: 'Masala Omelette',
-  description: 'Spicy omelette.',
-  ingredients: ['egg', 'onion', 'spices'],
-  instructions: 'Mix and cook.'
+  description: 'A flavorful omelette packed with onions, spices, and fresh herbs.',
+  ingredients: [
+    '2 eggs',
+    '1 small onion (finely chopped)',
+    '1 green chili (optional, chopped)',
+    '2 tbsp coriander leaves',
+    '1 tbsp oil',
+    'Salt and spices to taste'
+  ],
+  instructions: [
+    'Beat eggs in a bowl with salt and spices.',
+    'Add chopped onion, chili, and coriander leaves.',
+    'Heat oil in a pan.',
+    'Pour the egg mixture into the pan.',
+    'Cook on medium heat until set.',
+    'Flip if needed and cook the other side.',
+    'Serve hot.'
+  ]
 },
 {
   id: 122,
   title: 'Lemon Rice',
-  description: 'Tangy lemon rice.',
-  ingredients: ['rice', 'lemon', 'spices'],
-  instructions: 'Mix cooked rice with lemon.'
+  description: 'A tangy and refreshing rice dish flavored with lemon and mild spices.',
+  ingredients: [
+    '1 cup cooked rice',
+    '2 tbsp lemon juice',
+    '1 tsp mustard seeds',
+    '1 tbsp oil',
+    'Curry leaves',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan and add mustard seeds.',
+    'Add curry leaves and sauté briefly.',
+    'Add cooked rice and mix well.',
+    'Turn off heat and add lemon juice.',
+    'Add salt and mix gently.',
+    'Serve warm or at room temperature.'
+  ]
 },
 {
   id: 123,
   title: 'Garlic Rice',
-  description: 'Flavorful garlic rice.',
-  ingredients: ['rice', 'garlic', 'oil'],
-  instructions: 'Cook rice with garlic.'
+  description: 'Aromatic rice infused with the rich flavor of sautéed garlic.',
+  ingredients: [
+    '1 cup cooked rice',
+    '4 cloves garlic (chopped)',
+    '1 tbsp oil or butter',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil or butter in a pan.',
+    'Add chopped garlic and sauté until golden.',
+    'Add cooked rice and salt.',
+    'Mix well and cook for a few minutes.',
+    'Serve hot.'
+  ]
 },
 {
   id: 124,
   title: 'Cheese Toast',
-  description: 'Melted cheese bread.',
-  ingredients: ['bread', 'cheese'],
-  instructions: 'Top cheese and toast.'
+  description: 'Crispy toast topped with melted cheese for a quick and tasty snack.',
+  ingredients: [
+    '2 slices bread',
+    '1/2 cup grated cheese',
+    'Butter as needed'
+  ],
+  instructions: [
+    'Spread butter on bread slices.',
+    'Add grated cheese evenly on top.',
+    'Toast on a pan or in an oven until cheese melts.',
+    'Cook until edges are crispy.',
+    'Serve hot.'
+  ]
 },
 {
   id: 125,
-  title: 'Veg Soup',
-  description: 'Light vegetable soup.',
-  ingredients: ['vegetables', 'water'],
-  instructions: 'Boil and season.'
+  title: 'Quick vegetable Soup ',
+  description: 'A fast and simple vegetable soup made with basic ingredients.',
+  ingredients: [
+    '1 cup mixed vegetables',
+    '2 cups water',
+    'Salt and pepper to taste'
+  ],
+  instructions: [
+    'Boil vegetables in water until soft.',
+    'Add salt and pepper.',
+    'Simmer for a few minutes.',
+    'Serve warm.'
+  ]
 },
 {
   id: 126,
@@ -2213,734 +2499,1938 @@ const recipes = [
   instructions: 'Fry egg in pan.'
 },
 {
+  id: 126,
+  title: 'Fried Egg',
+  description: 'A simple fried egg with a soft or crispy edge, perfect for breakfast.',
+  ingredients: [
+    '1 egg',
+    '1 tsp oil or butter',
+    'Salt to taste',
+    'Pepper (optional)'
+  ],
+  instructions: [
+    'Heat oil or butter in a pan over medium heat.',
+    'Crack the egg gently into the pan.',
+    'Cook until the white is set.',
+    'For a runny yolk, remove early; for a firm yolk, cook longer or flip.',
+    'Season with salt and pepper.',
+    'Serve hot.'
+  ]
+},
+{
   id: 127,
   title: 'Plain Rice',
-  description: 'Steamed rice.',
-  ingredients: ['rice', 'water'],
-  instructions: 'Cook rice.'
+  description: 'Soft and fluffy steamed rice, a staple base for many dishes.',
+  ingredients: [
+    '1 cup rice',
+    '2 cups water',
+    'Salt (optional)'
+  ],
+  instructions: [
+    'Rinse the rice thoroughly under water.',
+    'Add rice and water to a pot.',
+    'Bring to a boil, then reduce heat to low.',
+    'Cover and cook for 10–15 minutes until water is absorbed.',
+    'Fluff with a fork before serving.'
+  ]
 },
 {
   id: 128,
   title: 'Potato Fry',
-  description: 'Crispy potato fry.',
-  ingredients: ['potato', 'oil', 'salt'],
-  instructions: 'Fry potatoes.'
+  description: 'Crispy and flavorful pan-fried potatoes with simple spices.',
+  ingredients: [
+    '2 potatoes (sliced)',
+    '2 tbsp oil',
+    'Salt to taste',
+    'Spices (chili powder, turmeric optional)'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Add sliced potatoes and spread evenly.',
+    'Cook on medium heat, stirring occasionally.',
+    'Add salt and spices.',
+    'Fry until golden and crispy.',
+    'Serve hot.'
+  ]
 },
 {
   id: 129,
   title: 'Onion Salad',
-  description: 'Fresh onion salad.',
-  ingredients: ['onion', 'salt', 'lemon'],
-  instructions: 'Mix ingredients.'
+  description: 'A quick fresh salad with onions, lemon, and seasoning.',
+  ingredients: [
+    '1 onion (sliced)',
+    '1 tbsp lemon juice',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Slice the onion thinly.',
+    'Add to a bowl with salt.',
+    'Pour lemon juice over it.',
+    'Mix well and let it sit for 5 minutes.',
+    'Serve fresh.'
+  ]
 },
 {
   id: 130,
   title: 'Egg Toast',
-  description: 'Egg coated toast.',
-  ingredients: ['bread', 'egg'],
-  instructions: 'Dip and fry.'
+  description: 'Bread coated in egg and pan-fried to golden perfection.',
+  ingredients: [
+    '2 slices bread',
+    '1 egg',
+    '2 tbsp milk (optional)',
+    'Salt to taste',
+    '1 tbsp oil or butter'
+  ],
+  instructions: [
+    'Beat egg with salt and milk in a bowl.',
+    'Dip bread slices into the egg mixture.',
+    'Heat oil or butter in a pan.',
+    'Place bread and cook until golden on one side.',
+    'Flip and cook the other side.',
+    'Serve hot.'
+  ]
 },
 {
   id: 131,
-  title: 'Milk Tea',
-  description: 'Hot milk tea.',
-  ingredients: ['milk', 'tea', 'sugar'],
-  instructions: 'Boil and serve.'
+  title: 'Chicken Biryani',
+  description: 'A rich and aromatic rice dish cooked with spiced chicken, herbs, and fragrant basmati rice.',
+  ingredients: [
+    '1 cup basmati rice',
+    '200g chicken',
+    '1 onion (sliced)',
+    '1 tomato (chopped)',
+    '2 tbsp yogurt',
+    '1 tbsp ginger garlic paste',
+    '2 tbsp oil or ghee',
+    'Whole spices (bay leaf, cinnamon, cloves)',
+    'Spice powders (turmeric, chili powder, garam masala)',
+    'Salt to taste',
+    'Fresh coriander and mint leaves',
+    '2 cups water'
+  ],
+  instructions: [
+    'Wash and soak basmati rice for 20 minutes.',
+    'Heat oil or ghee in a pot and add whole spices.',
+    'Add sliced onions and fry until golden brown.',
+    'Add ginger garlic paste and sauté until fragrant.',
+    'Add chicken pieces and cook until lightly browned.',
+    'Add chopped tomatoes, yogurt, and spice powders.',
+    'Cook until chicken is tender and oil separates.',
+    'Add soaked rice and water.',
+    'Mix gently, cover, and cook on low heat until rice is done.',
+    'Garnish with coriander and mint leaves.',
+    'Serve hot.'
+  ]
 },
 {
   id: 132,
   title: 'Black Tea',
-  description: 'Strong tea.',
-  ingredients: ['tea', 'water'],
-  instructions: 'Boil and strain.'
+  description: 'A strong and refreshing tea made without milk.',
+  ingredients: [
+    '1 cup water',
+    '1 tsp tea powder',
+    'Sugar (optional)'
+  ],
+  instructions: [
+    'Bring water to a boil in a saucepan.',
+    'Add tea powder and let it brew for 2–3 minutes.',
+    'Add sugar if desired.',
+    'Strain into a cup.',
+    'Serve hot.'
+  ]
 },
 {
   id: 133,
   title: 'Fruit Bowl',
-  description: 'Mixed fruits.',
-  ingredients: ['fruits'],
-  instructions: 'Cut and mix.'
+  description: 'A fresh and healthy mix of seasonal fruits.',
+  ingredients: [
+    '1 cup mixed fruits (apple, banana, mango, etc.)'
+  ],
+  instructions: [
+    'Wash all fruits thoroughly.',
+    'Peel and chop into bite-sized pieces.',
+    'Combine in a bowl.',
+    'Serve fresh or chilled.'
+  ]
 },
 {
   id: 134,
   title: 'Banana Snack',
-  description: 'Quick banana snack.',
-  ingredients: ['banana'],
-  instructions: 'Slice and serve.'
+  description: 'A quick and healthy banana-based snack for instant energy.',
+  ingredients: [
+    '1 banana',
+    '1 tsp honey (optional)',
+    'A pinch of cinnamon (optional)'
+  ],
+  instructions: [
+    'Peel and slice the banana.',
+    'Place slices in a bowl.',
+    'Drizzle honey on top.',
+    'Sprinkle cinnamon if desired.',
+    'Serve immediately.'
+  ]
 },
 {
   id: 135,
   title: 'Rice Porridge',
-  description: 'Soft rice porridge.',
-  ingredients: ['rice', 'water'],
-  instructions: 'Cook until soft.'
+  description: 'Soft and comforting rice porridge, perfect for light meals.',
+  ingredients: [
+    '1/2 cup rice',
+    '3 cups water',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Rinse the rice thoroughly.',
+    'Add rice and water to a pot.',
+    'Cook on low heat until rice becomes very soft.',
+    'Stir occasionally to avoid sticking.',
+    'Add salt and mix well.',
+    'Serve warm.'
+  ]
 },
 {
   id: 136,
-  title: 'Veg Stir Fry',
-  description: 'Quick stir fry.',
-  ingredients: ['vegetables', 'oil'],
-  instructions: 'Stir fry veggies.'
+  title: 'Vegetable Stir Fry',
+  description: 'A quick and healthy stir-fried vegetable dish with light seasoning.',
+  ingredients: [
+    '1 cup mixed vegetables (carrot, beans, capsicum)',
+    '1 tbsp oil',
+    '2 cloves garlic (chopped)',
+    'Salt to taste',
+    'Pepper (optional)'
+  ],
+  instructions: [
+    'Heat oil in a pan over medium heat.',
+    'Add chopped garlic and sauté briefly.',
+    'Add mixed vegetables and stir fry.',
+    'Cook for 5–7 minutes until slightly tender but crisp.',
+    'Add salt and pepper.',
+    'Mix well and serve hot.'
+  ]
 },
 {
   id: 137,
   title: 'Egg Bhurji',
-  description: 'Scrambled eggs.',
-  ingredients: ['egg', 'onion', 'spices'],
-  instructions: 'Cook scrambled eggs.'
+  description: 'Indian-style scrambled eggs cooked with onions, spices, and herbs.',
+  ingredients: [
+    '2 eggs',
+    '1 small onion (chopped)',
+    '1 tomato (chopped)',
+    '1 tbsp oil',
+    'Salt and spices to taste',
+    'Fresh coriander leaves'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Add onions and sauté until soft.',
+    'Add tomatoes and cook until mushy.',
+    'Add spices and mix well.',
+    'Crack eggs directly into the pan.',
+    'Scramble and cook until done.',
+    'Garnish with coriander and serve hot.'
+  ]
 },
 {
   id: 138,
   title: 'Tomato Rice',
-  description: 'Spiced tomato rice.',
-  ingredients: ['rice', 'tomato'],
-  instructions: 'Cook together.'
+  description: 'A flavorful rice dish cooked with tangy tomatoes and spices.',
+  ingredients: [
+    '1 cup cooked rice',
+    '2 tomatoes (chopped)',
+    '1 tbsp oil',
+    '1 tsp mustard seeds',
+    'Spices to taste',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan and add mustard seeds.',
+    'Add chopped tomatoes and cook until soft.',
+    'Add spices and salt.',
+    'Add cooked rice and mix well.',
+    'Cook for a few minutes.',
+    'Serve hot.'
+  ]
 },
 {
   id: 139,
   title: 'Cucumber Salad',
-  description: 'Fresh salad.',
-  ingredients: ['cucumber', 'salt'],
-  instructions: 'Mix ingredients.'
+  description: 'A refreshing and light salad perfect for hot days.',
+  ingredients: [
+    '1 cucumber (sliced)',
+    'Salt to taste',
+    '1 tsp lemon juice'
+  ],
+  instructions: [
+    'Slice the cucumber into thin pieces.',
+    'Place in a bowl.',
+    'Add salt and lemon juice.',
+    'Mix well.',
+    'Serve fresh.'
+  ]
 },
 {
   id: 140,
   title: 'Bread Jam',
-  description: 'Sweet bread.',
-  ingredients: ['bread', 'jam'],
-  instructions: 'Spread and eat.'
+  description: 'A quick and sweet snack made with bread and fruit jam.',
+  ingredients: [
+    '2 slices bread',
+    '2 tbsp jam',
+    'Butter (optional)'
+  ],
+  instructions: [
+    'Spread butter on bread if using.',
+    'Apply jam evenly on one side.',
+    'Place another slice on top or serve open.',
+    'Cut if desired and serve.'
+  ]
 },
 {
   id: 141,
   title: 'Butter Rice',
-  description: 'Simple butter rice.',
-  ingredients: ['rice', 'butter'],
-  instructions: 'Mix butter in rice.'
+  description: 'Simple and comforting rice tossed with butter for a rich taste.',
+  ingredients: [
+    '1 cup cooked rice',
+    '1 tbsp butter',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat butter in a pan.',
+    'Add cooked rice to the pan.',
+    'Mix well until butter coats the rice evenly.',
+    'Add salt and stir.',
+    'Serve warm.'
+  ]
 },
 {
   id: 142,
   title: 'Egg Roll',
-  description: 'Simple egg roll.',
-  ingredients: ['egg', 'roti'],
-  instructions: 'Wrap egg in roti.'
+  description: 'A quick and tasty egg wrap made with a soft roti and spiced egg.',
+  ingredients: [
+    '1 roti',
+    '1 egg',
+    '1 tbsp oil',
+    'Salt and spices to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Crack the egg and spread it slightly.',
+    'Place the roti over the egg.',
+    'Cook until egg is set, then flip.',
+    'Season with salt and spices.',
+    'Roll it and serve hot.'
+  ]
 },
 {
   id: 143,
   title: 'Veg Wrap',
-  description: 'Vegetable wrap.',
-  ingredients: ['roti', 'vegetables'],
-  instructions: 'Fill and roll.'
+  description: 'A simple vegetable wrap packed with fresh and lightly cooked veggies.',
+  ingredients: [
+    '1 roti',
+    '1/2 cup mixed vegetables',
+    '1 tbsp sauce or chutney',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Cook vegetables lightly in a pan.',
+    'Add salt and mix well.',
+    'Place vegetables on the roti.',
+    'Add sauce or chutney.',
+    'Roll tightly.',
+    'Serve immediately.'
+  ]
 },
 {
   id: 144,
   title: 'Sweet Milk',
-  description: 'Sweet milk drink.',
-  ingredients: ['milk', 'sugar'],
-  instructions: 'Mix and drink.'
+  description: 'A warm and comforting sweet milk drink.',
+  ingredients: [
+    '1 cup milk',
+    '2 tsp sugar',
+    'A pinch of cardamom (optional)'
+  ],
+  instructions: [
+    'Heat milk in a saucepan.',
+    'Add sugar and stir until dissolved.',
+    'Add cardamom if using.',
+    'Mix well and serve warm.'
+  ]
 },
 {
   id: 145,
   title: 'Boiled Egg',
-  description: 'Hard boiled egg.',
-  ingredients: ['egg'],
-  instructions: 'Boil egg.'
+  description: 'Perfectly boiled eggs for a quick and healthy snack.',
+  ingredients: [
+    '2 eggs',
+    'Water as needed'
+  ],
+  instructions: [
+    'Place eggs in a pot and cover with water.',
+    'Bring to a boil.',
+    'Cook for 8–10 minutes.',
+    'Remove and cool in cold water.',
+    'Peel and serve.'
+  ]
 },
 {
   id: 146,
   title: 'Veg Noodles',
-  description: 'Simple noodles.',
-  ingredients: ['noodles', 'vegetables'],
-  instructions: 'Cook and mix.'
+  description: 'Quick stir-fried noodles tossed with vegetables and light seasoning.',
+  ingredients: [
+    '1 pack noodles',
+    '1/2 cup mixed vegetables',
+    '1 tbsp oil',
+    '1 tbsp soy sauce',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Boil noodles according to package instructions and drain.',
+    'Heat oil in a pan.',
+    'Add vegetables and stir fry for a few minutes.',
+    'Add cooked noodles and mix well.',
+    'Add soy sauce and salt.',
+    'Toss everything together and serve hot.'
+  ]
 },
 {
   id: 147,
   title: 'Rice Upma',
-  description: 'Rice upma.',
-  ingredients: ['rice', 'spices'],
-  instructions: 'Cook and mix.'
+  description: 'A quick and savory rice-based dish with mild spices.',
+  ingredients: [
+    '1 cup cooked rice',
+    '1 tbsp oil',
+    '1 tsp mustard seeds',
+    'Curry leaves',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Add mustard seeds and let them splutter.',
+    'Add curry leaves and sauté briefly.',
+    'Add cooked rice and mix well.',
+    'Add salt and stir.',
+    'Cook for a few minutes and serve.'
+  ]
 },
 {
   id: 148,
   title: 'Onion Fry',
-  description: 'Fried onion.',
-  ingredients: ['onion', 'oil'],
-  instructions: 'Fry onion.'
+  description: 'Simple sautéed onions with a slightly crispy texture.',
+  ingredients: [
+    '2 onions (sliced)',
+    '1 tbsp oil',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Add sliced onions.',
+    'Cook on medium heat until soft.',
+    'Continue cooking until slightly crispy.',
+    'Add salt and mix well.',
+    'Serve hot.'
+  ]
 },
 {
   id: 149,
   title: 'Egg Sandwich',
-  description: 'Egg sandwich.',
-  ingredients: ['bread', 'egg'],
-  instructions: 'Assemble and serve.'
+  description: 'A quick sandwich filled with cooked eggs for a satisfying snack.',
+  ingredients: [
+    '2 slices bread',
+    '1 egg',
+    '1 tbsp butter',
+    'Salt and pepper to taste'
+  ],
+  instructions: [
+    'Boil or scramble the egg.',
+    'Spread butter on bread slices.',
+    'Place the egg on one slice.',
+    'Season with salt and pepper.',
+    'Cover with another slice.',
+    'Cut and serve.'
+  ]
 },
 {
   id: 150,
   title: 'Veg Cutlet',
-  description: 'Crispy veg snack.',
-  ingredients: ['vegetables', 'breadcrumbs'],
-  instructions: 'Shape and fry.'
+  description: 'Crispy vegetable patties perfect as a snack or appetizer.',
+  ingredients: [
+    '1 cup boiled vegetables (potato, carrot, peas)',
+    '2 tbsp breadcrumbs',
+    'Spices to taste',
+    'Oil for frying'
+  ],
+  instructions: [
+    'Mash the boiled vegetables in a bowl.',
+    'Add spices and breadcrumbs.',
+    'Mix into a firm dough.',
+    'Shape into small patties.',
+    'Heat oil in a pan.',
+    'Fry until golden and crispy on both sides.',
+    'Serve hot.'
+  ]
 },
 {
   id: 151,
   title: 'Paneer Rice',
-  description: 'Rice with paneer cubes.',
-  ingredients: ['rice', 'paneer', 'spices'],
-  instructions: 'Cook rice. Add paneer and spices.'
+  description: 'A simple and flavorful rice dish with soft paneer cubes and mild spices.',
+  ingredients: [
+    '1 cup cooked rice',
+    '100g paneer (cubed)',
+    '1 tbsp oil',
+    'Spices to taste',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Add paneer cubes and lightly fry until golden.',
+    'Add spices and mix well.',
+    'Add cooked rice and salt.',
+    'Mix gently and cook for a few minutes.',
+    'Serve hot.'
+  ]
 },
 {
   id: 152,
-  title: 'Chicken Rice',
-  description: 'Simple chicken rice.',
-  ingredients: ['rice', 'chicken', 'salt'],
-  instructions: 'Cook rice with chicken.'
+  title: 'Chicken Mandi',
+  description: 'A traditional Arabian rice dish with tender spiced chicken, smoky flavor, and fragrant rice.',
+  ingredients: [
+    '1 cup basmati rice',
+    '300g chicken',
+    '2 cups chicken stock or water',
+    '1 onion (sliced)',
+    '2 tbsp oil or butter',
+    '1 tbsp ginger garlic paste',
+    'Whole spices (cardamom, cloves, cinnamon)',
+    'Spice powders (pepper, turmeric, mandi masala or garam masala)',
+    'Salt to taste',
+    'Lemon wedges (for serving)'
+  ],
+  instructions: [
+    'Wash and soak basmati rice for 20 minutes.',
+    'Heat oil in a pot and add whole spices.',
+    'Add sliced onions and cook until soft.',
+    'Add ginger garlic paste and sauté until fragrant.',
+    'Add chicken and cook until lightly browned.',
+    'Add spices and salt, mix well.',
+    'Pour in chicken stock or water and bring to a boil.',
+    'Add soaked rice and mix gently.',
+    'Cover and cook on low heat until rice is fully cooked.',
+    'Optional: create a smoky flavor by placing hot charcoal in a small bowl inside the pot and covering briefly.',
+    'Serve hot with lemon wedges.'
+  ]
 },
 {
   id: 153,
   title: 'Veg Curry',
-  description: 'Mixed vegetable curry.',
-  ingredients: ['vegetables', 'spices'],
-  instructions: 'Cook vegetables with spices.'
+  description: 'A basic mixed vegetable curry cooked with simple spices.',
+  ingredients: [
+    '1 cup mixed vegetables',
+    '1 tbsp oil',
+    '1 onion (chopped)',
+    'Spices to taste',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Add chopped onion and sauté until soft.',
+    'Add vegetables and cook for a few minutes.',
+    'Add spices and salt.',
+    'Add a little water and cook until vegetables are tender.',
+    'Serve hot.'
+  ]
 },
 {
   id: 154,
   title: 'Egg Masala',
-  description: 'Egg masala gravy.',
-  ingredients: ['egg', 'onion', 'spices'],
-  instructions: 'Cook eggs in masala.'
+  description: 'Boiled eggs cooked in a rich and spicy onion-tomato gravy.',
+  ingredients: [
+    '2 boiled eggs',
+    '1 onion (chopped)',
+    '1 tomato (chopped)',
+    '1 tbsp oil',
+    'Spices to taste',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Add onions and sauté until golden.',
+    'Add tomatoes and cook until soft.',
+    'Add spices and mix well.',
+    'Add boiled eggs and coat with masala.',
+    'Cook for a few minutes.',
+    'Serve hot.'
+  ]
 },
 {
   id: 155,
   title: 'Bread Butter',
-  description: 'Classic bread butter.',
-  ingredients: ['bread', 'butter'],
-  instructions: 'Spread butter on bread.'
+  description: 'A classic and quick snack with soft bread and creamy butter.',
+  ingredients: [
+    '2 slices bread',
+    'Butter as needed'
+  ],
+  instructions: [
+    'Spread butter evenly on bread slices.',
+    'Serve as is or lightly toast if desired.',
+    'Enjoy immediately.'
+  ]
 },
 {
   id: 156,
   title: 'Corn Salad',
-  description: 'Sweet corn salad.',
-  ingredients: ['corn', 'salt', 'lemon'],
-  instructions: 'Mix all ingredients.'
+  description: 'A fresh and slightly tangy corn salad that’s quick and refreshing.',
+  ingredients: [
+    '1 cup boiled sweet corn',
+    '1 tbsp lemon juice',
+    'Salt to taste',
+    'Chili flakes (optional)'
+  ],
+  instructions: [
+    'Add boiled corn to a bowl.',
+    'Add salt and chili flakes.',
+    'Pour lemon juice over it.',
+    'Mix everything well.',
+    'Serve fresh or slightly chilled.'
+  ]
 },
 {
   id: 157,
   title: 'Veg Maggi',
-  description: 'Maggi with vegetables.',
-  ingredients: ['noodles', 'vegetables'],
-  instructions: 'Cook noodles with vegetables.'
+  description: 'Instant noodles cooked with vegetables for a quick and tasty meal.',
+  ingredients: [
+    '1 pack Maggi noodles',
+    '1/2 cup chopped vegetables',
+    '1.5 cups water',
+    'Maggi tastemaker'
+  ],
+  instructions: [
+    'Boil water in a pan.',
+    'Add vegetables and cook for 2–3 minutes.',
+    'Add noodles and tastemaker.',
+    'Cook until noodles are soft.',
+    'Mix well and serve hot.'
+  ]
 },
 {
   id: 158,
   title: 'Milk Coffee',
-  description: 'Hot milk coffee.',
-  ingredients: ['milk', 'coffee', 'sugar'],
-  instructions: 'Mix and serve hot.'
+  description: 'A smooth and comforting milk coffee perfect for any time of the day.',
+  ingredients: [
+    '1 cup milk',
+    '1 tsp coffee powder',
+    '2 tsp sugar'
+  ],
+  instructions: [
+    'Heat milk in a saucepan.',
+    'Add coffee powder and sugar.',
+    'Stir well until dissolved.',
+    'Simmer for a minute.',
+    'Serve hot.'
+  ]
 },
 {
   id: 159,
   title: 'Chicken Fry',
-  description: 'Spicy fried chicken.',
-  ingredients: ['chicken', 'spices', 'oil'],
-  instructions: 'Fry chicken with spices.'
+  description: 'Spicy and crispy chicken fry with bold flavors.',
+  ingredients: [
+    '250g chicken',
+    '2 tbsp oil',
+    'Spices (chili powder, turmeric, garam masala)',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Marinate chicken with spices and salt.',
+    'Heat oil in a pan.',
+    'Add chicken and cook on medium heat.',
+    'Fry until chicken is cooked and slightly crispy.',
+    'Stir occasionally for even cooking.',
+    'Serve hot.'
+  ]
 },
 {
   id: 160,
   title: 'Veg Rice Bowl',
-  description: 'Healthy rice bowl.',
-  ingredients: ['rice', 'vegetables'],
-  instructions: 'Combine and serve.'
+  description: 'A simple and healthy rice bowl with vegetables.',
+  ingredients: [
+    '1 cup cooked rice',
+    '1/2 cup mixed vegetables',
+    '1 tbsp oil',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Add vegetables and cook until tender.',
+    'Add cooked rice and salt.',
+    'Mix well and cook for a few minutes.',
+    'Serve hot.'
+  ]
 },
 {
   id: 161,
   title: 'Potato Curry',
-  description: 'Simple potato curry.',
-  ingredients: ['potato', 'spices'],
-  instructions: 'Cook potatoes with spices.'
+  description: 'A simple and comforting potato curry cooked with basic spices.',
+  ingredients: [
+    '2 potatoes (cubed)',
+    '1 tbsp oil',
+    '1 onion (chopped)',
+    'Spices to taste',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Add onions and sauté until soft.',
+    'Add potatoes and mix well.',
+    'Add spices and salt.',
+    'Add a little water and cover.',
+    'Cook until potatoes are soft.',
+    'Serve hot.'
+  ]
 },
 {
   id: 162,
-  title: 'Egg Rice',
-  description: 'Egg fried rice.',
-  ingredients: ['rice', 'egg'],
-  instructions: 'Stir fry rice with egg.'
+  title: 'Kerala Poratta',
+  description: 'Soft, flaky layered flatbread made with maida, famous in Kerala and perfect with curry.',
+  ingredients: [
+    '2 cups maida (all-purpose flour)',
+    '1 tbsp oil',
+    'Salt to taste',
+    'Water as needed',
+    'Oil for cooking'
+  ],
+  instructions: [
+    'Mix maida, salt, and oil in a bowl.',
+    'Add water gradually and knead into a soft dough.',
+    'Rest the dough for at least 30 minutes.',
+    'Divide into small balls.',
+    'Roll each ball thin, then stretch and fold into layers.',
+    'Roll again lightly into a round shape.',
+    'Cook on a hot tawa with oil until golden brown on both sides.',
+    'Crush gently with hands to create layers.',
+    'Serve hot with curry.'
+  ]
 },
 {
   id: 163,
   title: 'Veg Pasta',
-  description: 'Vegetable pasta.',
-  ingredients: ['pasta', 'vegetables'],
-  instructions: 'Cook pasta and mix veggies.'
+  description: 'Simple pasta tossed with vegetables and light seasoning.',
+  ingredients: [
+    '1 cup pasta',
+    '1/2 cup vegetables',
+    '1 tbsp oil',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Boil pasta and drain.',
+    'Heat oil in a pan.',
+    'Add vegetables and cook briefly.',
+    'Add pasta and salt.',
+    'Mix well and cook for a few minutes.',
+    'Serve hot.'
+  ]
 },
 {
   id: 164,
   title: 'Tomato Curry',
-  description: 'Tangy tomato curry.',
-  ingredients: ['tomato', 'spices'],
-  instructions: 'Cook tomatoes with spices.'
+  description: 'A tangy curry made with tomatoes and simple spices.',
+  ingredients: [
+    '2 tomatoes (chopped)',
+    '1 tbsp oil',
+    '1 onion (chopped)',
+    'Spices to taste',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Add onions and sauté until soft.',
+    'Add tomatoes and cook until mushy.',
+    'Add spices and salt.',
+    'Cook for a few minutes until thick.',
+    'Serve hot.'
+  ]
 },
 {
   id: 165,
   title: 'Egg Noodles',
-  description: 'Egg noodles.',
-  ingredients: ['noodles', 'egg'],
-  instructions: 'Cook noodles and mix egg.'
+  description: 'Stir-fried noodles with eggs for a quick and satisfying dish.',
+  ingredients: [
+    '1 pack noodles',
+    '2 eggs',
+    '1 tbsp oil',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Boil noodles and drain.',
+    'Heat oil in a pan.',
+    'Scramble eggs in the pan.',
+    'Add noodles and mix well.',
+    'Add salt.',
+    'Cook for a few minutes and serve hot.'
+  ]
 },
 {
   id: 166,
   title: 'Veg Omelette',
-  description: 'Omelette with veggies.',
-  ingredients: ['egg', 'vegetables'],
-  instructions: 'Cook mixture in pan.'
+  description: 'A fluffy omelette loaded with fresh vegetables and light spices.',
+  ingredients: [
+    '2 eggs',
+    '1/4 cup chopped vegetables (onion, tomato, capsicum)',
+    '1 tbsp oil',
+    'Salt and pepper to taste'
+  ],
+  instructions: [
+    'Beat eggs in a bowl with salt and pepper.',
+    'Add chopped vegetables and mix.',
+    'Heat oil in a pan.',
+    'Pour the mixture into the pan.',
+    'Cook on medium heat until set.',
+    'Flip and cook the other side.',
+    'Serve hot.'
+  ]
 },
 {
   id: 167,
   title: 'Chicken Soup',
-  description: 'Light chicken soup.',
-  ingredients: ['chicken', 'water'],
-  instructions: 'Boil and season.'
+  description: 'A light and comforting chicken soup, perfect for a warm meal.',
+  ingredients: [
+    '200g chicken',
+    '2 cups water',
+    '1 small onion (chopped)',
+    'Salt and pepper to taste'
+  ],
+  instructions: [
+    'Add chicken and water to a pot.',
+    'Bring to a boil and remove impurities.',
+    'Add chopped onion, salt, and pepper.',
+    'Simmer for 15–20 minutes.',
+    'Serve hot.'
+  ]
 },
 {
   id: 168,
   title: 'Rice Salad',
-  description: 'Cold rice salad.',
-  ingredients: ['rice', 'vegetables'],
-  instructions: 'Mix and serve.'
+  description: 'A simple cold rice salad mixed with fresh vegetables.',
+  ingredients: [
+    '1 cup cooked rice (cooled)',
+    '1/2 cup vegetables',
+    '1 tbsp lemon juice',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Add cooled rice to a bowl.',
+    'Add chopped vegetables.',
+    'Add lemon juice and salt.',
+    'Mix well.',
+    'Serve chilled or at room temperature.'
+  ]
 },
 {
   id: 169,
   title: 'Paneer Fry',
-  description: 'Fried paneer cubes.',
-  ingredients: ['paneer', 'oil'],
-  instructions: 'Fry paneer.'
+  description: 'Crispy and lightly spiced fried paneer cubes.',
+  ingredients: [
+    '150g paneer (cubed)',
+    '1 tbsp oil',
+    'Spices to taste',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Add paneer cubes.',
+    'Sprinkle spices and salt.',
+    'Fry until golden on all sides.',
+    'Serve hot.'
+  ]
 },
 {
   id: 170,
   title: 'Veg Burger',
-  description: 'Simple veg burger.',
-  ingredients: ['bun', 'vegetables'],
-  instructions: 'Assemble burger.'
+  description: 'A simple vegetable burger with a crispy patty and soft bun.',
+  ingredients: [
+    '1 burger bun',
+    '1 veg patty',
+    'Lettuce or vegetables',
+    'Sauce as needed'
+  ],
+  instructions: [
+    'Cook the veg patty until crispy.',
+    'Lightly toast the burger bun.',
+    'Place the patty inside the bun.',
+    'Add vegetables and sauce.',
+    'Close and serve.'
+  ]
 },
 {
   id: 171,
   title: 'Egg Burger',
-  description: 'Egg burger.',
-  ingredients: ['bun', 'egg'],
-  instructions: 'Assemble and serve.'
+  description: 'A simple burger with a fried egg and soft bun, perfect for a quick bite.',
+  ingredients: [
+    '1 burger bun',
+    '1 egg',
+    '1 tsp oil',
+    'Salt and pepper to taste',
+    'Sauce (optional)'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Fry the egg to your liking.',
+    'Lightly toast the burger bun.',
+    'Place the egg inside the bun.',
+    'Add salt, pepper, and sauce.',
+    'Close and serve.'
+  ]
 },
 {
   id: 172,
-  title: 'Veg Pizza Slice',
-  description: 'Vegetable pizza.',
-  ingredients: ['base', 'vegetables', 'cheese'],
-  instructions: 'Top and bake.'
+  title: 'Veg Pizza',
+  description: 'A delicious homemade vegetable pizza topped with fresh veggies and melted cheese.',
+  ingredients: [
+    '1 pizza base',
+    '1/2 cup mixed vegetables (capsicum, onion, corn)',
+    '1/2 cup grated cheese',
+    '2 tbsp pizza sauce',
+    '1 tsp oregano or mixed herbs'
+  ],
+  instructions: [
+    'Preheat a pan or oven.',
+    'Spread pizza sauce evenly on the base.',
+    'Add chopped vegetables on top.',
+    'Sprinkle grated cheese evenly.',
+    'Add oregano or herbs.',
+    'Cook in oven or covered pan until cheese melts and base is crisp.',
+    'Slice and serve hot.'
+  ]
 },
 {
   id: 173,
   title: 'Chicken Pizza',
-  description: 'Chicken pizza.',
-  ingredients: ['base', 'chicken', 'cheese'],
-  instructions: 'Bake pizza.'
+  description: 'A delicious pizza topped with juicy chicken and melted cheese.',
+  ingredients: [
+    '1 pizza base',
+    '1/2 cup cooked chicken',
+    '1/2 cup cheese',
+    'Pizza sauce'
+  ],
+  instructions: [
+    'Spread sauce on the pizza base.',
+    'Add cooked chicken pieces.',
+    'Top with cheese.',
+    'Bake until cheese melts and base is crisp.',
+    'Slice and serve hot.'
+  ]
 },
 {
   id: 174,
   title: 'Cheese Pasta',
-  description: 'Cheesy pasta.',
-  ingredients: ['pasta', 'cheese'],
-  instructions: 'Mix and cook.'
+  description: 'Creamy and cheesy pasta that’s quick and satisfying.',
+  ingredients: [
+    '1 cup pasta',
+    '1/2 cup cheese',
+    '1 tbsp butter',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Boil pasta and drain.',
+    'Heat butter in a pan.',
+    'Add pasta and mix.',
+    'Add cheese and stir until melted.',
+    'Add salt.',
+    'Serve hot.'
+  ]
 },
 {
   id: 175,
   title: 'Veg Wrap Roll',
-  description: 'Veg roll.',
-  ingredients: ['roti', 'vegetables'],
-  instructions: 'Fill and roll.'
+  description: 'A simple vegetable wrap rolled in soft roti with light seasoning.',
+  ingredients: [
+    '1 roti',
+    '1/2 cup vegetables',
+    '1 tbsp sauce',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Cook vegetables lightly in a pan.',
+    'Add salt and mix.',
+    'Place vegetables on the roti.',
+    'Add sauce.',
+    'Roll tightly.',
+    'Serve fresh.'
+  ]
 },
 {
   id: 176,
   title: 'Chicken Wrap',
-  description: 'Chicken roll.',
-  ingredients: ['roti', 'chicken'],
-  instructions: 'Wrap and serve.'
+  description: 'Juicy chicken wrapped in soft roti with fresh veggies.',
+  ingredients: [
+    '2 roti/wraps',
+    '1/2 cup cooked chicken',
+    'onion & lettuce',
+    'spices',
+    'mayonnaise or sauce'
+  ],
+  instructions: [
+    'Heat cooked chicken with spices.',
+    'Warm the roti/wrap.',
+    'Place chicken and veggies inside.',
+    'Add mayo or sauce.',
+    'Roll tightly.',
+    'Cut and serve fresh.'
+  ]
 },
 {
   id: 177,
   title: 'Potato Sandwich',
-  description: 'Potato sandwich.',
-  ingredients: ['bread', 'potato'],
-  instructions: 'Assemble and toast.'
+  description: 'Crispy toasted sandwich filled with spiced mashed potatoes.',
+  ingredients: [
+    '4 bread slices',
+    '2 boiled potatoes',
+    'onion',
+    'salt & spices',
+    'butter'
+  ],
+  instructions: [
+    'Mash boiled potatoes.',
+    'Mix with onions and spices.',
+    'Spread filling between bread slices.',
+    'Apply butter on outside.',
+    'Toast in pan until golden brown.',
+    'Cut and serve hot.'
+  ]
 },
 {
   id: 178,
   title: 'Egg Curry Rice',
-  description: 'Rice with egg curry.',
-  ingredients: ['rice', 'egg curry'],
-  instructions: 'Serve together.'
+  description: 'Simple and comforting rice served with spicy egg curry.',
+  ingredients: [
+    '2 boiled eggs',
+    '1 cup cooked rice',
+    'onion',
+    'tomato',
+    'spices',
+    'oil'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Sauté onions until golden.',
+    'Add tomatoes and spices, cook into gravy.',
+    'Add boiled eggs and simmer for 5–7 minutes.',
+    'Serve hot with cooked rice.'
+  ]
 },
 {
   id: 179,
   title: 'Veg Soup Bowl',
-  description: 'Vegetable soup.',
-  ingredients: ['vegetables', 'water'],
-  instructions: 'Cook and serve.'
+  description: 'Light and healthy vegetable soup.',
+  ingredients: [
+    'mixed vegetables',
+    'water',
+    'salt',
+    'pepper'
+  ],
+  instructions: [
+    'Chop vegetables finely.',
+    'Boil them in water until soft.',
+    'Season with salt and pepper.',
+    'Simmer for a few minutes.',
+    'Serve hot.'
+  ]
 },
 {
   id: 180,
   title: 'Chicken Rice Bowl',
-  description: 'Chicken rice bowl.',
-  ingredients: ['rice', 'chicken'],
-  instructions: 'Mix and serve.'
+  description: 'Flavourful chicken served over steamed rice.',
+  ingredients: [
+    '1 cup rice',
+    'chicken pieces',
+    'onion',
+    'spices',
+    'oil'
+  ],
+  instructions: [
+    'Cook rice and keep aside.',
+    'Heat oil and sauté onions.',
+    'Add chicken and spices, cook well.',
+    'Let it become slightly saucy.',
+    'Serve chicken over rice.'
+  ]
 },
 {
   id: 181,
   title: 'Paneer Sandwich',
-  description: 'Paneer sandwich.',
-  ingredients: ['bread', 'paneer'],
-  instructions: 'Assemble and grill.'
+  description: 'Grilled sandwich stuffed with spiced paneer filling.',
+  ingredients: [
+    'bread slices',
+    'paneer',
+    'onion',
+    'spices',
+    'butter'
+  ],
+  instructions: [
+    'Crumble paneer and mix with onions and spices.',
+    'Spread mixture between bread slices.',
+    'Apply butter on outside.',
+    'Grill or toast until golden.',
+    'Serve hot.'
+  ]
 },
 {
   id: 182,
   title: 'Veg Toast',
-  description: 'Vegetable toast.',
-  ingredients: ['bread', 'vegetables'],
-  instructions: 'Toast and serve.'
+  description: 'Crunchy toasted bread topped with seasoned vegetables.',
+  ingredients: [
+    'bread slices',
+    'mixed vegetables',
+    'butter',
+    'salt & pepper'
+  ],
+  instructions: [
+    'Sauté vegetables lightly with seasoning.',
+    'Toast bread slices with butter.',
+    'Place cooked vegetables on top.',
+    'Toast again lightly if needed.',
+    'Serve warm.'
+  ]
 },
 {
   id: 183,
   title: 'Milkshake Vanilla',
-  description: 'Vanilla milkshake.',
-  ingredients: ['milk', 'vanilla'],
-  instructions: 'Blend and serve.'
+  description: 'Creamy and smooth vanilla milkshake.',
+  ingredients: [
+    '1 cup cold milk',
+    '2 scoops vanilla ice cream',
+    '1 tsp sugar (optional)'
+  ],
+  instructions: [
+    'Add milk, ice cream, and sugar into a blender.',
+    'Blend until smooth and creamy.',
+    'Pour into a glass.',
+    'Serve chilled.'
+  ]
 },
 {
   id: 184,
   title: 'Chocolate Shake',
-  description: 'Chocolate milkshake.',
-  ingredients: ['milk', 'chocolate'],
-  instructions: 'Blend ingredients.'
+  description: 'Rich and thick chocolate milkshake.',
+  ingredients: [
+    '1 cup cold milk',
+    '2 tbsp chocolate syrup or cocoa powder',
+    '2 scoops chocolate ice cream'
+  ],
+  instructions: [
+    'Add milk, chocolate, and ice cream to blender.',
+    'Blend until thick and smooth.',
+    'Pour into glass.',
+    'Top with chocolate syrup if needed.'
+  ]
 },
 {
   id: 185,
   title: 'Strawberry Shake',
-  description: 'Strawberry drink.',
-  ingredients: ['milk', 'strawberry'],
-  instructions: 'Blend and serve.'
+  description: 'Fresh and fruity strawberry milkshake.',
+  ingredients: [
+    '1 cup cold milk',
+    '5–6 strawberries',
+    '2 scoops vanilla ice cream',
+    'sugar (optional)'
+  ],
+  instructions: [
+    'Wash and chop strawberries.',
+    'Add all ingredients into blender.',
+    'Blend until smooth.',
+    'Serve chilled.'
+  ]
 },
 {
   id: 186,
   title: 'Veg Fried Rice',
-  description: 'Classic fried rice.',
-  ingredients: ['rice', 'vegetables'],
-  instructions: 'Stir fry rice.'
+  description: 'Classic Indo-Chinese vegetable fried rice.',
+  ingredients: [
+    '1 cup cooked rice',
+    'mixed vegetables (carrot, beans, peas)',
+    'soy sauce',
+    'garlic',
+    'oil',
+    'salt & pepper'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Add garlic and sauté.',
+    'Add vegetables and stir fry.',
+    'Add cooked rice and mix well.',
+    'Add soy sauce and seasoning.',
+    'Toss everything and serve hot.'
+  ]
 },
 {
   id: 187,
   title: 'Chicken Fried Rice',
-  description: 'Chicken fried rice.',
-  ingredients: ['rice', 'chicken'],
-  instructions: 'Cook together.'
+  description: 'Flavourful fried rice with tender chicken pieces.',
+  ingredients: [
+    '1 cup cooked rice',
+    'chicken pieces',
+    'soy sauce',
+    'garlic',
+    'vegetables (optional)',
+    'oil'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Cook chicken with spices until done.',
+    'Add garlic and vegetables.',
+    'Add cooked rice and mix well.',
+    'Pour soy sauce and toss.',
+    'Serve hot.'
+  ]
 },
 {
   id: 188,
   title: 'Paneer Fried Rice',
-  description: 'Paneer rice.',
-  ingredients: ['rice', 'paneer'],
-  instructions: 'Stir fry.'
+  description: 'Flavorful fried rice with soft paneer cubes and vegetables.',
+  ingredients: [
+    '1 cup cooked rice',
+    'paneer cubes',
+    'mixed vegetables',
+    'soy sauce',
+    'garlic',
+    'oil',
+    'salt & pepper'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Add garlic and sauté briefly.',
+    'Add vegetables and cook for a minute.',
+    'Add paneer cubes and lightly fry.',
+    'Add cooked rice and mix well.',
+    'Add soy sauce and seasoning.',
+    'Toss everything and serve hot.'
+  ]
 },
 {
   id: 189,
   title: 'Veg Cutlet Plate',
-  description: 'Cutlet snack.',
-  ingredients: ['vegetables', 'crumbs'],
-  instructions: 'Shape and fry.'
+  description: 'Crispy vegetable cutlets served as a tasty snack.',
+  ingredients: [
+    'boiled potatoes',
+    'mixed vegetables',
+    'breadcrumbs',
+    'spices',
+    'oil'
+  ],
+  instructions: [
+    'Mash boiled potatoes.',
+    'Mix with cooked vegetables and spices.',
+    'Shape into small cutlets.',
+    'Coat with breadcrumbs.',
+    'Deep fry or shallow fry until golden brown.',
+    'Serve hot.'
+  ]
 },
 {
   id: 190,
   title: 'Egg Cutlet',
-  description: 'Egg cutlet.',
-  ingredients: ['egg', 'crumbs'],
-  instructions: 'Fry and serve.'
+  description: 'Crispy cutlet made with boiled eggs and spices.',
+  ingredients: [
+    'boiled eggs',
+    'boiled potatoes',
+    'spices',
+    'breadcrumbs',
+    'oil'
+  ],
+  instructions: [
+    'Mash potatoes and mix with spices.',
+    'Wrap mixture around boiled eggs.',
+    'Coat with breadcrumbs.',
+    'Fry until golden and crispy.',
+    'Serve warm.'
+  ]
 },
 {
   id: 191,
   title: 'Chicken Cutlet',
-  description: 'Chicken snack.',
-  ingredients: ['chicken', 'crumbs'],
-  instructions: 'Fry cutlet.'
+  description: 'Crispy chicken cutlets with a juicy, spiced center.',
+  ingredients: [
+    'minced chicken',
+    'boiled potato',
+    'onion',
+    'spices',
+    'breadcrumbs',
+    'oil'
+  ],
+  instructions: [
+    'Cook minced chicken with onions and spices.',
+    'Mix with mashed boiled potatoes.',
+    'Shape into cutlets.',
+    'Coat with breadcrumbs.',
+    'Fry until golden and crispy.',
+    'Serve hot.'
+  ]
 },
 {
   id: 192,
-  title: 'Veg Soup Creamy',
-  description: 'Creamy soup.',
-  ingredients: ['vegetables', 'cream'],
-  instructions: 'Cook and blend.'
+  title: 'Creamy Veg Soup',
+  description: 'Smooth and creamy vegetable soup.',
+  ingredients: [
+    'mixed vegetables',
+    'milk or cream',
+    'butter',
+    'salt',
+    'pepper'
+  ],
+  instructions: [
+    'Boil vegetables until soft.',
+    'Blend them into a smooth paste.',
+    'Heat butter in a pan.',
+    'Add blended mixture and milk/cream.',
+    'Season well and simmer.',
+    'Serve hot.'
+  ]
 },
 {
   id: 193,
   title: 'Tomato Pasta',
-  description: 'Tomato pasta.',
-  ingredients: ['pasta', 'tomato'],
-  instructions: 'Cook and mix.'
+  description: 'Simple pasta in rich tomato sauce.',
+  ingredients: [
+    'pasta',
+    'tomatoes',
+    'garlic',
+    'olive oil',
+    'salt',
+    'herbs'
+  ],
+  instructions: [
+    'Boil pasta until soft.',
+    'Blend or cook tomatoes into sauce.',
+    'Heat oil and sauté garlic.',
+    'Add tomato sauce and seasoning.',
+    'Mix cooked pasta into sauce.',
+    'Serve warm.'
+  ]
 },
 {
   id: 194,
   title: 'Garlic Pasta',
-  description: 'Garlic flavored pasta.',
-  ingredients: ['pasta', 'garlic'],
-  instructions: 'Cook and mix.'
+  description: 'Aromatic pasta with rich garlic flavor.',
+  ingredients: [
+    'pasta',
+    'garlic',
+    'butter',
+    'olive oil',
+    'salt',
+    'pepper'
+  ],
+  instructions: [
+    'Boil pasta and keep aside.',
+    'Heat butter and oil in a pan.',
+    'Add chopped garlic and sauté.',
+    'Add pasta and mix well.',
+    'Season with salt and pepper.',
+    'Serve hot.'
+  ]
 },
 {
   id: 195,
   title: 'Veg Chowmein',
-  description: 'Street noodles.',
-  ingredients: ['noodles', 'vegetables'],
-  instructions: 'Stir fry.'
+  description: 'Street-style stir-fried noodles with vegetables.',
+  ingredients: [
+    'noodles',
+    'cabbage',
+    'carrot',
+    'capsicum',
+    'soy sauce',
+    'garlic',
+    'oil'
+  ],
+  instructions: [
+    'Boil noodles and drain.',
+    'Heat oil in a pan.',
+    'Add garlic and vegetables, stir fry.',
+    'Add noodles and soy sauce.',
+    'Toss everything well.',
+    'Serve hot.'
+  ]
 },
 {
   id: 196,
   title: 'Chicken Chowmein',
-  description: 'Chicken noodles.',
-  ingredients: ['noodles', 'chicken'],
-  instructions: 'Cook together.'
+  description: 'Spicy Indo-Chinese noodles with tender chicken and vegetables.',
+  ingredients: [
+    'noodles',
+    'chicken pieces',
+    'cabbage',
+    'carrot',
+    'soy sauce',
+    'garlic',
+    'oil'
+  ],
+  instructions: [
+    'Boil noodles and set aside.',
+    'Cook chicken with salt and spices.',
+    'Heat oil and sauté garlic.',
+    'Add vegetables and stir fry.',
+    'Add chicken and noodles.',
+    'Pour soy sauce and toss well.',
+    'Serve hot.'
+  ]
 },
 {
   id: 197,
   title: 'Paneer Chowmein',
-  description: 'Paneer noodles.',
-  ingredients: ['noodles', 'paneer'],
-  instructions: 'Mix and cook.'
+  description: 'Stir-fried noodles with paneer and crunchy vegetables.',
+  ingredients: [
+    'noodles',
+    'paneer cubes',
+    'cabbage',
+    'carrot',
+    'soy sauce',
+    'garlic',
+    'oil'
+  ],
+  instructions: [
+    'Boil noodles and drain.',
+    'Lightly fry paneer cubes.',
+    'Heat oil and sauté garlic.',
+    'Add vegetables and cook quickly.',
+    'Add noodles, paneer, and soy sauce.',
+    'Toss well and serve.'
+  ]
 },
 {
   id: 198,
   title: 'Veg Salad Bowl',
-  description: 'Healthy salad.',
-  ingredients: ['vegetables'],
-  instructions: 'Mix and serve.'
+  description: 'Fresh and healthy vegetable salad.',
+  ingredients: [
+    'cucumber',
+    'tomato',
+    'carrot',
+    'onion',
+    'lemon juice',
+    'salt'
+  ],
+  instructions: [
+    'Chop all vegetables finely.',
+    'Add them to a bowl.',
+    'Add salt and lemon juice.',
+    'Mix well.',
+    'Serve fresh and cold.'
+  ]
 },
 {
   id: 199,
   title: 'Fruit Salad',
-  description: 'Fresh fruits.',
-  ingredients: ['fruits'],
-  instructions: 'Cut and mix.'
+  description: 'Refreshing mix of seasonal fruits.',
+  ingredients: [
+    'apple',
+    'banana',
+    'grapes',
+    'orange',
+    'honey (optional)'
+  ],
+  instructions: [
+    'Chop all fruits into bite-sized pieces.',
+    'Add them to a bowl.',
+    'Drizzle honey if needed.',
+    'Mix gently.',
+    'Serve chilled.'
+  ]
 },
 {
   id: 200,
   title: 'Egg Salad',
-  description: 'Protein salad.',
-  ingredients: ['egg', 'vegetables'],
-  instructions: 'Mix ingredients.'
+  description: 'Protein-rich salad made with boiled eggs and veggies.',
+  ingredients: [
+    'boiled eggs',
+    'onion',
+    'cucumber',
+    'salt',
+    'pepper',
+    'lemon juice'
+  ],
+  instructions: [
+    'Chop boiled eggs into pieces.',
+    'Add chopped vegetables.',
+    'Season with salt and pepper.',
+    'Add lemon juice.',
+    'Mix and serve fresh.'
+  ]
 },
 {
   id: 201,
   title: 'Chicken Salad',
-  description: 'Chicken salad.',
-  ingredients: ['chicken', 'vegetables'],
-  instructions: 'Mix and serve.'
+  description: 'Fresh chicken salad with crisp vegetables and light dressing.',
+  ingredients: [
+    '1 cup cooked chicken (shredded)',
+    '1/2 cup lettuce (chopped)',
+    '1/4 cup cucumber (sliced)',
+    '2 tbsp mayonnaise',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Add chicken, lettuce, and cucumber to a bowl.',
+    'Add mayonnaise and mix well.',
+    'Season with salt.',
+    'Toss everything evenly.',
+    'Serve fresh.'
+  ]
 },
 {
   id: 202,
   title: 'Paneer Salad',
-  description: 'Paneer salad.',
-  ingredients: ['paneer', 'vegetables'],
-  instructions: 'Combine and serve.'
+  description: 'Healthy paneer salad with fresh vegetables.',
+  ingredients: [
+    '1 cup paneer cubes',
+    '1/2 cup cucumber and tomato',
+    '1 tbsp olive oil',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Combine paneer and vegetables in a bowl.',
+    'Drizzle olive oil over the mixture.',
+    'Add salt and mix gently.',
+    'Serve immediately.'
+  ]
 },
 {
   id: 203,
   title: 'Veg Roll',
-  description: 'Veg roll.',
-  ingredients: ['roti', 'vegetables'],
-  instructions: 'Wrap and serve.'
+  description: 'Soft roti filled with spiced vegetables.',
+  ingredients: [
+    '2 rotis',
+    '1 cup mixed vegetables',
+    '1 tbsp oil',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil and cook vegetables until soft.',
+    'Add salt and mix well.',
+    'Place filling on roti.',
+    'Roll tightly.',
+    'Serve warm.'
+  ]
 },
 {
   id: 204,
   title: 'Chicken Roll',
-  description: 'Chicken roll.',
-  ingredients: ['roti', 'chicken'],
-  instructions: 'Wrap and serve.'
+  description: 'Tasty roll filled with spiced chicken.',
+  ingredients: [
+    '2 rotis',
+    '1 cup cooked chicken',
+    '1 tbsp sauce',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat chicken in a pan.',
+    'Add sauce and mix well.',
+    'Place filling on roti.',
+    'Roll tightly.',
+    'Serve hot.'
+  ]
 },
 {
   id: 205,
   title: 'Egg Roll Street',
-  description: 'Street egg roll.',
-  ingredients: ['roti', 'egg'],
-  instructions: 'Cook and wrap.'
+  description: 'Street-style egg roll with simple spices.',
+  ingredients: [
+    '2 eggs',
+    '2 rotis',
+    '1 tbsp oil',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Beat eggs with salt.',
+    'Heat oil and cook eggs in a pan.',
+    'Place roti over egg and cook briefly.',
+    'Flip and roll tightly.',
+    'Serve hot.'
+  ]
 },
 {
   id: 206,
-  title: 'Veg Pizza Mini',
-  description: 'Mini pizza.',
-  ingredients: ['base', 'veg', 'cheese'],
-  instructions: 'Bake.'
+  title: 'Veg Pizza',
+  description: 'Classic vegetable pizza with melted cheese.',
+  ingredients: [
+    '1 pizza base',
+    '1/2 cup vegetables',
+    '1/2 cup cheese',
+    '2 tbsp pizza sauce'
+  ],
+  instructions: [
+    'Spread sauce on the pizza base.',
+    'Add vegetables evenly.',
+    'Top with cheese.',
+    'Bake at 180°C for 10 minutes.',
+    'Serve hot.'
+  ]
 },
 {
   id: 207,
   title: 'Chicken Pizza Mini',
-  description: 'Mini chicken pizza.',
-  ingredients: ['base', 'chicken'],
-  instructions: 'Bake.'
+  description: 'Mini pizza topped with chicken and cheese.',
+  ingredients: [
+    '1 mini pizza base',
+    '1/2 cup cooked chicken',
+    '1/2 cup cheese'
+  ],
+  instructions: [
+    'Place chicken on pizza base.',
+    'Add cheese on top.',
+    'Bake for 10 minutes.',
+    'Serve warm.'
+  ]
 },
 {
   id: 208,
   title: 'Paneer Pizza Mini',
-  description: 'Mini paneer pizza.',
-  ingredients: ['base', 'paneer'],
-  instructions: 'Bake.'
+  description: 'Mini pizza with paneer topping.',
+  ingredients: [
+    '1 mini pizza base',
+    '1/2 cup paneer',
+    '1/2 cup cheese'
+  ],
+  instructions: [
+    'Add paneer on base.',
+    'Top with cheese.',
+    'Bake for 10 minutes.',
+    'Serve hot.'
+  ]
 },
 {
   id: 209,
   title: 'Veg Rice Deluxe',
-  description: 'Rich veg rice.',
-  ingredients: ['rice', 'veg'],
-  instructions: 'Cook and serve.'
+  description: 'Rich vegetable rice with mild spices.',
+  ingredients: [
+    '2 cups cooked rice',
+    '1 cup vegetables',
+    '1 tbsp oil',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil in a pan.',
+    'Add vegetables and cook.',
+    'Add rice and mix well.',
+    'Season with salt.',
+    'Serve hot.'
+  ]
 },
 {
   id: 210,
   title: 'Chicken Rice Deluxe',
-  description: 'Rich chicken rice.',
-  ingredients: ['rice', 'chicken'],
-  instructions: 'Cook and serve.'
+  description: 'Flavorful rice with cooked chicken.',
+  ingredients: [
+    '2 cups cooked rice',
+    '1 cup chicken',
+    '1 tbsp oil',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Heat oil and cook chicken.',
+    'Add rice and mix well.',
+    'Season with salt.',
+    'Cook for 2–3 minutes.',
+    'Serve hot.'
+  ]
 },
 {
   id: 211,
   title: 'Paneer Rice Deluxe',
-  description: 'Rich paneer rice.',
-  ingredients: ['rice', 'paneer'],
-  instructions: 'Cook.'
+  description: 'Rice mixed with soft paneer cubes.',
+  ingredients: [
+    '2 cups cooked rice',
+    '1 cup paneer',
+    '1 tbsp oil'
+  ],
+  instructions: [
+    'Heat oil and cook paneer lightly.',
+    'Add rice and mix.',
+    'Cook for 2 minutes.',
+    'Serve hot.'
+  ]
 },
 {
   id: 212,
   title: 'Veg Soup Hot',
-  description: 'Hot soup.',
-  ingredients: ['vegetables'],
-  instructions: 'Boil.'
+  description: 'Warm vegetable soup for light meals.',
+  ingredients: [
+    '2 cups water',
+    '1 cup vegetables',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Boil water in a pot.',
+    'Add vegetables.',
+    'Cook for 10 minutes.',
+    'Add salt and mix.',
+    'Serve hot.'
+  ]
 },
 {
   id: 213,
   title: 'Chicken Soup Hot',
-  description: 'Hot chicken soup.',
-  ingredients: ['chicken'],
-  instructions: 'Cook.'
+  description: 'Light chicken soup with simple seasoning.',
+  ingredients: [
+    '2 cups water',
+    '1 cup chicken',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Boil water.',
+    'Add chicken.',
+    'Cook until tender.',
+    'Season with salt.',
+    'Serve warm.'
+  ]
 },
 {
   id: 214,
   title: 'Paneer Soup',
-  description: 'Paneer soup.',
-  ingredients: ['paneer'],
-  instructions: 'Cook.'
+  description: 'Simple paneer soup.',
+  ingredients: [
+    '2 cups water',
+    '1 cup paneer',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Boil water.',
+    'Add paneer.',
+    'Cook for 5 minutes.',
+    'Add salt.',
+    'Serve hot.'
+  ]
 },
 {
   id: 215,
   title: 'Veg Snack Plate',
-  description: 'Snack combo.',
-  ingredients: ['veg'],
-  instructions: 'Serve.'
+  description: 'Quick vegetable snack platter.',
+  ingredients: [
+    '1 cup vegetables',
+    '1 tbsp sauce'
+  ],
+  instructions: [
+    'Arrange vegetables on a plate.',
+    'Add sauce.',
+    'Serve fresh.'
+  ]
 },
 {
   id: 216,
   title: 'Chicken Snack Plate',
-  description: 'Chicken snack.',
-  ingredients: ['chicken'],
-  instructions: 'Serve.'
+  description: 'Simple chicken snack.',
+  ingredients: [
+    '1 cup cooked chicken',
+    '1 tbsp sauce'
+  ],
+  instructions: [
+    'Place chicken on plate.',
+    'Add sauce.',
+    'Serve immediately.'
+  ]
 },
 {
   id: 217,
   title: 'Egg Snack Plate',
-  description: 'Egg snack.',
-  ingredients: ['egg'],
-  instructions: 'Serve.'
+  description: 'Easy egg snack.',
+  ingredients: [
+    '2 boiled eggs',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Slice eggs.',
+    'Sprinkle salt.',
+    'Serve.'
+  ]
 },
 {
   id: 218,
   title: 'Paneer Snack Plate',
-  description: 'Paneer snack.',
-  ingredients: ['paneer'],
-  instructions: 'Serve.'
+  description: 'Light paneer snack.',
+  ingredients: [
+    '1 cup paneer',
+    '1 tbsp sauce'
+  ],
+  instructions: [
+    'Place paneer on plate.',
+    'Add sauce.',
+    'Serve fresh.'
+  ]
 },
 {
   id: 219,
   title: 'Veg Combo Meal',
-  description: 'Veg combo.',
-  ingredients: ['rice', 'veg'],
-  instructions: 'Serve.'
+  description: 'Rice served with vegetable curry.',
+  ingredients: [
+    '1 cup rice',
+    '1 cup veg curry'
+  ],
+  instructions: [
+    'Serve rice on a plate.',
+    'Add curry on the side.',
+    'Serve hot.'
+  ]
 },
 {
   id: 220,
   title: 'Chicken Combo Meal',
-  description: 'Chicken combo.',
-  ingredients: ['rice', 'chicken'],
-  instructions: 'Serve.'
+  description: 'Rice with flavorful chicken curry.',
+  ingredients: [
+    '1 cup rice',
+    '1 cup chicken curry'
+  ],
+  instructions: [
+    'Serve rice.',
+    'Add chicken curry.',
+    'Serve hot.'
+  ]
 },
 {
   id: 221,
   title: 'Egg Rice Bowl',
-  description: 'Egg rice combo.',
-  ingredients: ['rice', 'egg'],
-  instructions: 'Mix and serve.'
+  description: 'Simple rice mixed with egg.',
+  ingredients: [
+    '2 cups rice',
+    '2 eggs',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Cook eggs in a pan.',
+    'Add rice and mix.',
+    'Season with salt.',
+    'Serve hot.'
+  ]
 },
 {
   id: 222,
   title: 'Veg Rice Mix',
-  description: 'Mixed veg rice.',
-  ingredients: ['rice', 'vegetables'],
-  instructions: 'Cook and mix.'
+  description: 'Mixed vegetable rice.',
+  ingredients: [
+    '2 cups rice',
+    '1 cup vegetables',
+    'Salt to taste'
+  ],
+  instructions: [
+    'Cook vegetables.',
+    'Add rice and mix.',
+    'Add salt.',
+    'Serve hot.'
+  ]
 },
 {
   id: 223,
   title: 'Chicken Masala',
-  description: 'Spicy chicken.',
-  ingredients: ['chicken', 'spices'],
-  instructions: 'Cook well.'
+  description: 'Spicy chicken cooked in masala.',
+  ingredients: [
+    '1 cup chicken',
+    '2 tbsp oil',
+    '1 tbsp masala'
+  ],
+  instructions: [
+    'Heat oil.',
+    'Add chicken.',
+    'Add masala.',
+    'Cook well.',
+    'Serve hot.'
+  ]
 },
 {
   id: 224,
   title: 'Paneer Masala',
-  description: 'Paneer curry.',
-  ingredients: ['paneer', 'spices'],
-  instructions: 'Cook paneer.'
+  description: 'Paneer cooked in rich masala.',
+  ingredients: [
+    '1 cup paneer',
+    '2 tbsp oil',
+    '1 tbsp masala'
+  ],
+  instructions: [
+    'Heat oil.',
+    'Add paneer.',
+    'Add masala.',
+    'Cook well.',
+    'Serve hot.'
+  ]
 },
 {
   id: 225,
   title: 'Veg Masala',
-  description: 'Veg curry.',
-  ingredients: ['vegetables', 'spices'],
-  instructions: 'Cook vegetables.'
+  description: 'Vegetables cooked in spiced gravy.',
+  ingredients: [
+    '1 cup vegetables',
+    '2 tbsp oil',
+    '1 tbsp masala'
+  ],
+  instructions: [
+    'Heat oil.',
+    'Add vegetables.',
+    'Add masala.',
+    'Cook well.',
+    'Serve hot.'
+  ]
 },
 {
-  id: 326,
+  id: 226,
   title: 'Rice Combo Plate',
-  description: 'Rice combo meal.',
-  ingredients: ['rice', 'curry'],
-  instructions: 'Serve together.'
+  description: 'Rice served with curry.',
+  ingredients: [
+    '1 cup rice',
+    '1 cup curry'
+  ],
+  instructions: [
+    'Serve rice.',
+    'Add curry.',
+    'Serve hot.'
+  ]
 },
 {
-  id: 327,
+  id: 227,
   title: 'Veg Deluxe Plate',
-  description: 'Veg deluxe meal.',
-  ingredients: ['vegetables', 'rice'],
-  instructions: 'Serve fresh.'
+  description: 'Complete veg meal.',
+  ingredients: [
+    '1 cup rice',
+    '1 cup vegetables'
+  ],
+  instructions: [
+    'Serve rice.',
+    'Add vegetables.',
+    'Serve fresh.'
+  ]
 },
 {
-  id: 328,
+  id: 228,
   title: 'Chicken Deluxe Plate',
-  description: 'Chicken deluxe meal.',
-  ingredients: ['chicken', 'rice'],
-  instructions: 'Serve hot.'
+  description: 'Rice with chicken meal.',
+  ingredients: [
+    '1 cup rice',
+    '1 cup chicken'
+  ],
+  instructions: [
+    'Serve rice.',
+    'Add chicken.',
+    'Serve hot.'
+  ]
 },
 {
-  id: 329,
+  id: 229,
   title: 'Paneer Deluxe Plate',
-  description: 'Paneer deluxe meal.',
-  ingredients: ['paneer', 'rice'],
-  instructions: 'Serve hot.'
+  description: 'Rice with paneer meal.',
+  ingredients: [
+    '1 cup rice',
+    '1 cup paneer'
+  ],
+  instructions: [
+    'Serve rice.',
+    'Add paneer.',
+    'Serve hot.'
+  ]
 },
 {
-  id: 330,
+  id: 230,
   title: 'Egg Deluxe Plate',
-  description: 'Egg deluxe meal.',
-  ingredients: ['egg', 'rice'],
-  instructions: 'Serve hot.'
+  description: 'Rice served with eggs.',
+  ingredients: [
+    '1 cup rice',
+    '2 eggs'
+  ],
+  instructions: [
+    'Cook eggs.',
+    'Serve with rice.',
+    'Serve hot.'
+  ]
 },
-
 ...Array.from({ length: 20 }, (_, i) => {
   const id = 331 + i;
   return {
